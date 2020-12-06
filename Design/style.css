@@ -1,0 +1,232 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #cbcbcb;
+	text-align: center;
+}
+/* common style */
+
+.container{
+	max-width: 1110px;
+	padding: 0 16px;
+	margin: 0 auto;
+}
+.go-to-link{
+	background-color: rgb(131, 184, 75);
+	padding: 15px 30px;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 4px;
+	border: 1px solid rgb(131, 184, 75);
+	border-bottom: 4px solid rgb(111, 156, 64);
+	transition: all 200ms;
+}
+.go-to-link:hover{
+	color: rgb(131, 184, 75);
+	background-color: #fff;
+}
+/*End common style*/
+/* HEADER */
+.header{
+	padding: 40px 0;
+	background-color: #fff;
+}
+
+.header .logo-contianer{
+	width: 60px;
+	margin: 0 auto;
+}
+
+.header .logo-contianer img{
+	width: 100%;
+}
+/* END HEADER */
+
+/* HERO IMAGE */
+.hero{
+	padding: 120px 0;
+	background-image: url('img/pic1.jpg');
+	background-size: cover;/* عشان الصوره تعبي الديف */
+	color: #fff;
+}
+
+.hero h2{
+	font-size: 28px;
+	max-width: 640px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	text-transform: uppercase;/* تحويل النص كابيتال */
+}
+
+.hero p{
+	max-width: 430px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+/* END HERO IMAGE */
+
+/* MARKETING DIGITAL */
+.marketig-digital{
+	background-color: #fff;
+	padding-top: 100px;
+	padding-bottom: 90px;
+}
+
+.marketig-digital h2{
+	max-width: 300px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.marketig-digital p{
+	max-width: 360px;
+	margin: 0 auto;
+	margin-bottom: 55px;
+}
+
+/* END MARKETING DIGITAL */
+
+/* Empizer*/
+.empizer  {
+    background-image: url('img/pic2.jpg');
+    background-color:#ebebeb;
+    padding: 160px 0px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50% auto;
+}
+.empizer .container .text{
+     width: 50%;
+}
+
+.empizer h2{
+
+    max-width: 430px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.empizer ul li{
+    max-width: 340px;
+	margin: 0 auto;
+    margin-bottom: 25px;
+    list-style-position:inside;
+}
+/*End Empizer*/
+
+/*main-text*/
+.main-text{
+    padding: 160px 0px;
+    background-color: white;
+}
+
+.main-text h2{
+    max-width: 430px;
+	margin: 0 auto;
+	margin-bottom: 55px;
+}
+
+.main-text h5{
+
+    max-width: 430px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+/*End main-text*/
+
+/*TestMonios*/
+.testmonios{
+    padding: 120px 0;
+	background-image: url('img/pic3.jpg');
+	background-size: cover;
+	color: #fff;
+}
+
+.testmonios h2{
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.testmonios .test-list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.testmonios .test-list .test-list-item{
+	flex-basis: 50%;
+	padding: 60px;
+}
+.testmonios .test-list-item h4{
+	margin-bottom: 20px;
+}
+
+.testmonios .test-list-item img{
+   
+	margin-bottom: 20px;
+}
+
+/*End TestMonios*/
+
+/*Icon*/
+
+.icon{
+
+	padding: 120px 0;
+	background-size: cover;
+	background-color: white;
+
+}
+
+.icon .test-icon{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.icon .test-icon .test-icon-item{
+	flex-basis: 50%;
+	padding: 60px;
+}
+
+.icon .test-icon-item img{
+	margin-bottom: 25px;
+}
+
+.icon .test-icon-item h4{
+	margin-bottom: 10px;
+}
+
+/*End Icon*/
+
+/*acaba*/
+
+.acaba {
+	padding: 160px 0px;
+}
+
+.acaba h1{
+	margin-bottom: 75px;
+}
+
+.acaba p{
+	margin-bottom: 50px;
+}
+/*End acaba*/
+
+/*prensa*/
+
+.prensa{
+	padding: 160px 0px;
+	background-color: white;
+}
+.prensa h1{
+	margin-bottom: 95px;
+}
+.prensa img{
+	margin-bottom: 140px;
+}
+

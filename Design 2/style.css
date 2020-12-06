@@ -1,0 +1,293 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #ffffff;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+.container{
+	max-width: 1110px;
+	padding: 0 16px;
+	margin: 0 auto;
+}
+.go-to-link {
+	background-color: #8895a0;
+	padding: 15px 50px;
+	text-decoration: none;
+	color: #ffffff;
+	border-radius: 4px;
+	border: 1px solid #8895a0;
+	border-bottom: 4px solid #8895a0;
+	transition: all 200ms;
+}
+.go-to-link:hover{
+	background-color: #ffffff;
+	color: #8895a0;
+}
+.play-btn{
+	background-color: #ffffff;
+	border: none;
+	padding: 48px 43px 43px 48px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 50%;
+}
+.play-btn i{
+	color: #000000;
+	font-size: 24px;
+}
+
+/* hero img */
+.hero {
+	background-image: url(img/pic1.png);
+	background-size: cover;
+	color:#ffffff;
+	position: relative; 	
+}
+.hero > *{
+	z-index: 1;
+	position: relative;
+}
+.hero::before{
+	content: "";
+	background-image: linear-gradient(180deg, rgba(34,34,34,0.5) 0% , rgba(255,255,255,0) 100%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+.hero .header-container{
+	max-width: 1440px;
+	padding: 0 16px;
+	padding-top: 45px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.hero .nav-bar {
+	list-style: none;
+}
+.hero .nav-bar li{
+	display: inline-block;
+	margin-left: 15px;
+}
+.hero .nav-bar a{
+	color: #fafafa;
+	text-decoration: none;
+	padding: 10px;
+	display: inline-block;
+}
+.hero .nav-bar a:hover{
+	color: #333;
+}
+.hero .hero-text {
+	padding: 370px 0;
+}
+.hero .hero-text p{
+	font-size: large;
+	margin-bottom: 55px;
+}
+.hero .hero-text h2{
+	font-weight: 100;
+	font-size: xx-large;
+	margin-bottom: 55px;
+}
+.hero .hero-text a{
+	color: #ffffff;
+	margin-bottom: 35px;
+	font-size: x-small;
+}
+/* End hero img*/
+
+/*Mini Pic */
+.mini-pic{
+	background-color: white;
+	padding: 90px 0 125px 0;
+}
+.mini-pic .group-text-pic{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	max-width: 1100px;
+	position: relative;
+}
+.mini-pic .group-text-pic .text-mini-pic{
+	text-align: left;
+	margin-right: 80px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	max-width: 640px;
+}
+.main-text .group-text-pic .text-mini-pic2{
+	max-width: 540px;
+	max-height: 360px;
+}
+.mini-pic .group-text-pic .text-mini-pic h1{
+	font-size: larger;
+	margin-bottom: 55px;
+}
+.mini-pic .group-text-pic .text-mini-pic ul{
+	font-size: small;
+	padding-bottom: 40px;
+}
+.mini-pic .group-text-pic .text-mini-pic li{
+	list-style: none;
+	padding-bottom: 20px;
+}
+.main-text{
+	margin-top: 100px;
+}
+.main-text h1{
+	font-weight: 600;
+	margin-bottom: 45px;
+}
+.main-text p{
+	margin-bottom: 30px;
+}
+.main-text h3{
+	margin-bottom: 60px;
+}
+.text-mini-pic a{
+	color: #8895a0;
+}
+.main-text .go-to:hover {
+	color:#8895a0 ;
+	background-color: white;
+}
+.text-mini-pic2 .play-btn{
+	position: absolute;
+	top: 50%;
+	left: 68%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+/*Mini Pic */
+
+/*  Text Pic */
+.pic-text {
+	background-image: url('img/pic-group1.png');
+	background-color:#fafafa;
+	padding: 160px 0px;
+	background-repeat: no-repeat;
+    background-position: left;
+	background-size: 50% auto;
+	border: 1px solid #ebebeb;
+	display: flex;
+    justify-content: flex-end;
+}
+.pic-text .text-pic{
+	flex-basis: 50%;
+	text-align: left;
+	padding: 0 125px;
+}
+.text-pic h2{
+	margin-bottom: 60px;
+}
+.text-pic p{
+	margin-bottom: 60px;
+}
+.text-pic a{
+	color: #8895a0;
+}
+/*END Text Pic */
+
+/*  Tu Piso */
+.tu-piso{
+	padding: 100px 0 205px 0;
+	background-color: #fafafa;
+	margin-top: 150px;
+	border: 1px solid #ebebeb;	
+}
+.tu-piso h1{
+	font-size: xx-large;
+	font-weight: lighter;
+	margin-bottom: 95px;
+}
+.tu-piso .icon{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;	
+}
+.tu-piso .icon .tu-piso-icon{
+	flex-basis: 50%;
+	width: 350px;
+	height: 395px;
+	padding: 50px 50px 100px 50px;
+	border: 1px solid #ebebeb;
+	margin: 17px;
+	max-width: 350px;
+	background-color: white;
+	margin-bottom: 80px;
+}
+.tu-piso .tu-piso-icon img{
+	margin-bottom: 50px;
+}
+.tu-piso .tu-piso-icon h2{
+	font-weight: lighter;
+	margin-bottom: 30px;
+}
+.tu-piso a{
+	margin-bottom: 200px;
+}
+/* End Tu Piso */
+
+/* Footer*/
+
+.footer{
+	background-color: #2a2a2a;
+	padding: 75px 0px;
+}
+.footer .footer-list ul{
+	padding-bottom: 65px;
+}
+.footer .footer-list a{
+	color: #a7a7a7;
+	text-decoration: none;
+}
+.footer .footer-list li{
+	display: inline-block;
+	list-style: none;
+	margin-right: 30px;
+}
+.footer .footer-list a:hover{
+	color: #fafafa;
+}
+.footer .social-media-icon li{
+	display: inline-block;
+	list-style: none;
+	margin-right: 30px;
+	margin-bottom: 70px;
+}
+.footer .footer-icon a{
+	color: #a7a7a7;
+	text-decoration: none;
+}
+.footer .footer-icon li{
+	margin-right: 40px;
+	display: inline-block;
+	list-style: none;
+}
+.footer .footer-icon a:hover{
+	color: #fafafa;
+}
+.social-media-icon i{
+	font-size: 24px;
+	color: #a7a7a7;
+}
+.social-media-icon i:hover{
+	color: #fafafa;
+}
+.footer-icon li{
+	color: #a7a7a7;
+}
