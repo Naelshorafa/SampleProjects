@@ -17,7 +17,7 @@ body{
 }
 .go-to-link {
 	background-color: #8895a0;
-	padding: 15px 50px;
+	padding: 11px 50px;
 	text-decoration: none;
 	color: #ffffff;
 	border-radius: 4px;
@@ -31,8 +31,10 @@ body{
 }
 .play-btn{
 	background-color: #ffffff;
+	width: 104px;
+	height: 104px;
 	border: none;
-	padding: 48px 43px 43px 48px;
+	padding: 43px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -40,9 +42,15 @@ body{
 	cursor: pointer;
 	border-radius: 50%;
 }
+.play-btn:hover{
+	background-color: #2a2a2a;
+}
 .play-btn i{
-	color: #000000;
+	color: #2a2a2a;
 	font-size: 24px;
+}
+.play-btn:hover i{
+	color: #ffffff;
 }
 
 /* hero img */
@@ -67,7 +75,7 @@ body{
 	z-index: 0;
 }
 .hero .header-container{
-	max-width: 1440px;
+	max-width: 1110px;
 	padding: 0 16px;
 	padding-top: 45px;
 	margin: 0 auto;
@@ -75,17 +83,24 @@ body{
 	flex-direction: row;
 	justify-content: space-between;
 }
+.hero-logo{
+	width: 125px;
+}
+.hero-logo img{
+	width: 100%;
+}
 .hero .nav-bar {
 	list-style: none;
+	font-size: 12px;
 }
 .hero .nav-bar li{
 	display: inline-block;
-	margin-left: 15px;
+	margin-left: 12px;
 }
 .hero .nav-bar a{
 	color: #fafafa;
 	text-decoration: none;
-	padding: 10px;
+	padding: 6px 10px;
 	display: inline-block;
 }
 .hero .nav-bar a:hover{
@@ -151,6 +166,7 @@ body{
 .main-text h1{
 	font-weight: 600;
 	margin-bottom: 45px;
+	font-weight: lighter;
 }
 .main-text p{
 	margin-bottom: 30px;
@@ -193,6 +209,7 @@ body{
 }
 .text-pic h2{
 	margin-bottom: 60px;
+	font-weight: lighter;
 }
 .text-pic p{
 	margin-bottom: 60px;
@@ -234,8 +251,12 @@ body{
 	margin-bottom: 50px;
 }
 .tu-piso .tu-piso-icon h2{
+	color: #0f0f0f;
 	font-weight: lighter;
 	margin-bottom: 30px;
+}
+.tu-piso-icon p{
+	color: #0f0f0f;
 }
 .tu-piso a{
 	margin-bottom: 200px;
@@ -290,4 +311,7 @@ body{
 }
 .footer-icon li{
 	color: #a7a7a7;
+}
+.footer ul{
+	font-size: 12px;
 }
