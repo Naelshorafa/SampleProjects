@@ -111,7 +111,6 @@ body{
 .hero .nav-bar a{
 	color: #fafafa;
 	text-decoration: none;
-	padding: 6px 10px;
 	display: inline-block;
 }
 .hero .nav-bar a:hover{
@@ -140,20 +139,37 @@ body{
 }
 @media(min-width: 768px){
 	.hero .hero-text a{
-		margin-bottom: 35px;
+		margin-bottom: 12px;
 	}
 	.hero .hero-text {
-		padding: 370px 0;
+		padding: 140px 0;
 	}
 	.hero .hero-text p,
 	.hero .hero-text h2{
 		margin-bottom: 55px;
 	}
 	.hero .hero-text p{
+		font-size: medium;
+	}
+	.hero .hero-text h2{
 		font-size: large;
+	}
+}
+@media(min-width: 992px){
+	.hero .hero-text {
+		padding: 370px 0;
+	}
+	.hero .nav-bar a{
+		padding: 6px 10px;
 	}
 	.hero .hero-text h2{
 		font-size: xx-large;
+	}
+	.hero .hero-text p{
+		font-size: large;
+	}
+	.hero .hero-text a{
+		margin-bottom: 35px;
 	}
 }
 /* End hero img*/
@@ -224,10 +240,33 @@ body{
 }
 @media(min-width: 768px){
 	.mini-pic{
-		padding: 90px 0 125px 0;
+		padding: 35px 0 50px 0;
 	}
 	.mini-pic .group-text-pic{
 		flex-direction: row;
+	}
+	.mini-pic .group-text-pic .text-mini-pic h1{
+		margin-bottom: 16px;
+	}
+	.mini-pic .group-text-pic .text-mini-pic ul{
+		margin-bottom: 20px;
+	}
+	.main-text{
+		margin-top: 32px;
+	}
+	.main-text h1{
+		margin-bottom: 25px;
+	}
+	.main-text p{
+		margin-bottom: 30px;
+	}
+	.main-text h3{
+		margin-bottom: 25px;
+	}
+}
+@media(min-width: 992px){
+	.mini-pic{
+		padding: 90px 0 125px 0;
 	}
 	.mini-pic .group-text-pic .text-mini-pic{
 		margin-right: 80px;
@@ -238,20 +277,17 @@ body{
 	.mini-pic .group-text-pic .text-mini-pic h1{
 		margin-bottom: 55px;
 	}
-	.mini-pic .group-text-pic .text-mini-pic ul{
-		margin-bottom: 40px;
-	}
 	.mini-pic .group-text-pic .text-mini-pic li{
 		margin-bottom: 20px;
 	}
 	.main-text{
 		margin-top: 100px;
 	}
+	.mini-pic .group-text-pic .text-mini-pic ul{
+		margin-bottom: 40px;
+	}
 	.main-text h1{
 		margin-bottom: 45px;
-	}
-	.main-text p{
-		margin-bottom: 30px;
 	}
 	.main-text h3{
 		margin-bottom: 60px;
@@ -282,14 +318,29 @@ body{
 	.pic-text {
 		display: flex;
     	justify-content: flex-end;
-		padding: 160px 0px;
+		padding: 24px 0px;
 		background-image: url('img/pic-group1.png');
 		background-repeat: no-repeat;
    	 	background-position: left;
-		background-size: 50% auto;	
+		background-size: 45% auto;	
 	}
 	.pic-text .text-pic{
 		flex-basis: 50%;
+		padding: 0 4px;
+	}
+	.text-pic h2{
+		margin-bottom: 25px;
+	}
+	.text-pic p{
+		margin-bottom: 25px;
+	}
+}
+@media(min-width: 992px){
+	.pic-text {
+		padding: 160px 0px;
+		background-size: 50% auto;
+	}
+	.pic-text .text-pic{
 		padding: 0 125px;
 	}
 	.text-pic h2{
@@ -337,21 +388,21 @@ body{
 }
 @media(min-width: 768px){
 	.tu-piso{
-		padding: 100px 0 205px 0;
-		margin-top: 150px;
+		padding: 20px 0 20px 0;
+		margin-top: 50px;
 	}
 	.tu-piso h1{
-		font-size: xx-large;
-		margin-bottom: 95px;
+		font-size: x-large;
+		margin-bottom: 12px;
 	}
 	.tu-piso .icon{
 		flex-direction: row;
 	}
 	.tu-piso .icon .tu-piso-icon{
 		flex-basis: 33.3%;
-		padding: 50px 50px 100px 50px;
+		padding: 45px 35px 15px 44px;
 		margin: 16px;
-		margin-bottom: 80px;
+		margin-bottom: 40px;
 	}
 	.tu-piso .tu-piso-icon img{
 		max-width: 100px;
@@ -359,6 +410,20 @@ body{
 	}
 	.tu-piso .tu-piso-icon h2{
 		margin-bottom: 30px;
+	}
+}
+@media(min-width: 992px){
+	.tu-piso{
+		padding: 100px 0 205px 0;
+		margin-top: 150px;
+	}
+	.tu-piso h1{
+		font-size: xx-large;
+		margin-bottom: 95px;
+	}
+	.tu-piso .icon .tu-piso-icon{
+		padding: 50px 50px 100px 50px;
+		margin-bottom: 80px;
 	}
 }
 /* End Tu Piso */
@@ -428,10 +493,10 @@ body{
 }
 @media(min-width: 768px){
 	.footer{
-		padding: 75px 0px;
+		padding: 40px 0px;
 	}
 	.footer .footer-list ul{
-		margin-bottom: 65px;
+		margin-bottom: 35px;
 	}
 	.footer .footer-list ul{
 		display: inline-block;
@@ -439,6 +504,17 @@ body{
 	.footer .footer-list ul li{
 		display: inline-block;
 		margin: 0 16px;
+	}
+	.footer .social-media-icon{
+		margin-bottom: 40px;
+	}
+}
+@media(min-width: 992px){
+	.footer{
+		padding: 75px 0px;
+	}
+	.footer .footer-list ul{
+		margin-bottom: 65px;
 	}
 	.footer .social-media-icon{
 		margin-bottom: 70px;
