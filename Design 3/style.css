@@ -19,29 +19,47 @@ body{
     background-image: url('img/pic1.png');
     background-repeat: no-repeat;
     background-size:cover;
-    padding:65px 0 175px 0;
+    padding:12px 0;
 }
 .hero-logo{
-    margin-bottom: 195px;
+    margin-bottom: 50px;
 }
 .hero-text h5{
-    margin-bottom: 55px;
+    margin-bottom: 12px;
     font-weight: lighter;
 }
 .hero-text h2{
     font-weight: lighter;
-    font-size: 35px;
+    font-size: 22px;
 }
 .hero-text h1{
-    margin-bottom: 55px;
-    font-size: 45px;
+    margin-bottom: 12px;
+    font-size: 30px;
+}
+@media(min-width: 768px){
+    .hero{
+        padding:65px 0 175px 0;
+    }
+    .hero-logo{
+        margin-bottom: 195px;
+    }
+    .hero-text h5{
+        margin-bottom: 55px;
+    }
+    .hero-text h2{
+        font-size: 35px;
+    }
+    .hero-text h1{
+        margin-bottom: 55px;
+        font-size: 45px; 
+    }
 }
 /* End Hero */
 
 /*Icon-Text*/
 .icon-text{
     background-color: #2d2d2d;
-    padding: 120px 0;
+    padding: 12px 0;
 }
 .main-text h1{
     margin-bottom: 40px; 
@@ -61,11 +79,11 @@ body{
 }
 .icons{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 .icon{
-    margin-left: 65px;
+    margin: auto;
 }
 .icons img{
     width: 100%;
@@ -73,7 +91,24 @@ body{
 .container-img{
     width: 107px;
     height: 103px;
-    margin-bottom: 35px;
+    margin-bottom: 8px;
+}
+.icon p{
+    margin-bottom: 8px;
+}
+@media(min-width: 768px){
+    .icons{
+    flex-direction: row;
+    }
+    .icon-text{
+        padding: 120px 0;
+    }
+    .icon{
+        margin-left: 65px;
+    }
+    .container-img{
+        margin-bottom: 35px;
+    }
 }
 /* End Icon-Text */
 
@@ -81,22 +116,22 @@ body{
 .text-Sesion{
     background-color: #e1e1e1;
     color: #3a3838;
-    padding: 165px 0 185px 0;
+    padding: 12px 0;
 }
 .text-tittle h5{
-    margin-bottom: 60px;
+    margin-bottom: 8px;
 }
 .text-tittle h2{
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     font-weight: lighter;
-    font-size: 32px;
+    font-size: 20px;
 }
 .text-tittle h1{
-    margin-bottom: 70px;
-    font-size: 45px;
+    margin-bottom: 12px;
+    font-size: 25px;
     font-weight: bolder;
     position: relative;
-    padding-bottom: 68px;
+    padding-bottom: 12px;
 }
 .text-tittle h1::before{
     content: "";
@@ -111,41 +146,76 @@ body{
 }
 .text-box {
     margin: auto;
-    border: 3px solid #a1a1a1;
-    padding: 60px 160px;
-    max-width: 1110px;
+    border: 1px solid #a1a1a1;
+    padding: 12px;
 }
 .text-box h1{
-    margin-bottom: 40px;
+    margin-bottom: 12px;
 }
 .sesion-text{
-    padding-top: 130px;
+    padding-top: 12px;
 }
 .sesion-text h1{
-    margin-bottom: 35px;
+    margin-bottom: 12px;
+    font-size: 18px;
 }
 .sesion-text h2{
     font-weight: lighter;
 }
 .sesion-text p{
-    margin-bottom: 100px;
+    margin-bottom: 30px;
+}
+@media(min-width: 768px){
+    .text-Sesion{
+        padding: 165px 0 185px 0;
+    }
+    .text-tittle h5{
+        margin-bottom: 60px;
+    }
+    .text-tittle h2{
+        margin-bottom: 15px;
+        font-size: 32px;
+    }
+    .text-tittle h1{
+        margin-bottom: 70px;
+        font-size: 45px;
+        padding-bottom: 68px;
+    }
+    .text-box{
+        border: 3px solid #a1a1a1;
+        padding: 60px 160px;
+        max-width: 1110px;
+    }
+    .text-box h1{
+        margin-bottom: 40px;
+    }
+    .sesion-text{
+        padding-top: 130px;
+    }
+    .sesion-text h1{
+        margin-bottom: 35px;
+        font-size: 24px;
+    }
+    .sesion-text p{
+        margin-bottom: 100px;
+    }
 }
 /* End */
 
 /*tu-ponente*/
 .tu-ponente{
-    padding: 95px 0 250px 0;
+    padding: 12px 0 12px 0;
     background-color: #383838;
     background-image: url('img/pic2.png');
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: center right;  
+    background-position: center;  
 }
 .tu-ponente h2{
-    margin-bottom: 35px;
-    font-size: 30px;
+    margin-bottom: 8px;
+    font-size: 22px;
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 12px;
 }
 .tu-ponente h2::before{
     content: "";
@@ -167,8 +237,23 @@ body{
     text-align: center;
 }
 .name h1{
-    margin-bottom: 40px;
-    font-weight: bold;
+    margin-bottom: 22px;
+    font-weight: lighter;
+}
+@media(min-width: 768px){
+    .tu-ponente{
+        padding: 95px 0 250px 0;
+        background-position: center right;  
+    }
+    .tu-ponente h2{
+        margin-bottom: 35px;
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+    .name h1{
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
 }
 /*END*/
 
@@ -176,13 +261,13 @@ body{
 .inversion {
     background-color: #e1e1e1;
     color: #3a3838;
-    padding: 125px 0 155px 0;
+    padding: 12px 0;
 }
 .inversion h1{
-    margin-bottom: 40px;
-    font-size: xx-large;
+    margin-bottom: 12px;
+    font-size: large;
     position: relative;
-    padding-bottom: 34px;
+    padding-bottom: 12px;
 }
 .inversion h1::before{
     content: "";
@@ -197,7 +282,7 @@ body{
 }
 .inversion-box {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .inversion-box-text{
     display: flex;
@@ -206,8 +291,8 @@ body{
     flex-basis: 50%;
     min-height: 360px;
     border: 3px solid #a1a1a1;
-    margin: 40px;
-    padding: 16px;
+    margin: 4px;
+    padding: 4px;
 }
 .inversion-box-text ul{
     list-style: none;
@@ -220,29 +305,66 @@ body{
     margin-bottom: 30px;
     font-size: x-large;
 }
+@media(min-width: 768px){
+    .inversion{
+        padding: 125px 0 155px 0;
+    }
+    .inversion h1{
+        margin-bottom: 40px;
+        font-size: xx-large;
+        padding-bottom: 34px;
+    }
+    .inversion-box-text{
+        margin: 40px;
+        padding: 16px;
+    }
+    .inversion-box{
+        flex-direction: row;
+    }
+}
 /*end*/
 /*Fecha*/
 .fecha{
-    padding: 150px 0;
+    padding: 15px 0;
     color: #3a3838;
 }
 .fecha h2{
-    font-size: 35px;
+    font-size: 25px;
     font-weight: lighter;
 }
 .fecha h1{
-    margin-bottom: 55px;
-    font-size: 35px;
+    margin-bottom: 12px;
+    font-size: 20px;
 }
 .fecha p{
-    margin-bottom: 10px;
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 13px;
+}
+@media(min-width: 768px){
+    .fecha{
+        padding: 150px 0;
+    }
+    .fecha h2{
+        font-size: 35px; 
+    }
+    .fecha h1 {
+        margin-bottom: 55px;
+        font-size: 35px;
+    }
+    .fecha p{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
 }
 /*end*/
 /*footer*/
 .footer{
     border-top: 7px solid #e1e1e1;
     background-color: #2d2d2d;
+    padding: 30px 0;
+}
+@media(min-width: 768px){
+    .footer{
     padding: 135px 0 155px 0;
+    }
 }
