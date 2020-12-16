@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'TradeGothicLTStd';
+  src: url("fonts/TradeGothicLTStd-BdCn20.eot");
+  src: url("fonts/TradeGothicLTStd-BdCn20.eot?#iefix") format("embedded-opentype"), url("fonts/TradeGothicLTStd-BdCn20.woff2") format("woff2"), url("fonts/TradeGothicLTStd-BdCn20.woff") format("woff"), url("fonts/TradeGothicLTStd-BdCn20.ttf") format("truetype"), url("fonts/TradeGothicLTStd-BdCn20.svg#TradeGothicLTStd-BdCn20") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,7 +17,7 @@
 body {
   background-color: #cbcbcb;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "TradeGothicLTStd", Arial, Helvetica, sans-serif;
 }
 
 /*common style*/
@@ -36,7 +45,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .go-to-link .go-to-link {
+  .go-to-link {
     padding: 15px 30px;
   }
 }
@@ -174,13 +183,16 @@ body {
 .empizer {
   background-color: #ebebeb;
   padding: 90px 0;
+  background-image: url("img/pic2.jpg");
+  background-repeat: no-repeat;
+  padding-bottom: 66%;
+  background-position: bottom;
+  background-size: 100% auto;
 }
 
 @media (min-width: 768px) {
   .empizer {
-    background-image: url("img/pic2.jpg");
     padding: 16px 0;
-    background-repeat: no-repeat;
     background-position: right;
     background-size: 55% auto;
   }
