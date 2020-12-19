@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: $background-color;
+    text-align: center;
+    font-family: $main-font;
+  }
+  .container {
+    max-width: 1110px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+  .bg-dark {
+    background-color: $text-input-color;
+  }
+  .bg-lite {
+    background-color: $color-title-shadow;
+  }

@@ -1,0 +1,24 @@
+.lorem {
+    padding: 70px 0 100px 0;
+    background-image: url(img/shadow2.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    .lorem-section {
+      display: flex;
+      flex-direction: row;
+      .lorem-section-text {
+        flex-basis: 33.3%;
+        text-align: left;
+        padding-bottom: 255px;
+        h2 {
+          color: $color-title-shadow;
+          margin-bottom: 37px;
+          font-weight: 700;
+        }
+      }
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 70px;
+    }
+  }

@@ -1,0 +1,25 @@
+.explore {
+    background-image: url(img/Shape-top2.png), url(img/Shape-down.png),
+      url(img/img6.jpg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    padding: 488px 0;
+    .explore-text {
+      text-align: right;
+      padding: 0 100px;
+      h1 {
+        font-weight: 800;
+        font-style: italic;
+        font-size: 70px;
+        color: $color-title-shadow;
+        text-shadow: 5px -5px $shadow-text;
+      }
+      h2 {
+        font-weight: 800;
+        font-style: italic;
+        font-size: 70px;
+        color: $text-color;
+        text-shadow: 5px -5px $shadow-text;
+      }
+    }
+  }

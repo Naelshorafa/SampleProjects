@@ -1,0 +1,16 @@
+.hicking {
+  background-color: $background-color-lite;
+  background-image: url(img/Shape-top.png), url(img/Shape-down2.png),
+    url(img/shadow.png);
+  background-position: top, bottom, 0 120px;
+  background-repeat: no-repeat;
+  padding: 350px 0;
+  h1 {
+    color: $text-img-color;
+    margin-bottom: 42px;
+    font-weight: 600;
+  }
+  p {
+    color: $text-img-color;
+  }
+}
