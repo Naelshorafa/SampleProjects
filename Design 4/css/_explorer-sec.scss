@@ -1,8 +1,9 @@
 .explore {
-    background-image: url(img/Shape-top2.png), url(img/Shape-down.png),
+    background-image: url(img/Shape-top1.png), url(img/Shape-down1.png),
       url(img/img6.jpg);
     background-repeat: no-repeat;
     background-position: top, bottom;
+    background-size: 100% , 100% , cover;
     padding: 488px 0;
     .explore-text {
       text-align: right;

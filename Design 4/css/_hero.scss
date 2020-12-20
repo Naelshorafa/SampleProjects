@@ -1,82 +1,92 @@
 .hero {
-    background-image: url(img/Shape-top.png), url(img/Shape-down.png),
-      url(img/hero-pic.jpg);
-    background-position: top, bottom;
-    background-repeat: no-repeat;
-    padding-bottom: 220px;
-    .header-container {
-      max-width: 1110px;
-      padding: 0 55px 0 74px;
-      padding-top: 30px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    .nave-bar {
-      padding-top: 11px;
-      font-size: 12px;
-      font-weight: 700;
-    }
-    li {
-      list-style: none;
-      display: inline;
-      padding-left: 30px;
-      a {
-        color: $link-color;
-        text-decoration: none;
-        &:hover {
-          color: $color-title-shadow;
-        }
-      }
-    }
-    input[type="text"] {
-      width: 182px;
-      height: 51px;
-      font-size: 16px;
-      background-color: $input-color;
-      background-image: url("img/search.png");
-      background-position: 120px 10px;
-      background-repeat: no-repeat;
-      border: none;
-      color: $text-input-color;
-      font-weight: bold;
-      padding: 12px;
-      border-radius: 25px;
-    }
-    .text-hero {
-      margin-top: 175px;
-      text-align: left;
-      h1 {
-        font-weight: 800;
+  background-image: url(img/Shape-top.png), url(img/asdad.png),
+    url(img/hero-pic.jpg);
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  background-size: 100%, 100%, cover;
+  padding-bottom: 220px;
+  .header-container {
+    padding: 0 55px 0 74px;
+    padding-top: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nave-bar {
+    padding-top: 11px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  li {
+    list-style: none;
+    display: inline;
+    padding-left: 30px;
+    a {
+      color: $link-color;
+      text-decoration: none;
+      &:hover {
         color: $color-title-shadow;
-        font-size: 65px;
-        margin-bottom: 10px;
-        text-shadow: 3px -3px $shadow-text;
-      }
-      h4 {
-        margin-bottom: 67px;
-        font-style: italic;
-        font-weight: 700;
-        color: $text-color;
-      }
-      a {
-        margin-bottom: 27px;
-        background-color: $background-color;
-        padding: 15px 34px;
-        border-radius: 25px;
-        text-decoration: none;
-        color: $link-read;
-        display: inline-block;
-        font-weight: 800;
-        &:hover {
-          background-color: $link-read;
-          color: $background-color;
-        }
-      }
-      p {
-        font-style: italic;
-        color: $text-color;
       }
     }
   }
+  input[type="text"] {
+    width: 182px;
+    height: 51px;
+    font-size: 16px;
+    background-color: $input-color;
+    background-position: 120px 10px;
+    background-repeat: no-repeat;
+    border: none;
+    color: $text-input-color;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 25px;
+    position: relative;
+  }
+  .text-hero {
+    padding: 300px 0 215px 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 94px;
+    h1 {
+      font-weight: 800;
+      color: $color-title-shadow;
+      font-size: 65px;
+      margin-bottom: 10px;
+      text-shadow: 3px -3px $shadow-text;
+    }
+    h4 {
+      margin-bottom: 67px;
+      font-style: italic;
+      font-weight: 700;
+      color: $text-color;
+    }
+    a {
+      margin-bottom: 27px;
+      background-color: $background-color;
+      padding: 15px 34px;
+      border-radius: 25px;
+      text-decoration: none;
+      color: $link-read;
+      display: inline-block;
+      font-weight: 800;
+      &:hover {
+        background-color: $link-read;
+        color: $background-color;
+      }
+    }
+    p {
+      font-style: italic;
+      color: $text-color;
+    }
+  }
+  .fa-search:before{
+    font-size: 30px;
+    position: absolute;
+    right: 80px;
+    top: 49px;
+  }
+}

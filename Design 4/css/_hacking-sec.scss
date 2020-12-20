@@ -1,9 +1,10 @@
 .hicking {
   background-color: $background-color-lite;
-  background-image: url(img/Shape-top.png), url(img/Shape-down2.png),
+  background-image: url(img/Shape-top1.png), url(img/Shape-down1.png),
     url(img/shadow.png);
   background-position: top, bottom, 0 120px;
   background-repeat: no-repeat;
+  background-size: 100%;
   padding: 350px 0;
   h1 {
     color: $text-img-color;
