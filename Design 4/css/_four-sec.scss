@@ -25,26 +25,26 @@
       padding: 32px;
       flex-direction: column;
       h1 {
-        color: $text-img-color;
+        color: #fff;
         margin-bottom: 55px;
         font-weight: 700;
       }
       p {
         margin-bottom: 60px;
-        color: $text-img-color;
+        color: #fff;
       }
       a {
         background-color: $color-title;
         padding: 15px 34px;
         border-radius: 25px;
         text-decoration: none;
-        color: $text-img-color;
+        color: #fff;
         display: inline-block;
         font-weight: 700;
         letter-spacing: 3px;
         width: max-content;
         &:hover {
-          background-color: $text-img-color;
+          background-color: #fff;
           color: $color-title;
         }
       }
@@ -71,13 +71,13 @@
         padding: 15px 34px;
         border-radius: 25px;
         text-decoration: none;
-        color: $text-img-color;
+        color: #fff;
         display: inline-block;
         font-weight: 700;
         letter-spacing: 3px;
         width: max-content;
         &:hover {
-          background-color: $text-img-color;
+          background-color: #fff;
           color: $color-title;
         }
       }

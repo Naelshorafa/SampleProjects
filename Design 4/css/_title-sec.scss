@@ -8,7 +8,7 @@
       padding: 230px 0;
     }
     h1 {
-      color: $text-img-color;
+      color: #ffffff;
       font-weight: 700;
       font-size: 40px;
       margin-bottom: 20px;
@@ -18,7 +18,7 @@
     }
     p {
       font-size: 20px;
-      color: $text-color;
+      color: $dark2-color;
       margin-bottom: 30px;
       @media(min-width:768px){
         font-size: 30px;
@@ -26,7 +26,7 @@
       }
     }
     .sup-form {
-      background-color: $background-color;
+      background-color: #ffffff;
       margin: 0 auto;
       display: flex;
       border-radius: 30px;
@@ -39,9 +39,9 @@
         flex-grow: 1;
         height: 50px;
         font-size: 16px;
-        background-color: $background-color;
+        background-color: #ffffff;
         border: none;
-        color: $text-input-color;
+        color: $dark-color;
         padding: 23px 24px;
         border-radius: 25px;
         @media(min-width: 768px){
@@ -52,8 +52,8 @@
       }
       button {
         padding: 18px 16px;
-        background: $link-color;
-        color: $text-img-color;
+        background: $dark2-color;
+        color: #ffffff;
         font-size: 14px;
         border-radius: 30px;
         border: none;

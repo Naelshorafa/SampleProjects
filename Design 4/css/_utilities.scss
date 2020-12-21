@@ -8,7 +8,7 @@
   }
 }
 body {
-  background-color: $background-color;
+  background-color: #ffffff;
   text-align: center;
   font-family: $main-font;
 }
@@ -18,8 +18,8 @@ body {
   margin: 0 auto;
 }
 .bg-dark {
-  background-color: $text-input-color;
+  background-color: $dark-color;
 }
 .bg-lite {
-  background-color: $color-title-shadow;
+  background-color: $lite-color;
 }

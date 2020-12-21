@@ -18,7 +18,7 @@
       font-weight: 600;
       font-style: italic;
       font-size: 24px;
-      color: $color-title-shadow;
+      color: $lite-color;
       text-shadow: 1px -1px $shadow-text;
       @media (min-width: 768px) {
         font-size: 70px;
@@ -30,7 +30,7 @@
       font-weight: 600;
       font-style: italic;
       font-size: 24px;
-      color: $text-color;
+      color: $dark2-color;
       text-shadow: 1px -1px $shadow-text;
       @media (min-width: 768px) {
         font-size: 70px;

@@ -26,10 +26,10 @@
     display: inline;
     padding-left: 30px;
     a {
-      color: $link-color;
+      color: $dark2-color;
       text-decoration: none;
       &:hover {
-        color: $color-title-shadow;
+        color: $lite-color;
       }
     }
   }
@@ -41,7 +41,7 @@
     background-position: 120px 10px;
     background-repeat: no-repeat;
     border: none;
-    color: $text-input-color;
+    color: $dark-color;
     font-weight: bold;
     padding: 12px;
     border-radius: 25px;
@@ -60,7 +60,7 @@
     }
     h1 {
       font-weight: 600;
-      color: $color-title-shadow;
+      color: $lite-color;
       font-size: 24px;
       margin-bottom: 10px;
       text-shadow: 1px -1px $shadow-text;
@@ -74,7 +74,7 @@
       margin-bottom: 34px;
       font-style: italic;
       font-weight: 700;
-      color: $text-color;
+      color: $dark2-color;
       font-size: 10px;
       @media(min-width:768px){
         margin-bottom: 67px;
@@ -83,7 +83,7 @@
     }
     a {
       margin-bottom: 27px;
-      background-color: $background-color;
+      background-color: #ffffff;
       padding: 15px 12px;
       border-radius: 25px;
       text-decoration: none;
@@ -93,7 +93,7 @@
       font-size: 10px;
       &:hover {
         background-color: $link-read;
-        color: $background-color;
+        color: #ffffff;
       }
       @media(min-width:768px){
         font-size: 16px;
@@ -102,7 +102,7 @@
     }
     p {
       font-style: italic;
-      color: $text-color;
+      color: $dark2-color;
       width: 177px;
       @media(min-width:768px){
         width: 333px;

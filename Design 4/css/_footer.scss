@@ -5,7 +5,7 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100%;
-  color: $text-img-color;
+  color: #ffffff;
   @media (min-width: 768px) {
     padding: 340px 0 235px 0;
   }
@@ -29,7 +29,7 @@
         list-style: none;
       }
       a {
-        background-color: $background-color;
+        background-color: #ffffff;
         color: $background-sec-color;
         width: 45px;
         height: 45px;
@@ -41,7 +41,7 @@
         margin-right: 14px;
         &:hover {
           background-color: $background-sec-color;
-          color: $background-color;
+          color: #ffffff;
         }
       }
     }
@@ -60,7 +60,7 @@
       }
       a {
         text-decoration: none;
-        color: $text-img-color;
+        color: #ffffff;
         &:hover {
           color: $color-title;
         }

@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #ffffff;
   text-align: center;
   font-family: "Open Sans", sans-serif;
 }
@@ -151,7 +151,7 @@ body {
 
 .hero .text-hero a {
   margin-bottom: 27px;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 15px 12px;
   border-radius: 25px;
   text-decoration: none;
@@ -163,7 +163,7 @@ body {
 
 .hero .text-hero a:hover {
   background-color: #776c64;
-  color: #fff;
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -199,7 +199,7 @@ body {
 }
 
 .lets-go {
-  background-color: #fff;
+  background-color: #ffffff;
   background-image: url(img/shadow.png);
   background-repeat: no-repeat;
   background-position: bottom left;
@@ -274,14 +274,14 @@ body {
 }
 
 .lets-go .pic-text .pic-text-cont h2 {
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   margin-left: 17px;
   margin-bottom: 27px;
 }
 
 .lets-go .pic-text .pic-text-cont p {
-  color: #fff;
+  color: #ffffff;
   margin-left: 17px;
   margin-bottom: 70px;
 }
@@ -293,7 +293,7 @@ body {
   border-radius: 45px;
   border: 1px solid #7f7770;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
   font-weight: 800;
   letter-spacing: 3px;
@@ -301,7 +301,7 @@ body {
 }
 
 .lets-go a:hover {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #7f7770;
 }
 
@@ -476,13 +476,13 @@ body {
 }
 
 .hicking h1 {
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 42px;
   font-weight: 600;
 }
 
 .hicking p {
-  color: #fff;
+  color: #ffffff;
 }
 
 .explore {
@@ -614,7 +614,7 @@ body {
 }
 
 .title-here h1 {
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 20px;
@@ -640,7 +640,7 @@ body {
 }
 
 .title-here .sup-form {
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -661,7 +661,7 @@ body {
           flex-grow: 1;
   height: 50px;
   font-size: 16px;
-  background-color: #fff;
+  background-color: #ffffff;
   border: none;
   color: #68635f;
   padding: 23px 24px;
@@ -679,7 +679,7 @@ body {
 .title-here .sup-form button {
   padding: 18px 16px;
   background: #54524f;
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   border-radius: 30px;
   border: none;
@@ -756,7 +756,7 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100%;
-  color: #fff;
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -804,7 +804,7 @@ body {
 }
 
 .footer .footer-text .footer-title a {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #7f7770;
   width: 45px;
   height: 45px;
@@ -818,7 +818,7 @@ body {
 
 .footer .footer-text .footer-title a:hover {
   background-color: #7f7770;
-  color: #fff;
+  color: #ffffff;
 }
 
 .footer .footer-text .footer-info {
@@ -854,7 +854,7 @@ body {
 
 .footer .footer-text .footer-info a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 }
 
 .footer .footer-text .footer-info a:hover {
