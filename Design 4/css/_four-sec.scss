@@ -28,24 +28,36 @@
         color: #fff;
         margin-bottom: 55px;
         font-weight: 700;
+        font-size: 33px;
+        @media(min-width: 768px){
+          font-size: 59px;
+        }
       }
       p {
         margin-bottom: 60px;
         color: #fff;
+        font-size: 20px;
+        @media(min-width:768px){
+          font-size: 30px; 
+        }
       }
       a {
         background-color: $color-title;
-        padding: 15px 34px;
-        border-radius: 25px;
+        padding: 15px 60px;
+        border-radius: 35px;
         text-decoration: none;
         color: #fff;
         display: inline-block;
         font-weight: 700;
+        font-size: 20px;
         letter-spacing: 3px;
         width: max-content;
         &:hover {
           background-color: #fff;
           color: $color-title;
+        }
+        @media(min-width:768px){
+          font-size: 30px;
         }
       }
     }
@@ -62,23 +74,35 @@
       h1 {
         margin-bottom: 40px;
         font-weight: 700;
+        font-size: 33px;
+        @media(min-width: 768px){
+          font-size: 59px;
+        }
       }
       p {
         margin-bottom: 53px;
+        font-size: 20px;
+        @media(min-width:768px){
+          font-size: 30px; 
+        }
       }
       a {
         background-color: $color-title;
-        padding: 15px 34px;
-        border-radius: 25px;
+        padding: 15px 60px;
+        border-radius: 35px;
         text-decoration: none;
         color: #fff;
         display: inline-block;
         font-weight: 700;
+        font-size: 20px;
         letter-spacing: 3px;
         width: max-content;
         &:hover {
           background-color: #fff;
           color: $color-title;
+        }
+        @media(min-width:768px){
+          font-size: 30px;
         }
       }
     }

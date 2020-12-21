@@ -10,16 +10,21 @@
       margin-bottom: 24px;
       font-size: 32px;
       @media(min-width: 768px){
-        font-size: 45px;
+        font-size: 62px;
         margin-bottom: 50px; 
       }
     }
     p {
       color: $dark2-color;
-      margin-bottom: 10px;
-      @media(min-width: 768px){
-        margin-bottom: 83px;
+      font-size: 20px;
+      @media(min-width:768){
+        font-size: 27px;
       }
+    }
+    .descripion{
+      background-color: $background-sec-color;
+      margin-bottom: 10px;
+      padding: 60px 16px 68px 16px;
     }
     .pic-text {
       display: flex;
@@ -27,36 +32,34 @@
       @media(min-width:768px){
         flex-direction: row;
       }
-      .pic-text-cont {
-        background-color: $background-sec-color;
-        background-clip: content-box;
+      .col{
         flex-basis: 33.3%;
         padding: 20px;
-        text-align: left;
+        color: #ffffff;
         @media(min-width:768px){
-          padding: 43px;
+          padding: 82px 32px 55px 32px;
         }
+      }
+      .pic-text-cont {
+        text-align: left;
         .img-box {
-          margin-bottom: 58px;
           img {
+            display: block;
             width: 100%;
           }
         }
         h2 {
-          color: #ffffff;
           font-weight: 700;
-          margin-left: 17px;
           margin-bottom: 27px;
+          font-size: 29px;
         }
         p {
           color: #ffffff;
-          margin-left: 17px;
-          margin-bottom: 70px;
+          font-size: 19px;
         }
       }
     }
     a {
-      margin-bottom: 27px;
       background-color: $background-sec-color;
       padding: 20px 80px;
       border-radius: 45px;
@@ -67,9 +70,14 @@
       font-weight: 800;
       letter-spacing: 3px;
       margin-top: 14px;
+      font-size: 20px;
+      @media(min-width:768px){
+        font-size: 24px;
+      }
       &:hover {
         background-color: #ffffff;
         color: $background-sec-color;
       }
+
     }
   }

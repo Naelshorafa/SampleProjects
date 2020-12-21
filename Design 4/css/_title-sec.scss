@@ -1,9 +1,10 @@
 .title-here {
     padding: 90px 0;
-    background-image: url(img/Shape-top1.png), url(img/Shape-down1.png);
+    background-image: url(img/Shape-top2.png), url(img/Shape-down3.png);
     background-repeat: no-repeat;
     background-position: top, bottom;
     background-size: 100%;
+    margin-bottom: 100px;
     @media(min-width:768px){
       padding: 230px 0;
     }
@@ -14,10 +15,11 @@
       margin-bottom: 20px;
       @media(min-width:768px){
         margin-bottom: 75px;
+        font-size: 75px;
       }
     }
     p {
-      font-size: 20px;
+      font-size: 12px;
       color: $dark2-color;
       margin-bottom: 30px;
       @media(min-width:768px){
@@ -48,6 +50,7 @@
           height: 60px;
           padding: 23px 37px;
           border-radius: 30px;
+          font-size: 25px;
         }
       }
       button {
@@ -60,6 +63,7 @@
         font-weight: 700;
         @media(min-width:768px){
           padding: 18px 40px;
+          font-size: 25px;
         }
       }
     }

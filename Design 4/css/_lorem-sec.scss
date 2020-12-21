@@ -23,12 +23,28 @@
           font-weight: 700;
           @media(min-width:768px){
             margin-bottom: 37px;
+            font-size: 33px;
           }
+        }
+        p{
+          font-size: 19px;
         }
       }
     }
+    .Lorem-ipsum{
     h1 {
       font-weight: 700;
       font-size: 70px;
+      @media(min-width:768px){
+        font-size: 100px;
+      }
     }
+    p{
+      font-size: 16px;
+      font-weight: 600;
+      @media(min-width:768px){
+        font-size: 25px;
+      }
+    }
+  }
   }

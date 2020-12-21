@@ -1,52 +1,11 @@
 .hero {
-  background-image: url(img/Shape-top.png), url(img/asdad.png),
+  background-image: url(img/Shape-top.png), url(img/Shape-down.png),
     url(img/hero-pic.jpg);
   background-position: top, bottom;
   background-repeat: no-repeat;
   background-size: 100%, 100%, cover;
   padding-bottom: 220px;
-  .header-container {
-    padding: 0 22px;
-    padding-top: 30px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    @media(min-width: 768px){
-      padding: 28px 55px 0 74px;
-    }
-  }
-  .nave-bar {
-    padding-top: 11px;
-    font-size: 12px;
-    font-weight: 700;
-  }
-  li {
-    list-style: none;
-    display: inline;
-    padding-left: 30px;
-    a {
-      color: $dark2-color;
-      text-decoration: none;
-      &:hover {
-        color: $lite-color;
-      }
-    }
-  }
-  input[type="text"] {
-    width: 182px;
-    height: 51px;
-    font-size: 16px;
-    background-color: $input-color;
-    background-position: 120px 10px;
-    background-repeat: no-repeat;
-    border: none;
-    color: $dark-color;
-    font-weight: bold;
-    padding: 12px;
-    border-radius: 25px;
-    position: relative;
-  }
+ margin-bottom: 100px;
   .text-hero {
     padding: 32px 0;
     text-align: left;
@@ -65,7 +24,7 @@
       margin-bottom: 10px;
       text-shadow: 1px -1px $shadow-text;
       @media(min-width: 768px){
-        font-size: 65px;
+        font-size: 92px;
         text-shadow: 3px -3px $shadow-text;
         font-weight: 800;
       }
@@ -78,14 +37,14 @@
       font-size: 10px;
       @media(min-width:768px){
         margin-bottom: 67px;
-        font-size: 24px;
+        font-size: 25px;
       }
     }
     a {
       margin-bottom: 27px;
       background-color: #ffffff;
       padding: 15px 12px;
-      border-radius: 25px;
+      border-radius: 45px;
       text-decoration: none;
       color: $link-read;
       display: inline-block;
@@ -96,7 +55,7 @@
         color: #ffffff;
       }
       @media(min-width:768px){
-        font-size: 16px;
+        font-size: 25px;
         padding: 15px 34px;
       }
     }
@@ -105,17 +64,10 @@
       color: $dark2-color;
       width: 177px;
       @media(min-width:768px){
-        width: 333px;
+        width: 471px;
+        font-size: 21px;
       }
     }
   }
-  .fa-search:before{
-    font-size: 30px;
-    position: absolute;
-    right: 80px;
-    top: 76px;
-    @media(min-width:768px){
-      top: 49px;
-    }
-  }
+
 }

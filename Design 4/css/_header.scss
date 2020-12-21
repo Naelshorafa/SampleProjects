@@ -1,0 +1,53 @@
+.header-container {
+    padding: 0 22px;
+    padding-top: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media(min-width: 768px){
+      padding: 28px 55px 0 74px;
+    }
+  }
+  .nave-bar {
+    padding-top: 11px;
+    font-size: 17px;
+    font-weight: 700;
+    li {
+      list-style: none;
+      display: inline;
+      padding-left: 30px;
+      a {
+        color: $dark2-color;
+        text-decoration: none;
+        &:hover {
+          color: $lite-color;
+        }
+      }
+    }
+    input[type="text"] {
+      width: 182px;
+      height: 51px;
+      font-size: 16px;
+      background-color: $input-color;
+      background-position: 120px 10px;
+      background-repeat: no-repeat;
+      border: none;
+      color: $dark-color;
+      font-weight: bold;
+      padding: 12px;
+      border-radius: 25px;
+      position: relative;
+    }
+    .fa-search:before{
+      font-size: 30px;
+      position: absolute;
+      right: 80px;
+      top: 76px;
+      @media(min-width:768px){
+        top: 49px;
+      }
+    }
+  }
+
+  

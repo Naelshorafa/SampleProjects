@@ -1,12 +1,14 @@
 .explore {
-  background-image: url(img/Shape-top1.png), url(img/Shape-down1.png),
+  background-image: url(img/Shape-top.png), url(img/Shape-down2.png),
     url(img/img6.jpg);
   background-repeat: no-repeat;
   background-position: top, bottom;
   background-size: 100%, 100%, cover;
-  padding: 145px 0;
+  margin-bottom: 20px;
+  padding: 100px 0;
   @media(min-width:768px){
     padding: 488px 0;
+    margin-bottom: 100px;
   }
   .explore-text {
     text-align: right;
@@ -21,7 +23,7 @@
       color: $lite-color;
       text-shadow: 1px -1px $shadow-text;
       @media (min-width: 768px) {
-        font-size: 70px;
+        font-size: 75px;
         font-weight: 800;
         text-shadow: 5px -5px $shadow-text;
       }
@@ -33,7 +35,7 @@
       color: $dark2-color;
       text-shadow: 1px -1px $shadow-text;
       @media (min-width: 768px) {
-        font-size: 70px;
+        font-size: 83px;
         font-weight: 800;
         text-shadow: 5px -5px $shadow-text;
       }
