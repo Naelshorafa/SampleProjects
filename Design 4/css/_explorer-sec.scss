@@ -1,26 +1,42 @@
 .explore {
-    background-image: url(img/Shape-top1.png), url(img/Shape-down1.png),
-      url(img/img6.jpg);
-    background-repeat: no-repeat;
-    background-position: top, bottom;
-    background-size: 100% , 100% , cover;
+  background-image: url(img/Shape-top1.png), url(img/Shape-down1.png),
+    url(img/img6.jpg);
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  background-size: 100%, 100%, cover;
+  padding: 145px 0;
+  @media(min-width:768px){
     padding: 488px 0;
-    .explore-text {
-      text-align: right;
+  }
+  .explore-text {
+    text-align: right;
+    padding: 0 25px;
+    @media(min-width:768px){
       padding: 0 100px;
-      h1 {
-        font-weight: 800;
-        font-style: italic;
+    }
+    h1 {
+      font-weight: 600;
+      font-style: italic;
+      font-size: 24px;
+      color: $color-title-shadow;
+      text-shadow: 1px -1px $shadow-text;
+      @media (min-width: 768px) {
         font-size: 70px;
-        color: $color-title-shadow;
+        font-weight: 800;
         text-shadow: 5px -5px $shadow-text;
       }
-      h2 {
-        font-weight: 800;
-        font-style: italic;
+    }
+    h2 {
+      font-weight: 600;
+      font-style: italic;
+      font-size: 24px;
+      color: $text-color;
+      text-shadow: 1px -1px $shadow-text;
+      @media (min-width: 768px) {
         font-size: 70px;
-        color: $text-color;
+        font-weight: 800;
         text-shadow: 5px -5px $shadow-text;
       }
     }
   }
+}

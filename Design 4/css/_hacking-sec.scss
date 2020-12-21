@@ -1,11 +1,16 @@
 .hicking {
   background-color: $background-color-lite;
-  background-image: url(img/Shape-top1.png), url(img/Shape-down1.png),
+  background-image: url(img/Shape-top.png), url(img/Shape-down.png),
     url(img/shadow.png);
-  background-position: top, bottom, 0 120px;
+  background-position: top, bottom, 0 135px;
   background-repeat: no-repeat;
-  background-size: 100%;
-  padding: 350px 0;
+  background-size: 100% , 100% , auto;
+  padding: 70px 0;
+  @media(min-width:768px){
+    padding: 350px 0;
+    background-image: url(img/Shape-top1.png), url(img/Shape-down1.png),
+    url(img/shadow.png);
+  }
   h1 {
     color: $text-img-color;
     margin-bottom: 42px;

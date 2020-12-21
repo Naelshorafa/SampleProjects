@@ -7,24 +7,36 @@
     h1 {
       color: $color-title;
       font-weight: 800;
-      margin-bottom: 50px;
-      font-size: 45px;
+      margin-bottom: 24px;
+      font-size: 32px;
+      @media(min-width: 768px){
+        font-size: 45px;
+        margin-bottom: 50px; 
+      }
     }
     p {
       color: $text-color;
-      margin-bottom: 83px;
+      margin-bottom: 10px;
+      @media(min-width: 768px){
+        margin-bottom: 83px;
+      }
     }
     .pic-text {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      @media(min-width:768px){
+        flex-direction: row;
+      }
       .pic-text-cont {
         background-color: $background-sec-color;
         background-clip: content-box;
         flex-basis: 33.3%;
-        padding: 43px;
+        padding: 20px;
         text-align: left;
+        @media(min-width:768px){
+          padding: 43px;
+        }
         .img-box {
-          max-width: 340px;
           margin-bottom: 58px;
           img {
             width: 100%;
