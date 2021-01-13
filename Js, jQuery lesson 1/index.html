@@ -87,7 +87,7 @@
         });
 
         $(document).on('keydown', '.numbers-only-input', function(e) {
-            if(e.which != 8 && (e.which < 48 || e.which > 57)){
+            if(e.which != 8 && (e.which < 48 || e.which > 57) && (e.which < 96 || e.which > 105) ){
             	// Invalid input
             	e.preventDefault();
             	$(this).addClass('is-invalid');

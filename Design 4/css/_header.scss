@@ -1,8 +1,10 @@
 #site-header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   background-color: #ffffff;
+  z-index: 999;
   .navbar {
     padding: 0 24px;
     padding-top: 12px;
