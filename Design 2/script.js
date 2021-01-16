@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.hero-slider').bxSlider({
-    mode: 'vertical',
+    mode: 'fade',
     tickerHover: true,
     controls: false,
     auto: true,
@@ -13,4 +13,18 @@ $(document).ready(function(){
     auto: true,
     pager: false,
   });
+});
+$(document).ready(function(){
+  var url = $("#myVideo").attr('src');
+  $("#myVideo").attr('src', '');
+  $("#exampleModal").on('shown.bs.modal', function(){
+      $("#myVideo").attr('src', url);
+  });
+  $("#exampleModal").on('hide.bs.modal', function(){
+      $("#myVideo").attr('src', '');
+  });
+});
+
+$(function () {
+  $("#preloader-logo").fadeOut(2000);
 });
