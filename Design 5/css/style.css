@@ -1,0 +1,623 @@
+@font-face {
+  font-family: 'Gabelisa';
+  src: url("Font/Gabelisa 400.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1110px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+/*Preloader*/
+.preloader {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 99999;
+  background: #000000;
+  right: 0;
+  left: 0;
+  z-index: 9999999;
+}
+
+.loader-logo img {
+  width: 400px;
+  margin: auto;
+}
+
+.loader-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.preloader .cssload-speeding-wheel {
+  position: absolute;
+  top: calc(50% - 3.5px);
+  left: calc(50% - 3.5px);
+}
+
+.loader, .loader-figure {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.loader {
+  overflow: visible;
+  padding-top: 2em;
+  height: 0;
+  width: 2em;
+}
+
+.loader-figure {
+  height: 0;
+  width: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0 solid #f9f9f9;
+  border-radius: 50%;
+  -webkit-animation: loader-figure 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: loader-figure 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.loader-label {
+  float: left;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin: 2em 0 0 50%;
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  color: #006f42;
+  white-space: nowrap;
+  -webkit-animation: loader-label 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: loader-label 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  font-weight: 600;
+}
+
+/* back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: block;
+  background: #ffe001;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  z-index: -9;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.back-to-top:hover {
+  color: #ffe001;
+  background: #000000;
+}
+
+.back-to-top.nav-show {
+  opacity: 1;
+  z-index: 9;
+  -webkit-box-shadow: 0 0 25px rgba(26, 108, 225, 0.1);
+          box-shadow: 0 0 25px rgba(26, 108, 225, 0.1);
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 55px;
+}
+
+.header .header-logo-num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header-logo-num .header-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: right;
+}
+
+.header .header-logo-num .header-phone .phone-num {
+  margin-right: 15px;
+  margin-top: 12px;
+}
+
+.header .header-logo-num .header-phone .phone-num span {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.header .header-logo-num .header-phone .phone-num p {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.header .nav-bar ul {
+  text-align: right;
+  margin-top: 32px;
+}
+
+.header .nav-bar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 30px;
+}
+
+.header .nav-bar ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.header .nav-bar ul li a:hover {
+  color: #ffffff;
+}
+
+.hero {
+  background: #ffe001;
+  position: relative;
+  background: linear-gradient(104deg, #ffe001 10%, #ffe001 62%, #e1dfa4 30%, #e1dfa4 10%);
+}
+
+.hero::before {
+  content: " ";
+  background-image: url(img/pic-spagiti.png);
+  position: absolute;
+  bottom: -145px;
+  left: 0;
+  width: 240px;
+  height: 410px;
+}
+
+.hero .hero-cont {
+  background-image: url(img/pic-hero2.png), url(img/pic-hero3.png), url(img/pic-hero4.png), url(img/pic-hero5.png);
+  background-repeat: no-repeat;
+  background-position: 65px 220px, 650px 210px, 600px 800px, 1240px 750px;
+}
+
+.hero .hero-cont .hero-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 40px 30px 155px 30px;
+}
+
+.hero .hero-cont .hero-info .hero-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-right: 70px;
+}
+
+.hero .hero-cont .hero-info .hero-text .main-text h3 {
+  font-size: 58px;
+  margin-bottom: 30px;
+  font-family: Gabelisa;
+  font-weight: 400;
+}
+
+.hero .hero-cont .hero-info .hero-text .main-text h1 {
+  font-size: 90px;
+  font-family: "Fredericka the Great", cursive;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.hero .hero-cont .hero-info .hero-text .main-text p {
+  font-size: 26px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.hero .hero-cont .hero-info .hero-text .main-text p::before {
+  content: "";
+  display: block;
+  width: 470px;
+  height: 2px;
+  background-color: #ccb301;
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.hero .hero-cont .hero-info .hero-text .order-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Fredericka the Great", cursive;
+  margin-bottom: 60px;
+}
+
+.hero .hero-cont .hero-info .hero-text .order-text span {
+  font-size: 20px;
+  margin-right: 17px;
+}
+
+.hero .hero-cont .hero-info .hero-text .order-text p {
+  font-size: 57px;
+  font-weight: 400;
+}
+
+.hero .hero-cont .hero-info .hero-text a {
+  padding: 22px 43px;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #000000;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.hero .hero-cont .hero-info .hero-text a:hover {
+  background-color: #000;
+  color: #ffe001;
+}
+
+.hero .hero-cont .hero-img .container-img {
+  width: 570px;
+  height: 570px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.hero .hero-cont .hero-img .container-img img {
+  width: 100%;
+}
+
+.choose-enjoy {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(42%, #ffffff), color-stop(20%, #e1dfa4), color-stop(56%, #e1dfa4), color-stop(40%, #ffffff), to(#ffffff));
+  background: linear-gradient(to bottom, #ffffff, #ffffff 42%, #e1dfa4 20%, #e1dfa4 56%, #ffffff 40%, #ffffff);
+  padding: 90px 0;
+}
+
+.choose-enjoy .title-choose {
+  padding-bottom: 55px;
+}
+
+.choose-enjoy .title-choose h1 {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: "Fredericka the Great", cursive;
+  margin-bottom: 30px;
+}
+
+.choose-enjoy .title-choose p {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.choose-enjoy .food-choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.choose-enjoy .food-choose .food-order {
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+  margin: 50px;
+}
+
+.choose-enjoy .food-choose .food-order .container-img {
+  width: 355px;
+  height: 360px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.choose-enjoy .food-choose .food-order .container-img img {
+  width: 100%;
+}
+
+.choose-enjoy .food-choose .food-order h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.choose-enjoy .food-choose .food-order p {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.choose-enjoy .food-choose .food-order a {
+  padding: 24px 41px 21px 41px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffe001;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.choose-enjoy .food-choose .food-order a:hover {
+  background-color: #000;
+  color: #ffe001;
+}
+
+.discover .discover-info h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.discover .discover-info h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-weight: 400;
+  font-size: 42px;
+  margin-bottom: 35px;
+}
+
+.discover .discover-info p {
+  font-weight: 400;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+.discover .pic-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.discover .pic-group .pic-try {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.discover .pic-group .pic-try .pic-cont {
+  width: 600px;
+  height: 420px;
+  margin: 0 auto;
+}
+
+.discover .pic-group .pic-try .pic-cont img {
+  width: 100%;
+}
+
+.discover .pic-group .pic-try .pic-try2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.discover .pic-group .pic-try .pic-try2 .pic-cont2 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  width: 600px;
+  height: 195px;
+  margin: 0 auto;
+}
+
+.discover .pic-group .pic-try .pic-try2 .pic-cont2 img {
+  width: 100%;
+}
+
+.discover .pic-group .pic-try .pic-try2 .pic-cont2 .pic-margin img {
+  margin-bottom: 32px;
+}
+
+.reservation {
+  padding: 95px 0;
+}
+
+.reservation .reservation-info h3 {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.reservation .reservation-info h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-weight: 400;
+  font-size: 50px;
+}
+
+.reservation .lable-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reservation .lable-input input {
+  width: 380px;
+  height: 65px;
+  font-size: 17px;
+  padding: 0 25px;
+  margin: 14px 13px;
+  border: 1px solid #bebebe;
+  border-radius: 7px;
+}
+
+.reservation .lable-input a {
+  padding: 22px 127px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffe001;
+  font-weight: 700;
+  font-size: 17px;
+  margin: 14px 13px;
+  border-radius: 7px;
+}
+
+.reservation .lable-input a:hover {
+  background-color: #000;
+  color: #ffe001;
+}
+
+.footer {
+  background-image: url(img/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 65px 0;
+  padding-left: 100px;
+  color: #ffffff;
+}
+
+.footer .footer-logo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.footer .footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .footer-info .footer-p {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: left;
+}
+
+.footer .footer-info .footer-p p {
+  margin-bottom: 177px;
+  font-size: 17px;
+  font-weight: 400;
+  max-width: 535px;
+}
+
+.footer .footer-location {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: left;
+  margin-left: 150px;
+}
+
+.footer .footer-location ul {
+  list-style: none;
+}
+
+.footer .footer-location ul li {
+  margin-bottom: 35px;
+}
+
+.footer .footer-location ul .fa-map-marker {
+  color: #ffe001;
+  font-size: 40px;
+  margin-right: 35px;
+}
+
+.footer .footer-location ul .fa-envelope {
+  font-size: 20px;
+  color: #ffe001;
+  margin-right: 35px;
+}
+
+.footer .footer-location .footer-social {
+  text-align: right;
+  margin-right: 85px;
+  margin-top: 133px;
+}
+
+.footer .footer-location .footer-social ul {
+  list-style: none;
+}
+
+.footer .footer-location .footer-social ul li {
+  display: inline;
+}
+
+.footer .footer-location .footer-social ul li a {
+  background-color: #ffffff;
+  color: #000000;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 3px 7px;
+  margin-right: 14px;
+  font-size: 20px;
+}
+
+.footer .footer-location .footer-social ul li a:hover {
+  background-color: #ffe001;
+}
+/*# sourceMappingURL=style.css.map */

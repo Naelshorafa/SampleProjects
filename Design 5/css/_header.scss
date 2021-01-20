@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 55px;
+    .header-logo-num {
+      display: flex;
+      justify-content: space-between;
+      .header-phone {
+        display: flex;
+        flex-direction: row;
+        text-align: right;
+        .phone-num {
+          margin-right: 15px;
+          margin-top: 12px;
+          span {
+            font-size: 17px;
+            font-weight: 700;
+          }
+          p {
+            font-size: 30px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .nav-bar {
+      ul {
+        text-align: right;
+        margin-top: 32px;
+        li {
+          list-style: none;
+          display: inline-block;
+          padding: 0 30px;
+          a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: 700;
+            font-size: 17px;
+            &:hover {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }

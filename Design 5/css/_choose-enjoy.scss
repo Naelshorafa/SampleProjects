@@ -1,0 +1,58 @@
+.choose-enjoy {
+  background: linear-gradient(to bottom, #ffffff, #ffffff 42%, #e1dfa4 20%, #e1dfa4 56%, #ffffff 40%, #ffffff);
+  padding: 90px 0;
+  .title-choose {
+      padding-bottom: 55px;
+    h1 {
+      font-size: 50px;
+      font-weight: 400;
+      font-family: $sec-font;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 17px;
+      font-weight: 400;
+    }
+  }
+  .food-choose{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .food-order{
+          flex-basis: 33.3%;
+          margin: 50px;
+          .container-img{
+              width: 355px;
+              height: 360px;
+              margin: 0 auto;
+              border-radius: 50%;
+              overflow: hidden;
+              img{
+                  width: 100%;
+              }
+          }
+          h3{
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 25px;
+          }
+          p{
+              font-size: 17px;
+              font-weight: 400;
+              margin-bottom: 60px;
+          }
+          a{
+            padding: 24px 41px 21px 41px;
+            text-decoration: none;
+            color: #000000;
+            background-color: $main-color;
+            font-weight: 700;
+            font-size: 17px;
+            &:hover {
+              background-color: #000;
+              color: $main-color;
+            }
+          }
+      }
+  }
+}

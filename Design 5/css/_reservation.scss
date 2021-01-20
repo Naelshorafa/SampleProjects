@@ -1,0 +1,43 @@
+.reservation {
+  padding: 95px 0;
+  .reservation-info {
+    h3 {
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+    h1 {
+      font-family: $sec-font;
+      font-weight: 400;
+      font-size: 50px;
+    }
+  }
+  .lable-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    input {
+      width: 380px;
+      height: 65px;
+      font-size: 17px;
+      padding: 0 25px;
+      margin: 14px 13px;
+      border: 1px solid #bebebe;
+      border-radius: 7px;
+    }
+    a {
+      padding: 22px 127px;
+      text-decoration: none;
+      color: #000000;
+      background-color: $main-color;
+      font-weight: 700;
+      font-size: 17px;
+      margin: 14px 13px;
+      border-radius: 7px;
+      &:hover {
+        background-color: #000;
+        color: $main-color;
+      }
+    }
+  }
+}
