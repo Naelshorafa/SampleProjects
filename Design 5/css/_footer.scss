@@ -2,69 +2,131 @@
   background-image: url(img/footer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 65px 0;
-  padding-left: 100px;
+  padding: 12px;
   color: #ffffff;
-  .footer-logo{
-    img {
-      display: flex;
-      margin-bottom: 70px;
+  @media (min-width: 768px) {
+    padding: 65px 0;
+    padding-left: 30px;
+  }
+  @media (min-width: 992px) {
+    padding-left: 100px;
+  }
+  .footer-logo {
+    .img-cont {
+      width: 200px;
+      height: 50px;
+      overflow: hidden;
+      margin-bottom: 25px;
+      @media (min-width: 768px) {
+        margin-bottom: 70px;
+        width: 310px;
+      height: 80px;
+      }
+      img {
+        width: 100%;
+      }
     }
   }
   .footer-info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    @media (min-width: 992px) {
+      flex-direction: row;
+    }
+    
     .footer-p {
       flex-basis: 50%;
       text-align: left;
       p {
-        margin-bottom: 177px;
-        font-size: 17px;
+        margin-bottom: 20px;
+        font-size: 12px;
         font-weight: 400;
-        max-width: 535px;
+        
+        @media (min-width: 768px) {
+          margin-bottom: 30px;
+          font-size: 22px;
+          
+        }
+        @media (min-width: 992px) {
+          margin-bottom: 177px;
+          font-size: 17px;
+          max-width: 535px;
+        }
+      }
+      span {
+        font-size: 12px;
+        @media (min-width: 768px) {
+          font-size: 17px;
+        }
       }
     }
   }
   .footer-location {
     flex-basis: 50%;
     text-align: left;
-    margin-left: 150px;
+    @media (min-width: 992px) {
+      margin-left: 50px;
+    }
+    @media (min-width: 992px) {
+      margin-left: 150px;
+    }
     ul {
-        list-style: none;
-        li{
-            margin-bottom: 35px;
+      list-style: none;
+      li {
+        font-size: 12px;
+        @media (min-width: 768px) {
+          font-size: 17px;
+          margin: 20px 0;
         }
+        @media(min-width:992px){
+          font-size: 17px;
+          margin: 0 0 35px 0;
+        }
+      }
       .fa-map-marker {
         color: $main-color;
-        font-size: 40px;
-        margin-right: 35px;
+        font-size: 20px;
+        margin-right: 8px;
+        @media (min-width: 768px) {
+          font-size: 40px;
+          margin-right: 35px;
+        }
       }
       .fa-envelope {
-        font-size: 20px;
+        font-size: 12px;
         color: $main-color;
-        margin-right: 35px;
+        margin-right: 8px;
+        @media (min-width: 768px) {
+          font-size: 40px;
+          margin-right: 35px;
+        }
       }
     }
     .footer-social {
+      margin-top: 12px;
+      @media (min-width: 768px) {
         text-align: right;
         margin-right: 85px;
         margin-top: 133px;
+      }
       ul {
         list-style: none;
         li {
           display: inline;
+          margin-right: 14px;
           a {
             background-color: #ffffff;
             color: #000000;
-            width: 30px;
-            height: 30px;
+            width: 32px;
+            height: 32px;
             display: inline-block;
             border-radius: 50%;
-            padding: 3px 7px;
-            margin-right: 14px;
             font-size: 20px;
-            &:hover{
-                background-color: $main-color;
+            line-height: 32px;
+            text-align: center;
+            &:hover {
+              background-color: $main-color;
+              color: #ffffff;
             }
           }
         }

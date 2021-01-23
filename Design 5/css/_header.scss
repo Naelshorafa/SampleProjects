@@ -1,46 +1,88 @@
 .header {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  @media (min-width: 768px) {
+    padding: 40px 55px;
+  }
+  .header-logo-num {
     display: flex;
     flex-direction: column;
-    padding: 40px 55px;
-    .header-logo-num {
-      display: flex;
+    @media (min-width: 768px) {
+      flex-direction: row;
       justify-content: space-between;
-      .header-phone {
-        display: flex;
-        flex-direction: row;
-        text-align: right;
-        .phone-num {
-          margin-right: 15px;
-          margin-top: 12px;
-          span {
-            font-size: 17px;
-            font-weight: 700;
-          }
-          p {
-            font-size: 30px;
-            font-weight: 700;
-          }
+    }
+    .header-logo {
+      display: flex;
+      justify-content: first baseline;
+      img {
+        width: 50%;
+        @media (min-width: 768px) {
+          width: 100%;
         }
       }
     }
-    .nav-bar {
-      ul {
-        text-align: right;
-        margin-top: 32px;
-        li {
-          list-style: none;
-          display: inline-block;
-          padding: 0 30px;
-          a {
-            text-decoration: none;
-            color: #000000;
-            font-weight: 700;
+    .header-phone {
+      display: flex;
+      flex-direction: row;
+      text-align: right;
+      justify-content: flex-end;
+      @media (min-width: 768px) {
+        justify-content: center;
+      }
+      .phone-num {
+        margin-right: 15px;
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        span {
+          font-size: 12px;
+          font-weight: 600;
+          @media (min-width: 768px) {
             font-size: 17px;
-            &:hover {
-              color: #ffffff;
-            }
+          }
+        }
+        a {
+          font-size: 16px;
+          font-weight: 700;
+          text-decoration: none;
+          color: #000000;
+          @media (min-width: 768px) {
+            font-size: 30px;
+          }
+          &:hover {
+            color: #ffffff;
           }
         }
       }
     }
   }
+  .nav-bar {
+    ul {
+      text-align: right;
+      @media (min-width: 768px) {
+        margin-top: 32px;
+      }
+      li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 12px;
+        @media (min-width: 768px) {
+          padding: 0 30px;
+        }
+        a {
+          text-decoration: none;
+          color: #000000;
+          font-weight: 700;
+          font-size: 8px;
+          @media (min-width: 768px) {
+            font-size: 17px;
+          }
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

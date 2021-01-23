@@ -1,15 +1,25 @@
 .reservation {
-  padding: 95px 0;
+  padding: 25px 0;
+  @media(min-width:768px){
+    padding: 95px 0;
+  }
   .reservation-info {
     h3 {
-      font-size: 21px;
+      font-size: 15px;
       font-weight: 700;
-      margin-bottom: 25px;
+      margin-bottom: 12px;
+      @media(min-width:768px){
+        font-size: 21px;
+        margin-bottom: 25px;
+      }
     }
     h1 {
       font-family: $sec-font;
       font-weight: 400;
-      font-size: 50px;
+      font-size: 26px;
+      @media(min-width:768px){
+        font-size: 50px;
+      }
     }
   }
   .lable-input {
@@ -26,7 +36,7 @@
       border-radius: 7px;
     }
     a {
-      padding: 22px 127px;
+      padding: 22px 68px;
       text-decoration: none;
       color: #000000;
       background-color: $main-color;
@@ -34,6 +44,9 @@
       font-size: 17px;
       margin: 14px 13px;
       border-radius: 7px;
+      @media(min-width:768px){
+        padding: 22px 127px;
+      }
       &:hover {
         background-color: #000;
         color: $main-color;

@@ -3,84 +3,155 @@
   position: relative;
   background: linear-gradient(
     104deg,
-    $main-color 10%,
+    $main-color 0,
     $main-color 62%,
-    $sec-color 30%,
-    $sec-color 10%
+    $sec-color 62%,
+    $sec-color 100%
   );
   &::before {
     content: " ";
     background-image: url(img/pic-spagiti.png);
     position: absolute;
-    bottom: -145px;
+    bottom: -322px;
     left: 0;
     width: 240px;
     height: 410px;
+    background-size: 35%;
+    background-repeat: no-repeat;
+    @media (min-width: 768px) {
+      background-size: 100%;
+      bottom: -145px;
+    }
   }
   .hero-cont {
     background-image: url(img/pic-hero2.png), url(img/pic-hero3.png),
       url(img/pic-hero4.png), url(img/pic-hero5.png);
     background-repeat: no-repeat;
-    background-position: 65px 220px, 650px 210px, 600px 800px, 1240px 750px;
+    background-position: 4% 30%, 63% 30%, 55% 95%, 90% 75%;
+    background-size: 25px , 40px ,40px ,30px;
+    @media(min-width:768px){
+      background-position: 7% 25%, 52% 24%, 50% 90%, 98% 85%;
+      background-size: auto;
+    }
     .hero-info {
       display: flex;
       flex-direction: row;
-      padding: 40px 30px 155px 30px;
+      padding: 50px 12px;
+      @media(min-width:768px){
+        padding: 40px 30px 155px 30px;
+      }
       .hero-text {
         flex-basis: 50%;
-        margin-right: 70px;
+        margin-right: 20px;
+        @media (min-width: 768px) {
+          margin-right: 12px;
+        }
+        @media(min-width:992px){
+          margin-right: 70px;
+        }
         .main-text {
           h3 {
-            font-size: 58px;
-            margin-bottom: 30px;
+            font-size: 18px;
+            margin-bottom: 8px;
             font-family: $thrd-font;
             font-weight: 400;
+            @media (min-width: 768px) {
+              font-size: 37px;
+              margin-bottom: 12px;
+            }
+            @media(min-width:992px){
+              font-size: 58px;
+              margin-bottom: 30px;
+            }
           }
           h1 {
-            font-size: 90px;
+            font-size: 20px;
             font-family: $sec-font;
             font-weight: 400;
-            margin-bottom: 40px;
+            margin-bottom: 8px;
+            @media (min-width: 768px) {
+              font-size: 55px;
+              margin-bottom: 12px;
+            }
+            @media(min-width:992px){
+              font-size: 90px;
+              margin-bottom: 40px;
+            }
           }
           p {
-            font-size: 26px;
+            font-size: 8px;
             font-weight: 700;
             position: relative;
-            margin-bottom: 80px;
+            margin-bottom: 40px;
+            @media (min-width: 768px) {
+              font-size: 18px;
+              margin-bottom: 55px;
+            }
+            @media(min-width:992px){
+              font-size: 26px;
+              margin-bottom: 80px;
+            }
             &::before {
               content: "";
               display: block;
-              width: 470px;
+              width: 155px;
               height: 2px;
               background-color: #ccb301;
               position: absolute;
               left: 50%;
-              bottom: -40px;
+              bottom: -25px;
               transform: translateX(-50%);
+              @media (min-width: 768px) {
+                width: 265px;
+                bottom: -30px;
+              }
+              @media(min-width:992px){
+                width: 470px;
+                bottom: -40px;
+              }
             }
           }
         }
         .order-text {
           display: flex;
+          flex-direction: column;
           justify-content: center;
           font-family: $sec-font;
-          margin-bottom: 60px;
+          margin-bottom: 12px;
+          @media (min-width: 768px) {
+            margin-bottom: 60px;
+            flex-direction: row;
+          }
           span {
-            font-size: 20px;
-            margin-right: 17px;
+            font-size: 12px;
+            margin-right: 6px;
+            position: relative;
+            top: 5px;
+            @media (min-width: 768px) {
+              font-size: 20px;
+              margin-right: 17px;
+              top: 10px;
+            }
           }
           p {
-            font-size: 57px;
+            font-size: 30px;
             font-weight: 400;
+            @media (min-width: 768px) {
+              font-size: 57px;
+            }
           }
         }
         a {
-          padding: 22px 43px;
+          padding: 12px 8px;
           text-decoration: none;
           color: #000000;
           border: 1px solid #000000;
           font-weight: 800;
-          font-size: 20px;
+          font-size: 12px;
+          @media (min-width: 768px) {
+            padding: 22px 43px;
+            font-size: 20px;
+          }
           &:hover {
             background-color: #000;
             color: $main-color;
@@ -90,11 +161,18 @@
     }
     .hero-img {
       .container-img {
-        width: 570px;
-        height: 570px;
-        margin: 0 auto;
+        width: 130px;
+        height: 130px;
         border-radius: 50%;
         overflow: hidden;
+        @media (min-width: 768px) {
+          width: 350px;
+          height: 350px;
+        }
+        @media(min-width:992px){
+          width: 570px;
+          height: 570px;
+        }
         img {
           width: 100%;
         }

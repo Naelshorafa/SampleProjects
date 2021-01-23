@@ -1,6 +1,14 @@
 AOS.init();
-$(function () {
+$(document).ready(function () {
   $("#preloader-logo").fadeOut();
+  
+  $('.gallery-container').slick({
+    dots:true,
+    centerMode: true,
+    slidesToShow: 3,
+    centerPadding:'20px',
+  });
+  setTimeout(AOS.refresh,2000);
 });
   // ==============================================================
   // loading
