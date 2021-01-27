@@ -1,0 +1,187 @@
+.swim-school {
+  padding: 115px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    padding: 190px 10px 10px 10px;
+  }
+  @media (min-width: 992px) {
+    padding: 310px 47px 60px 47px;
+  }
+  .school-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 34px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .info-text {
+      flex-basis: 50%;
+      //max-width: 637px;
+      background-color: #f7f7f7;
+      padding: 10px;
+      text-align: left;
+      margin: 13px;
+      @media (min-width: 768px) {
+        flex-basis: 50%;
+        padding: 40px 12px;
+      }
+      @media (min-width: 992px) {
+        padding: 95px 24px;
+      }
+      h3 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        @media (min-width: 768px) {
+          font-size: 27px;
+          margin-bottom: 20px;
+        }
+        @media (min-width: 992px) {
+          font-size: 48px;
+          margin-bottom: 40px;
+        }
+      }
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 23px;
+        @media (min-width: 768px) {
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+        @media (min-width: 992px) {
+          font-size: 23px;
+          margin-bottom: 40px;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+        background: linear-gradient(to right, #ff8902, #ff2f50);
+        font-size: 12px;
+        font-weight: 400;
+        padding: 15px 28px;
+        @media (min-width: 768px) {
+          font-size: 18px;
+          padding: 15px 38px;
+        }
+        @media (min-width: 992px) {
+          font-size: 23px;
+          padding: 26px 65px;
+        }
+        &:hover {
+          color: #000;
+          background: linear-gradient(to bottom, #b95cfe, #165fd2);
+        }
+      }
+    }
+    .img-cont {
+      width: 272px;
+      height: 165px;
+      margin: 13px;
+      @media (min-width: 768px) {
+        //width: 390px;
+        flex-basis: 50%;
+        height: 300px;
+      }
+      @media (min-width: 992px) {
+        //width: 637px;
+        
+        height: 495px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .school-text {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .img-cont2 {
+      width: 272px;
+      height: 165px;
+      margin: 13px;
+      @media (min-width: 768px) {
+        //width: 390px;
+        flex-basis: 50%;
+        height: 300px;
+      }
+      @media (min-width: 992px) {
+        //width: 637px;
+        height: 495px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .info-text2 {
+    //max-width: 637px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    text-align: left;
+    margin: 13px;
+    @media (min-width: 768px) {
+      flex-basis: 50%;
+      padding: 40px 12px;
+    }
+    @media (min-width: 992px) {
+      padding: 55px 24px;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 15px;
+      @media (min-width: 768px) {
+        font-size: 19px;
+        margin-bottom: 20px;
+      }
+      @media (min-width: 992px) {
+        font-size: 48px;
+        margin-bottom: 40px;
+      }
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 23px;
+      @media (min-width: 768px) {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      @media (min-width: 992px) {
+        font-size: 23px;
+        margin-bottom: 40px;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(to right, #ff8902, #ff2f50);
+      font-size: 12px;
+      font-weight: 400;
+      padding: 15px 28px;
+      @media (min-width: 768px) {
+        font-size: 18px;
+        padding: 15px 38px;
+      }
+      @media (min-width: 992px) {
+        font-size: 23px;
+        padding: 26px 65px;
+      }
+      &:hover {
+        color: #000;
+        background: linear-gradient(to bottom, #b95cfe, #165fd2);
+      }
+    }
+  }
+}
