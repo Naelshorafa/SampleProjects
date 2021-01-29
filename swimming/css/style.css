@@ -146,6 +146,12 @@ a {
 
 @media (min-width: 768px) {
   .header .header-logo img {
+    width: 85%;
+  }
+}
+
+@media (min-width: 992px) {
+  .header .header-logo img {
     width: 100%;
   }
 }
@@ -239,8 +245,8 @@ a {
 }
 
 .hero .hero-info .hero-box {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
   margin: 5px;
   color: #fff;
   text-align: left;
@@ -332,7 +338,7 @@ a {
   color: #fff;
   font-size: 20px;
   position: relative;
-  bottom: -90px;
+  bottom: -80px;
   margin-left: 10px;
 }
 
@@ -386,11 +392,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 34px;
 }
 
 @media (min-width: 768px) {
   .swim-school .school-info {
+    margin-bottom: 34px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -495,7 +501,6 @@ a {
 }
 
 .swim-school .school-info .img-cont {
-  width: 272px;
   height: 165px;
   margin: 13px;
 }
@@ -542,7 +547,6 @@ a {
 }
 
 .swim-school .school-text .img-cont2 {
-  width: 272px;
   height: 165px;
   margin: 13px;
 }
@@ -1188,7 +1192,7 @@ a {
 }
 
 .footer .footer-info .map {
-  margin: 13px;
+  margin: 10px auto;
   width: 290px;
 }
 
@@ -1197,6 +1201,7 @@ a {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     width: 100%;
+    margin: 13px;
   }
 }
 

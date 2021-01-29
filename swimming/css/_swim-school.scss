@@ -11,9 +11,10 @@
   .school-info {
     display: flex;
     flex-direction: column;
-    margin-bottom: 34px;
+    
 
     @media (min-width: 768px) {
+      margin-bottom: 34px;
       flex-direction: row;
       justify-content: center;
     }
@@ -79,7 +80,7 @@
       }
     }
     .img-cont {
-      width: 272px;
+      
       height: 165px;
       margin: 13px;
       @media (min-width: 768px) {
@@ -89,7 +90,6 @@
       }
       @media (min-width: 992px) {
         //width: 637px;
-        
         height: 495px;
       }
       img {
@@ -106,7 +106,7 @@
       justify-content: center;
     }
     .img-cont2 {
-      width: 272px;
+      
       height: 165px;
       margin: 13px;
       @media (min-width: 768px) {
