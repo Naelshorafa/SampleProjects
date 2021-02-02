@@ -1,0 +1,188 @@
+.hero {
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 0;
+  @media (min-width: 768px) {
+    padding: 170px 0;
+  }
+  .hero-info {
+    background: radial-gradient(
+      circle,
+      #ffffff 0px,
+      #ffffff 85px,
+      $main-color 86px,
+      $main-color 88px,
+      #ffffff 89px,
+      #ffffff 104px,
+      $main-color 105px,
+      $main-color 106px,
+      #d5dcdc 107px,
+      #d5dcdc 117px,
+      $main-color 118px,
+      $main-color 119px,
+      #d5dcdc 120px,
+      #d5dcdc 135px,
+      rgba(222, 226, 226, 0.5) 136px,
+      rgba(161, 171, 180, 0.5) 150px
+    );
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    padding-top: 89px;
+    margin: 0 auto;
+    position: relative;
+    div::after,
+    div::before {
+      content: "";
+      position: absolute;
+      background-color: $main-color;
+      height: 13px;
+      width: 13px;
+      z-index: 1;
+      border-radius: 50%;
+      z-index: 1;
+      @media (min-width: 768px) {
+        height: 18px;
+        width: 18px;
+      }
+      @media (min-width: 992px) {
+        height: 26px;
+        width: 26px;
+      }
+    }
+    div::after {
+      top: 222px;
+      right: 233px;
+      @media (min-width: 768px) {
+        top: 65px;
+        right: 79px;
+      }
+      @media (min-width: 992px) {
+        top: 135px;
+        right: 145px;
+      }
+    }
+    div::before {
+      top: 58px;
+      right: 59px;
+      @media (min-width: 768px) {
+        top: 304px;
+        right: 318px;
+      }
+      @media (min-width: 992px) {
+        top: 549px;
+        right: 577px;
+      }
+    }
+    @media (min-width: 768px) {
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(
+        circle,
+        #ffffff 0px,
+        #ffffff 141px,
+        $main-color 142px,
+        $main-color 143px,
+        #ffffff 144px,
+        #ffffff 154px,
+        $main-color 155px,
+        $main-color 156px,
+        #d5dcdc 157px,
+        #d5dcdc 167px,
+        $main-color 168px,
+        $main-color 169px,
+        #d5dcdc 170px,
+        #d5dcdc 184px,
+        rgba(222, 226, 226, 0.5) 185px,
+        rgba(161, 171, 180, 0.5) 200px
+      );
+      padding-top: 105px;
+    }
+    @media (min-width: 992px) {
+      width: 730px;
+      height: 730px;
+      background: radial-gradient(
+        circle,
+        #ffffff 0px,
+        #ffffff 245px,
+        $main-color 246px,
+        $main-color 250px,
+        #ffffff 251px,
+        #ffffff 276px,
+        $main-color 277px,
+        $main-color 278px,
+        #d5dcdc 279px,
+        #d5dcdc 299px,
+        $main-color 300px,
+        $main-color 301px,
+        #d5dcdc 302px,
+        #d5dcdc 332px,
+        rgba(222, 226, 226, 0.5) 333px,
+        rgba(161, 171, 180, 0.5) 365px
+      );
+      padding-top: 190px;
+    }
+    h5 {
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 12px;
+      @media (min-width: 768px) {
+        font-size: 26px;
+        margin-bottom: 12px;
+      }
+      @media (min-width: 992px) {
+        font-size: 42px;
+        margin-bottom: 45px;
+      }
+      span {
+        font-size: 14px;
+        @media (min-width: 768px) {
+          font-size: 20px;
+        }
+        @media (min-width: 992px) {
+          font-size: 25px;
+        }
+      }
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      @media (min-width: 768px) {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+      @media (min-width: 992px) {
+        font-size: 58px;
+        margin-bottom: 45px;
+      }
+    }
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 10px;
+      @media (min-width: 768px) {
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 22px;
+      }
+      @media (min-width: 992px) {
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 45px;
+      }
+    }
+    .img-cont {
+      width: 62px;
+      height: 43px;
+      margin: 0 auto;
+      img {
+        width: 50%;
+        @media (min-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

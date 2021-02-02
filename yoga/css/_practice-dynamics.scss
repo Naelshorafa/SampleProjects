@@ -1,0 +1,291 @@
+.practice-dynamics {
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(
+    circle at 143% 89%,
+    transparent 84.9%,
+    #ebf2f2 50%
+  );
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 90px 0 75px 0;
+    background: radial-gradient(
+      circle at 100% 83%,
+      transparent 79.9%,
+      #ebf2f2 50%
+    );
+  }
+  @media (min-width: 992px) {
+    padding: 165px 0 75px 0;
+    background: radial-gradient(
+      circle at 100% 139%,
+      transparent 81.9%,
+      #ebf2f2 50%
+    );
+  }
+  .practice-text {
+    flex-basis: 50%;
+    text-align: left;
+    padding-left: 15px;
+    @media (min-width: 768px) {
+      padding-left: 50px;
+    }
+    @media (min-width: 992px) {
+      padding-left: 135px;
+    }
+    .tittle {
+      h1 {
+        font-size: 35px;
+        font-weight: 700;
+        @media (min-width: 768px) {
+          font-size: 40px;
+        }
+        @media (min-width: 992px) {
+          font-size: 50px;
+        }
+      }
+      p {
+        font-size: 35px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        @media (min-width: 768px) {
+          font-size: 40px;
+          margin-bottom: 40px;
+        }
+        @media (min-width: 992px) {
+          font-size: 50px;
+          margin-bottom: 100px;
+        }
+      }
+    }
+    .text-practice {
+      h1 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 14px;
+        @media (min-width: 768px) {
+          font-size: 25px;
+          margin-bottom: 25px;
+        }
+        @media (min-width: 992px) {
+          font-size: 33px;
+          margin-bottom: 45px;
+        }
+        span {
+          font-weight: 300;
+        }
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        position: relative;
+        &::before {
+          content: "";
+          display: block;
+          width: 80%;
+          height: 2px;
+          background-color: #877093;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          @media (min-width: 768px) {
+            width: 100%;
+          }
+        }
+        @media (min-width: 768px) {
+          font-size: 22px;
+          margin-bottom: 30px;
+          padding-bottom: 22px
+        }
+        @media (min-width: 992px) {
+          font-size: 25px;
+          margin-bottom: 65px;
+          padding-bottom: 30px;
+        }
+      }
+      h5 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        @media (min-width: 768px) {
+          font-size: 20px;
+          margin-bottom: 30px;
+        }
+        @media (min-width: 992px) {
+          font-size: 25px;
+          margin-bottom: 55px;
+        }
+      }
+    }
+    .price {
+      font-size: 14px;
+      display: flex;
+      flex-direction: row;
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
+      @media (min-width: 992px) {
+        font-size: 25px;
+      }
+      h5 {
+        font-weight: 700;
+      }
+      p {
+        font-weight: 300;
+      }
+      .price-start {
+        margin-left: 60px;
+        @media (min-width: 768px) {
+          margin-left: 85px;
+        }
+      }
+    }
+  }
+  .practice-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .image {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(
+        circle,
+        #ffffff 125px,
+        #ffffff 130px,
+        $main-color 131px,
+        $main-color 132px,
+        #fff 133px,
+        #fff 137px,
+        $main-color 138px,
+        $main-color 139px,
+        #fff 140px,
+        #fff 148px,
+        $main-color 149px,
+        $main-color 150px
+      );
+      padding: 24px;
+      position: relative;
+      div::after,
+      div::before {
+        content: "";
+        position: absolute;
+        background-color: $main-color;
+        height: 14px;
+        width: 14px;
+        z-index: 1;
+        border-radius: 50%;
+        @media (min-width: 768px) {
+          height: 20px;
+          width: 20px;
+        }
+        @media (min-width: 992px) {
+          height: 26px;
+          width: 26px;
+        }
+      }
+      div::after {
+        top: 250px;
+        right: 38px;
+        @media (min-width: 768px) {
+          top: 334px;
+          right: 52px;
+        }
+        @media (min-width: 992px) {
+          top: 511px;
+          right: 74px;
+        }
+      }
+      div::before {
+        top: 36px;
+        right: 249px;
+        @media (min-width: 768px) {
+          top: 36px;
+          right: 320px;
+        }
+        @media (min-width: 992ox) {
+          top: 45px;
+          right: 473px;
+        }
+      }
+      @media (min-width: 768px) {
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(
+          circle,
+          #ffffff 150px,
+          #ffffff 167px,
+          $main-color 168px,
+          $main-color 169px,
+          #fff 170px,
+          #fff 182px,
+          $main-color 183px,
+          $main-color 184px,
+          #fff 185px,
+          #fff 198px,
+          $main-color 199px,
+          $main-color 200px
+        );
+        padding: 50px;
+      }
+      @media (min-width: 992px) {
+        width: 616px;
+        height: 616px;
+        background: radial-gradient(
+          circle,
+          #ffffff 225px,
+          #ffffff 255px,
+          $main-color 256px,
+          $main-color 258px,
+          #fff 259px,
+          #fff 283px,
+          $main-color 283px,
+          $main-color 284px,
+          #fff 285px,
+          #fff 306px,
+          $main-color 307px,
+          $main-color 308px
+        );
+        padding: 83px;
+      }
+      .img-cont {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+        @media (min-width: 768px) {
+          width: 300px;
+          height: 300px;
+        }
+        @media (min-width: 992px) {
+          width: 450px;
+          height: 450px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .text {
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        position: relative;
+        top: 214px;
+        @media (min-width: 768px) {
+          font-size: 25px;
+          top: 300px;
+        }
+        @media (min-width: 992px) {
+          top: 600px;
+        }
+      }
+    }
+  }
+}

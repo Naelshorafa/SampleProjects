@@ -1,0 +1,123 @@
+.footer {
+  padding: 50px 0 10px 0;
+  background-image: url(../img/footer.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-bottom: 18px solid $main-color;
+  @media (min-width: 768px) {
+    padding: 155px 0 50px 0;
+    border-bottom: 40px solid $main-color;
+  }
+  .footer-text {
+    img {
+      margin-bottom: 20px;
+      @media (min-width: 768px) {
+        margin-bottom: 65px;
+      }
+    }
+    p {
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      @media (min-width: 768px) {
+        font-size: 25px;
+        margin-bottom: 50px;
+      }
+    }
+    h1 {
+      font-size: 58px;
+      font-weight: 700;
+    }
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+    .about-footer {
+      flex-basis: 50%;
+      text-align: left;
+      padding-left: 20px;
+      @media (min-width: 768px) {
+        padding-left: 30px;
+      }
+      @media (min-width: 990px) {
+        padding-left: 185px;
+      }
+      h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        @media (min-width: 768px) {
+          font-size: 25px;
+          margin-bottom: 25px;
+        }
+      }
+      p {
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 14px;
+        @media (min-width: 768px) {
+          font-size: 20px;
+          margin-bottom: 55px;
+        }
+      }
+      .img-cont {
+        width: 220px;
+        height: 75px;
+        img {
+          width: 50%;
+          @media (min-width: 768px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .list-footer {
+    display: flex;
+    flex-direction: row;
+    .list-text {
+      text-align: left;
+      margin-left: 20px;
+      flex-basis: 33%;
+      @media(min-width:768px){
+       margin: 0 40px;
+       padding-top: 55px;   
+      }
+      @media(min-width:992px){
+        margin: 0 60px;  
+      }
+      h3 {
+        font-size: 17px;
+        font-weight: 700;
+        
+        @media(min-width:768px){
+          margin-bottom: 40px;
+        margin-left: 10px;  
+        }
+      }
+      ul {
+        li {
+          list-style: none;
+          font-size: 16px;
+          font-weight: 400;
+          a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            color: $main-color;
+            padding: 3px;
+            @media(min-width:768px){
+              padding: 10px;  
+            }
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,168 @@
+.summer-class {
+  background-image: url(../img/summer-class.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -27px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/shap.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    @media (min-width: 768px) {
+      top: -60px;
+    }
+  }
+  @media (min-width: 768px) {
+    padding-bottom: 30px;
+  }
+  @media (min-width: 992px) {
+    padding-bottom: 350px;
+  }
+  .border-circle {
+    width: 150px;
+    height: 150px;
+    border: 1px solid $main-color;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 15px;
+    margin-left: 20px;
+    position: relative;
+    top: -55px;
+    @media (min-width: 768px) {
+      width: 300px;
+      height: 300px;
+      padding: 30px;
+      margin-left: 30px;
+    top: -98px;
+    }
+    @media (min-width: 992px) {
+      width: 420px;
+      height: 420px;
+      padding: 37px;
+      margin-left: 65px;
+      top: -65px;
+    }
+    .border1 {
+      width: 120px;
+      height: 120px;
+      border: 2px solid $main-color;
+      border-radius: 50%;
+      overflow: hidden;
+      padding: 10px;
+      @media (min-width: 768px) {
+        width: 240px;
+        height: 240px;
+        padding: 28px;
+      }
+      @media (min-width: 992px) {
+        width: 345px;
+        height: 345px;
+        padding: 28px;
+      }
+      .disc-text {
+        border-radius: 50%;
+        width: 95px;
+        height: 95px;
+        background-color: #fff;
+        overflow: hidden;
+        padding-top: 16px;
+        @media (min-width: 768px) {
+          width: 180px;
+          height: 180px;
+          padding-top: 48px;
+        }
+        @media (min-width: 992px) {
+          width: 285px;
+          height: 285px;
+          padding-top: 70px;
+        }
+
+        h1 {
+          font-size: 30px;
+          font-weight: 700;
+          @media (min-width: 768px) {
+            font-size: 50px;
+          }
+          @media (min-width: 992px) {
+            font-size: 75px;
+          }
+          span {
+            font-size: 26px;
+            font-weight: 300;
+            @media (min-width: 768px) {
+              font-size: 40px;
+            }
+            @media (min-width: 992px) {
+              font-size: 58px;
+            }
+          }
+        }
+        h3 {
+          font-size: 20px;
+          font-weight: 400;
+          @media (min-width: 768px) {
+            font-size: 30px;
+          }
+          @media (min-width: 992px) {
+            font-size: 38px;
+          }
+        }
+      }
+    }
+  }
+  .class-time {
+    color: #fff;
+    margin-left: 20px;
+    text-align: left;
+    @media (min-width: 768px) {
+      margin-left: 50px;
+    }
+    @media (min-width: 992px) {
+      margin-left: 170px;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+      @media (min-width: 768px) {
+        font-size: 40px;
+      }
+      @media (min-width: 992px) {
+        font-size: 50px;
+      }
+    }
+    h2 {
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 14px;
+      @media (min-width: 768px) {
+        font-size: 40px;
+        margin-bottom: 35px;
+      }
+      @media (min-width: 992px) {
+        font-size: 50px;
+        margin-bottom: 50px;
+      }
+    }
+    p {
+      font-size: 16px;
+      font-weight: 700;
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
+      @media (min-width: 992px) {
+        font-size: 25px;
+      }
+    }
+  }
+}
