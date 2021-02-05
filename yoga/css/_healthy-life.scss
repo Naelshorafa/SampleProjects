@@ -18,7 +18,7 @@
       &:before {
         content: "";
         display: block;
-        width: 30%;
+        width: 25%;
         height: 2px;
         background-color: #877093;
         position: absolute;
@@ -32,7 +32,7 @@
       &:after {
         content: "";
         display: block;
-        width: 30%;
+        width: 25%;
         height: 2px;
         background-color: #877093;
         position: absolute;
@@ -63,6 +63,7 @@
     }
     .icons {
       flex-basis: 33.3%;
+      padding: 0 10px;
       .img-cont {
         width: 140px;
         height: 140px;
@@ -155,6 +156,7 @@
           border-radius: 50%;
           overflow: hidden;
           margin: 0 auto;
+          margin-bottom: 14px;
           @media (min-width: 768px) {
             width: 200px;
             height: 200px;

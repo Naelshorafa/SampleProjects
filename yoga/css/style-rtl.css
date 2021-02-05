@@ -1,0 +1,169 @@
+body {
+  direction: rtl;
+  font-family: "Tajawal", sans-serif;
+}
+
+.yoga-class .class-people .people-list .list-text {
+  text-align: right;
+  margin-right: 53px;
+  margin-left: 0;
+}
+
+.summer-class {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.practice-dynamics {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .practice-dynamics {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+.practice-dynamics .practice-text {
+  text-align: right;
+}
+
+.practice-dynamics .practice-text .text-practice p::before {
+  right: 0;
+}
+
+@media (min-width: 1110px) {
+  .practice-dynamics .practice-text {
+    padding-right: 135px;
+  }
+}
+
+.practice-dynamics .practice-img {
+  padding-right: 15px;
+}
+
+.practice-dynamics .practice-img .text p {
+  top: 346px;
+  right: -385px;
+}
+
+@media (min-width: 992px) {
+  .practice-dynamics .practice-img .text p {
+    left: 580px;
+  }
+}
+
+.practice-dynamics .price p {
+  margin-left: 30px;
+}
+
+.positions-dynamics {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .positions-dynamics {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.positions-dynamics .positions-text {
+  text-align: right;
+}
+
+.positions-dynamics .positions-text .text-positions p::before {
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .positions-dynamics .positions-text {
+    padding-right: 50px;
+    padding-left: 0;
+  }
+}
+
+.positions-dynamics .positions-img p {
+  bottom: 43px;
+  left: 53px;
+}
+
+.positions-dynamics .price p {
+  margin-left: 30px;
+}
+
+.healthy-life .look-class .class-people .people-list .list-text {
+  text-align: center;
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .healthy-life .look-class .class-people .people-list .list-text {
+    text-align: right;
+    margin-right: 53px;
+  }
+}
+
+.workshop .workshop-info {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+@media (min-width: 992px) {
+  .workshop .workshop-info {
+    padding-right: 110px;
+  }
+}
+
+.workshop .workshop-info .info-title {
+  margin-left: 0;
+  margin-right: 20px;
+  text-align: right;
+}
+
+@media (min-width: 992px) {
+  .workshop .workshop-info .info-title {
+    margin-right: 90px;
+  }
+}
+
+.workshop .workshop-img .text p {
+  top: 200px;
+}
+
+.footer .footer-info .about-footer {
+  text-align: right;
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer .footer-info .about-footer {
+    padding-right: 70px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer .footer-info .about-footer {
+    padding-right: 185px;
+  }
+}
+
+.footer .list-footer .list-text {
+  text-align: right;
+  padding-right: 20px;
+}
+/*# sourceMappingURL=style-rtl.css.map */

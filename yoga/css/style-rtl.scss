@@ -1,0 +1,152 @@
+body {
+  direction: rtl;
+  font-family: "Tajawal", sans-serif;
+}
+.yoga-class {
+  .class-people {
+    .people-list {
+      .list-text {
+        text-align: right;
+        margin-right: 53px;
+        margin-left: 0;
+      }
+    }
+  }
+}
+.summer-class {
+  flex-wrap: wrap-reverse;
+}
+.practice-dynamics {
+  flex-direction: column;
+  padding: 20px;
+  @media(min-width:768px){
+    flex-direction: row-reverse;  
+  }
+  .practice-text {
+    text-align: right;
+    .text-practice{
+        p{
+            &::before{
+                right: 0;
+            }
+        }
+    }
+    @media (min-width: 1110px) {
+      padding-right: 135px;
+    }
+  }
+
+  .practice-img {
+    padding-right: 15px;
+
+    .text {
+      p {
+        top: 346px;
+        right: -385px;
+          @media(min-width:992px){
+            left: 580px;  
+          }
+        
+      }
+    }
+  }
+  .price {
+    p {
+      margin-left: 30px;
+    }
+  }
+}
+.positions-dynamics {
+  flex-direction: column;
+  padding: 20px;
+  @media(min-width:768px){
+    flex-direction: row;  
+  }
+  .positions-text {
+    text-align: right;
+    .text-positions{
+        p{
+            &::before{
+                right: 0;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+      padding-right: 50px;
+      padding-left: 0;
+    }
+  }
+  .positions-img{
+      p{
+        bottom: 43px;
+        left: 53px;
+      }
+  }
+  .price {
+    p {
+      margin-left: 30px;
+    }
+  }
+}
+.healthy-life {
+  .look-class {
+    .class-people {
+      .people-list {
+        .list-text {
+          text-align: center;
+          margin-left: 0;
+          @media(min-width:768px){
+            text-align: right;
+          margin-right: 53px;  
+          }
+        }
+      }
+    }
+  }
+}
+.workshop {
+  .workshop-info {
+    padding-right: 20px;
+    padding-left: 0;
+    @media(min-width:992px){
+     padding-right: 110px;   
+    }
+    .info-title {
+      margin-left: 0;
+      margin-right: 20px;
+      text-align: right;
+      @media(min-width:992px){
+        margin-right: 90px;  
+      }
+    }
+  }
+  .workshop-img {
+    .text{
+        p{
+            top: 200px;
+        }
+    }
+  }
+}
+.footer {
+  .footer-info {
+    .about-footer {
+      text-align: right;
+      padding-left: 0;
+      padding-right: 20px;
+      @media(min-width:768px){
+       padding-right: 70px;   
+      }
+      @media (min-width: 992px) {
+        padding-right: 185px;
+      }
+    }
+  }
+  .list-footer {
+    .list-text {
+      text-align: right;
+      padding-right: 20px;
+      
+    }
+  }
+}

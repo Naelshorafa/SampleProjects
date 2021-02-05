@@ -77,7 +77,10 @@
   }
   .list-footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    @media(min-width:768px){
+      flex-direction: row;
+    }
     .list-text {
       text-align: left;
       margin-left: 20px;
