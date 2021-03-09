@@ -1,60 +1,80 @@
 .footer {
   background-color: #f3f3f3;
-  .footer-info {
-    padding: 0 252px;
+  font-size: 13px;
+  a {
+    transition: filter 300ms;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  .footer-section {
+    padding-top: 22px;
+    padding-bottom: 32px;
     display: flex;
     justify-content: space-between;
-    position: relative;
-    &::before {
-      content: "";
-      display: block;
-      width: 1416px;
-      height: 1px;
-      background-color: #e5e5e5;
-      position: absolute;
-      bottom: 0;
-      
+    align-items: center;
+    &:first-child {
+      border-bottom: 1px solid #e5e5e5;
     }
-    .social-media {
-      flex-basis: 50%;
+  }
+  .social-media {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    .icons {
       display: flex;
-      p {
-        margin-top: 30px;
-        margin-left: 21px;
-        font-size: 13px;
-      }
-      .icons {
-        padding: 22px;
+      justify-content: space-between;
+      li {
+        margin: 0 14px;
         a {
-          margin: 0 14px;
-        }
-      }
-    }
-    .privacy-policy {
-      ul {
-        margin-top: 28px;
-        li {
-          list-style: none;
-          display: inline-block;
-          a {
-            text-decoration: none;
-            color: #000;
-            font-size: 13px;
-            margin: 0 20px;
+          display: block;
+          width: 32px;
+          height: 32px;
+          filter: grayscale(0%);
+          &:hover {
+            filter: grayscale(100%);
+          }
+          img {
+            width: 100%;
           }
         }
       }
     }
   }
-  .footer-logo{
-      padding: 21px 248px 30px 252px;
-      display: flex;
-      justify-content: space-between;
-      .footer-Publishing{
-          p{
-              color: #9c96a8;
-              font-size: 13px;
-          }
+  .footer-menu {
+    display: flex;
+    flex-basis: 33%;
+    justify-content: space-between;
+    li {
+      a {
+        color: #000;
+        transition: color 300ms;
+        &:hover {
+          color: #277691;
+        }
       }
+    }
+  }
+  .logo-container {
+    width: 165px;
+    a {
+      display: block;
+      &:hover {
+        img {
+          filter: grayscale(100%);
+        }
+      }
+      img {
+        width: 100%;
+        filter: grayscale(0%);
+      }
+    }
+  }
+  .copyright {
+    color: #9c96a8;
   }
 }
