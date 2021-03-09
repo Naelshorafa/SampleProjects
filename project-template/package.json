@@ -5,8 +5,13 @@
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
     "gulp-html-extend": "^1.1.6",
+    "gulp-image": "^6.2.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-inline-fonts": "^1.2.1",
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^4.1.0",
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.7",
+    "postcss-loader": "^5.1.0"
   }
 }
