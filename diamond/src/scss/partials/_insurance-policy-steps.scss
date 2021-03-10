@@ -1,0 +1,78 @@
+.insurance-policy-steps {
+    text-align: center;
+    margin-top: 148px;
+  .container {
+    h1 {
+      font-size: 42px;
+      margin-bottom: 114px;
+    }
+    .row {
+      .col-sm {
+        a {
+            
+            display: block;
+            &:hover {
+              img {
+                filter: grayscale(100%);
+              }
+            }
+            img {
+              width: 100%;
+              filter: grayscale(0%);
+            }
+          }
+        .icon-container {
+          margin: 0 auto;
+          margin-bottom: 36px;
+        }
+        h1 {
+          font-size: 20px;
+          margin-bottom: 25px;
+        }
+        p {
+          font-size: 16px;
+        }
+        &:nth-child(1) {
+          .icon-container {
+            width: 122px;
+            height: 114px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        &:nth-child(2) {
+          .icon-container {
+            width: 122px;
+            height: 122px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        &:nth-child(3) {
+          .icon-container {
+            width: 118px;
+            height: 122px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        &:nth-child(4) {
+          .icon-container {
+            width: 102px;
+            height: 122px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
