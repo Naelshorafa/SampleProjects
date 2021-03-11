@@ -10,7 +10,7 @@
   }
   p {
     margin: 20px 0;
-    @media(min-width:768px){
+    @media (min-width: 768px) {
       margin: 0;
     }
   }
@@ -23,9 +23,12 @@
     &:first-child {
       border-bottom: 1px solid #e5e5e5;
     }
-    @media(min-width:768px){
+    @media (min-width: 768px) {
       justify-content: space-between;
       flex-direction: row;
+    }
+    @include media-breakpoint-up('lg', $grid-breakpoints) {
+      margin: 0 84px;
     }
   }
   .social-media {
@@ -33,14 +36,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    @media(min-width:768px){
+    @media (min-width: 768px) {
       flex-direction: row;
     }
     .icons {
       display: flex;
       justify-content: space-between;
       margin-bottom: 20px;
-      @media(min-width:768px){
+      @media (min-width: 768px) {
         margin-bottom: 0;
       }
       li {

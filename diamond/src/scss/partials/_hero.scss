@@ -1,31 +1,64 @@
 .hero {
+  position: relative;
+  padding-top: 164px;
+  padding-bottom: 95px;
   background-image: url("../images/hero-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: right;
   color: #fff;
+  display: flex;
+  align-items: center;
   & > * {
-    z-index: 2;
     position: relative;
+    z-index: 2;
   }
   &::before {
     content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 70%;
+    height: 100%;
     background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0) 0%,
       #000000 100%
     );
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.5;
-    margin-left: 323px;
+    opacity: 0.6;
   }
   .hero-info {
-    padding-top: 275px;
+    flex-basis: 50% 0 0;
+    .slogan {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 75px;
+      font-weight: 900;
+      line-height: 1.31;
+      small {
+        font-size: 65px;
+      }
+      &:first-child {
+        > * {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 26px;
+            left: -16px;
+            z-index: -1;
+            background-color: #3A3A3A;
+            backdrop-filter: blur(30px);
+            opacity: 0.3;
+            border-radius: 17px;
+            width: calc(100% + 32px);
+            height: calc(100% - 45px);
+          }
+        }
+      }
+    }
     h3 {
       font-size: 55px;
       font-weight: 500;
@@ -33,7 +66,7 @@
       &::before {
         content: "";
         display: block;
-        
+
         background-color: #303030;
         width: 262px;
         height: 42px;
@@ -65,22 +98,14 @@
       right: -13px;
     }
   }
-  h1 {
-    font-weight: 900;
-    font-size: 75px;
-  }
-  h2 {
-    font-weight: 900;
-    font-size: 65px;
-  }
-  .tele {
+  .hotline {
     display: flex;
     width: 646px;
     height: 110px;
     border-radius: 55px;
     background-color: #000000;
     backdrop-filter: blur(30px);
-    margin: 30px 0 200px 0;
+    margin-top: 30px;
     padding: 24px 42px 20px 40px;
     .image-cont {
       width: 42px;

@@ -1,4 +1,7 @@
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import 'partials/variables';
+@import '../../node_modules/bootstrap/scss/bootstrap';
 @import 'partials/common';
 @import 'partials/header';
 @import 'partials/hero';

@@ -1,78 +1,73 @@
 .insurance-policy-steps {
-    text-align: center;
-    margin-top: 148px;
-  .container {
-    h1 {
-      font-size: 42px;
-      margin-bottom: 114px;
+  text-align: center;
+  margin-bottom: 120px;
+  .heading {
+    font-size: 42px;
+    margin-bottom: 54px;
+  }
+  .row {
+    margin: 0 -8px;
+    > * {
+      padding: 0 8px;
     }
-    .row {
-      .col-sm {
-        a {
-            
-            display: block;
-            &:hover {
-              img {
-                filter: grayscale(100%);
-              }
-            }
-            img {
-              width: 100%;
-              filter: grayscale(0%);
-            }
-          }
-        .icon-container {
-          margin: 0 auto;
-          margin-bottom: 36px;
-        }
-        h1 {
-          font-size: 20px;
-          margin-bottom: 25px;
-        }
-        p {
-          font-size: 16px;
-        }
-        &:nth-child(1) {
-          .icon-container {
-            width: 122px;
-            height: 114px;
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
-        &:nth-child(2) {
-          .icon-container {
-            width: 122px;
-            height: 122px;
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
-        &:nth-child(3) {
-          .icon-container {
-            width: 118px;
-            height: 122px;
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
-        &:nth-child(4) {
-          .icon-container {
-            width: 102px;
-            height: 122px;
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
+  }
+  .content {
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom, #ffffff 32%, #f4f4f4);
+    padding: 48px 24px;
+    margin-bottom: 24px;
+    height: 100%;
+    &:hover {
+      cursor: pointer;
+      .icon-container {
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-name: bounce-icon;
+        animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
       }
     }
+    .icon-container {
+      margin: 0 auto;
+      margin-bottom: 36px;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      img {
+        max-width: 100%;
+      }
+    }
+    .title {
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+    .description {
+      margin: 0 auto;
+      max-width: 220px;
+    }
+  }
+}
+
+@keyframes bounce-icon {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-50px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
   }
 }

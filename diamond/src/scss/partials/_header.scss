@@ -1,88 +1,50 @@
 .header {
-  background-color: #000;
+  padding-top: 22px;
+  @include media-breakpoint-up('md', $grid-breakpoints) {
+    padding-top: 52px;
+  }
+  #index-page & {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+  }
   .container {
     display: flex;
     flex-direction: column;
-    @media (min-width: 768px) {
+    @include media-breakpoint-up('md', $grid-breakpoints) {
       justify-content: space-between;
       flex-direction: row;
+      align-items: center;
     }
     .header-logo {
-      padding-top: 22px;
-      @media (min-width: 768px) {
-        padding-top: 52px;
+      #index-page & {
+        filter: brightness(0) invert(1);
       }
       .img-container {
         width: 284px;
-        height: 58px;
         img {
           width: 100%;
         }
       }
     }
-    .header-btn {
-      display: flex;
-      padding-top: 30px;
-      @media (min-width: 768px) {
-        padding-top: 60px;
+    .header-btns {
+      margin: 0 -8px;
+      @include media-breakpoint-down('md', $grid-breakpoints) {
+        padding-top: 30px;
       }
-      a {
-        text-decoration: none;
+      .btn {
         font-size: 15px;
+        padding: 10px 22px;
+        min-width: 126px;
         margin: 0 8px;
-        display: block;
-        border-radius: 18px;
-        transition: 0.7s all;
-        &:nth-child(1) {
-          background-color: #277691;
-          color: #fff;
-          width: 98px;
-          height: 35px;
-          padding: 5px 18px;
-          &:hover {
-            color: #277691;
-            background-color: #fff;
-          }
-          @media (min-width: 768px) {
-            width: 126px;
-            height: 45px;
-            padding: 10px 42px 12px 43px;
-          }
-        }
-        &:nth-child(2) {
-          background-color: #fff;
-          color: #000;
-          width: 140px;
-          height: 35px;
-          padding: 5px 8px;
-          &:hover {
-            background-color: #000;
-            color: #fff;
-          }
-          @media (min-width: 768px) {
-            height: 45px;
-            padding: 11px 23px;
-          }
-        }
-        &:nth-child(3) {
-          width: 45px;
-          height: 35px;
-          color: #fff;
-          padding: 2px 8px;
-          border: 3px solid #fff;
-          background-color: rgba(255, 255, 255, 0.2);
-          border-radius: 12px;
-          &:hover {
-            color: #000;
-            background-color: #fff;
-            border: 3px solid #000;
-          }
-          @media (min-width: 768px) {
-            border-radius: 18px;
-            height: 45px;
-            padding: 11px 13px;
-          }
-        }
+      }
+      .btn-lang{
+        padding: 8px;
+        min-width: 44px;
+        color: #fff;
+        border-width: 3px;
+        backdrop-filter: blur(30px);
+        background-color: rgba(255, 255, 255, 0.2);
       }
     }
   }
