@@ -1,7 +1,20 @@
-.success-partners{
-    text-align: right;
-    margin-top: 118px;
-    h1{
-        font-size: 42px;
+.success-partners {
+  text-align: right;
+  margin-top: 118px;
+  h1 {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+  .slider-cont {
+    height: 95px;
+    .logo-slider {
+      .item {
+        a {
+          img {
+            width: 100%;
+          }
+        }
+      }
     }
+  }
 }

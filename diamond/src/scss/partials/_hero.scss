@@ -1,0 +1,128 @@
+.hero {
+  background-image: url("../images/hero-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+  color: #fff;
+  & > * {
+    z-index: 2;
+    position: relative;
+  }
+  &::before {
+    content: "";
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      #000000 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.5;
+    margin-left: 323px;
+  }
+  .hero-info {
+    padding-top: 275px;
+    h3 {
+      font-size: 55px;
+      font-weight: 500;
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        
+        background-color: #303030;
+        width: 262px;
+        height: 42px;
+        border-radius: 17px;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.5;
+        top: 27px;
+        right: -13px;
+      }
+    }
+  }
+  h4 {
+    font-weight: 900;
+    font-size: 75px;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      backdrop-filter: blur(30px);
+      background-color: #e16f7c;
+      width: 390px;
+      height: 60px;
+      border-radius: 17px;
+      position: absolute;
+      z-index: -1;
+      opacity: 0.3;
+      top: 22px;
+      right: -13px;
+    }
+  }
+  h1 {
+    font-weight: 900;
+    font-size: 75px;
+  }
+  h2 {
+    font-weight: 900;
+    font-size: 65px;
+  }
+  .tele {
+    display: flex;
+    width: 646px;
+    height: 110px;
+    border-radius: 55px;
+    background-color: #000000;
+    backdrop-filter: blur(30px);
+    margin: 30px 0 200px 0;
+    padding: 24px 42px 20px 40px;
+    .image-cont {
+      width: 42px;
+      height: 38px;
+      margin-left: 18px;
+      position: relative;
+      top: 15px;
+      img {
+        width: 100%;
+      }
+    }
+    .phone-num {
+      display: flex;
+      flex-direction: column;
+      margin-left: 30px;
+      span {
+        font-size: 20px;
+        font-weight: 300;
+      }
+      a {
+        font-size: 27px;
+        font-weight: 600;
+        color: #fff;
+      }
+    }
+    .img-cont {
+      width: 258px;
+      height: 62px;
+      margin-right: 34px;
+      img {
+        width: 100%;
+      }
+      &::before {
+        content: "";
+        display: block;
+        height: 57px;
+        width: 0;
+        border: solid 3px #ffffff;
+        position: absolute;
+        opacity: 0.35;
+        margin-right: -32px;
+      }
+    }
+  }
+}

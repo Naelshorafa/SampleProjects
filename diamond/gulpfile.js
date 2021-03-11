@@ -1,8 +1,8 @@
 const gulp = require('gulp');
 const htmlextender = require('gulp-html-extend');
 const image = require('gulp-image');
-const inlineFonts = require('gulp-inline-fonts');
 const sass = require('gulp-sass');
+const concat = require('gulp-concat');
 sass.compiler = require('node-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
@@ -34,16 +34,16 @@ gulp.task('images', function () {
   });
 
 // TODO: Copy fonts
-gulp.task('fonts', function() {
-    return gulp.src(['./src/fonts/Avenir Regular.ttf'])
-      .pipe(inlineFonts({ name: 'Avenir' }))
-      .pipe(gulp.dest('./dist/fonts'));
-  });
 
 // TODO: Minify, concat js
+gulp.task('scripts', function() {
+    return gulp.src('./src/js/*.js')
+      .pipe(concat('script.js'))
+      .pipe(gulp.dest('./dist/js'));
+  });
 
 // Default gulp task
-gulp.task('default', gulp.parallel('html', 'sass', 'images', 'fonts'));
+gulp.task('default', gulp.parallel('html', 'sass', 'images','scripts'));
 
 // Dev mode - local server
 gulp.task('watch',function () {
@@ -55,5 +55,6 @@ gulp.task('watch',function () {
 
     gulp.watch('./src/scss/**/*', gulp.parallel('sass'));
     gulp.watch('./src/html/**/*', gulp.parallel('html'));
+    gulp.watch('./src/js/*.js', gulp.parallel('scripts'));
     gulp.watch('./dist/*.html').on('change', browserSync.reload);
 });
