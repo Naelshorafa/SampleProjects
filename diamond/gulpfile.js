@@ -5,6 +5,7 @@ const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 sass.compiler = require('node-sass');
 const postcss = require('gulp-postcss');
+const rtlcss = require('gulp-rtlcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const browserSync = require('browser-sync').create();
@@ -23,6 +24,7 @@ gulp.task('html', function () {
 gulp.task('sass', function () {
     return gulp.src('./src/scss/**/style.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(rtlcss())
         .pipe(postcss([autoprefixer, cssnano]))
         .pipe(gulp.dest('./dist/css'))
         .pipe(browserSync.stream()); // tell browser

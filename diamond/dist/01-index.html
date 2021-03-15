@@ -1,4 +1,4 @@
-<html>
+<html dir="rtl" lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,26 +41,129 @@
 <!-- start hero.html-->
 <section class="hero">
   <div class="container">
-    <div class="hero-info">
-      <p class="slogan">
-        <small>تخلص من</small>
-        <span>إلتباس التأمين،</span>
-      </p>
-      <p class="slogan">
-        <small>أمِّن على سيارتك الآن</small>
-        <span>أفضل شركات التأمين</span>
-      </p>
-      <div class="hotline">
-        <div class="image-cont">
-          <img src="images/tele.svg" />
+    <div class="hero-content">
+      <div class="hero-info">
+        <p class="slogan">
+          <small>تخلص من</small>
+          <span>إلتباس التأمين،</span>
+        </p>
+        <p class="slogan">
+          <small>أمِّن على سيارتك الآن</small>
+          <span>أفضل شركات التأمين</span>
+        </p>
+        <div class="hotline">
+          <div class="image-cont">
+            <img src="images/tele.svg" />
+          </div>
+          <div class="phone-num">
+            <span>الخط الساخن</span>
+            <a href="tel:0000 000 00">0000 000 00</a>
+          </div>
+          <div class="img-cont">
+            <img src="images/bank-logo.png" />
+          </div>
         </div>
-        <div class="phone-num">
-          <span>الخط الساخن</span>
-          <a href="tel:0000 000 00">0000 000 00</a>
-        </div>
-        <div class="img-cont">
-          <img src="images/bank-logo.png" />
-        </div>
+      </div>
+
+      <div class="inquiry-form">
+        <header class="titles-container">
+          <h3 class="title">ماذا تنتظر .. إبدأ خطوتك الأولى</h3>
+          <p class="subtitle">للتأمين على المركبات ضد الغير / شامل</p>
+        </header>
+        <form class="">
+          <div class="mb-3">
+            <div class="row">
+              <div class="col-md-5">
+                <label>نوع وثيقة المركبة</label>
+              </div>
+              <div class="col-md-7">
+                <div class="form-check-inline-group">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="vehicleDocumentType"
+                      id="vehicleDocumentType1"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="vehicleDocumentType1"
+                      >استمارة</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="vehicleDocumentType"
+                      id="vehicleDocumentType2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="vehicleDocumentType2"
+                      >بطاقة جمركية</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-floating mb-2">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="idNumber"
+              placeholder="رقم الهوية، الإقامة أو الشركة"
+            />
+            <label for="idNumber" class="form-label"
+              >رقم الهوية، الإقامة أو الشركة</label
+            >
+          </div>
+          <div class="form-floating mb-2">
+            <select class="form-select form-control-lg" id="insurancePurpose">
+              <option>اختر الغرض من التأمين</option>
+              <option>تأمين جديد شامل</option>
+              <option>تأمين ضد الغير</option>
+            </select>
+            <label for="insurancePurpose" class="form-label"
+              >الغرض من التأمين</label
+            >
+          </div>
+          <div class="form-floating mb-2">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="serialNo"
+              placeholder="الرقم التسلسلي"
+            />
+            <label for="serialNo" class="form-label">الرقم التسلسلي</label>
+          </div>
+          <div class="form-floating mb-5">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="startDate"
+              placeholder="تاريخ بداية التأمين"
+            />
+            <label for="startDate" class="form-label"
+              >تاريخ بداية التأمين</label
+            >
+          </div>
+          <div class="form-check mb-4">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="acceptTerms"
+            />
+            <label class="form-check-label" for="acceptTerms">
+              أوافق على الشروط والأحكام وسياسة الخصوصية
+            </label>
+          </div>
+          <div class="d-grid col-md-8 offset-md-4">
+            <button type="submit" class="btn btn-lg btn-primary">
+              احصل على العروض
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -74,31 +177,46 @@
     <div class="slider-cont">
       <div class="logo-slider">
         <div class="item">
-          <a href="#"><img src="images/image1.png" /></a>
+          <img src="images/image1.png" />
         </div>
         <div class="item">
-          <a href="#"><img src="images/image2.png" /></a>
+          <img src="images/image2.png" />
         </div>
         <div class="item">
-          <a href="#"><img src="images/image3.png" /></a>
+          <img src="images/image3.png" />
         </div>
         <div class="item">
-          <a href="#"><img src="images/image4.png" /></a>
+          <img src="images/image4.png" />
         </div>
         <div class="item">
-          <a href="#"><img src="images/image5.png" /></a>
+          <img src="images/image5.png" />
         </div>
         <div class="item">
-          <a href="#"><img src="images/image6.png" /></a>
+          <img src="images/image6.png" />
         </div>
         <div class="item">
-          <a href="#"><img src="images/image7.png" /></a>
+          <img src="images/image7.png" />
         </div>
         <div class="item">
-          <a href="#"><img src="images/image8.png" /></a>
+          <img src="images/image8.png" />
         </div>
         <div class="item">
-          <a href="#"><img src="images/image9.png" /></a>
+          <img src="images/image9.png" />
+        </div>
+        <div class="item">
+          <img src="images/image3.png" />
+        </div>
+        <div class="item">
+          <img src="images/image4.png" />
+        </div>
+        <div class="item">
+          <img src="images/image5.png" />
+        </div>
+        <div class="item">
+          <img src="images/image6.png" />
+        </div>
+        <div class="item">
+          <img src="images/image7.png" />
         </div>
       </div>
     </div>
