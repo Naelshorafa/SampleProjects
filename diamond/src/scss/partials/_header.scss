@@ -1,6 +1,6 @@
 .header {
   padding-top: 22px;
-  @include media-breakpoint-up('md', $grid-breakpoints) {
+  @include media-breakpoint-up("md", $grid-breakpoints) {
     padding-top: 52px;
   }
   #index-page & {
@@ -11,7 +11,7 @@
   .container {
     display: flex;
     flex-direction: column;
-    @include media-breakpoint-up('md', $grid-breakpoints) {
+    @include media-breakpoint-up("md", $grid-breakpoints) {
       justify-content: space-between;
       flex-direction: row;
       align-items: center;
@@ -29,17 +29,24 @@
     }
     .header-btns {
       margin: 0 -8px;
-      @include media-breakpoint-down('md', $grid-breakpoints) {
+      @include media-breakpoint-down("md", $grid-breakpoints) {
         padding-top: 30px;
       }
       .btn {
-        font-size: 15px;
         padding: 10px 22px;
         min-width: 126px;
         margin: 0 8px;
+        font-size: 15px;
       }
-      .btn-lang{
+      .btn-primary{
+        font-weight: 900;
+      }
+      .btn-light{
+        font-weight: 500;
+      }
+      .btn-lang {
         padding: 8px;
+        font-weight: 500;
         min-width: 44px;
         color: #fff;
         border-width: 3px;

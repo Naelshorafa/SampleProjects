@@ -1,6 +1,8 @@
 .footer {
   background-color: #f3f3f3;
   font-size: 13px;
+  font-weight: 900;
+
   a {
     transition: filter 300ms;
   }
@@ -65,7 +67,7 @@
   }
   .footer-menu {
     display: flex;
-    flex-basis: 33%;
+    flex-basis: 40%;
     justify-content: space-between;
     li {
       a {

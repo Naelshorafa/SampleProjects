@@ -8,6 +8,8 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const browserSync = require('browser-sync').create();
+const copy = require('copy');
+
 
 // Compile html pages
 gulp.task('html', function () {
@@ -34,6 +36,10 @@ gulp.task('images', function () {
   });
 
 // TODO: Copy fonts
+gulp.task('copy', function () {
+    return gulp.src('./src/fonts/**/*')
+    .pipe(gulp.dest('./dist/fonts'));
+  });
 
 // TODO: Minify, concat js
 gulp.task('scripts', function() {
