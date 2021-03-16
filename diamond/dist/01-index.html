@@ -32,7 +32,7 @@
     </div>
     </div>
     <div class="header-btns">
-      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#sign-up">تسجيل</a>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup-modal">تسجيل الدخول</button>
       <a href="#" class="btn btn-light">الأسئلة الشائعة</a>
       <a href="#" class="btn btn-light btn-lang">En</a>
     </div>
@@ -178,8 +178,8 @@
 <section class="success-partners">
   <div class="container">
     <h1>شركاء النجاح</h1>
-    <div class="slider-cont">
-      <div class="logo-slider">
+    <div class="slider-container">
+      <div class="partners-slider">
         <div class="item">
           <img src="images/image1.png" />
         </div>
@@ -223,11 +223,13 @@
           <img src="images/image7.png" />
         </div>
       </div>
-      <div class="arrow-prev">
-        <span class="arrow"><i class="fa fa-angle-left" aria-hidden="true"></i> </span>
-      </div>
-      <div class="arrow-next">
-        <span class="arrow"><i class="fa fa-angle-right" aria-hidden="true"></i> </span>
+      <div class="slider-arrows-container">
+        <div class="arrow-prev">
+          <span class="arrow"></span>
+        </div>
+        <div class="arrow-next">
+          <span class="arrow"></span>
+        </div>
       </div>
     </div>
   </div>
@@ -333,31 +335,37 @@
 </footer>
 
 <!-- end footer.html-->
-<!-- start sign-up.html-->
-<div class="modal" id="sign-up" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">تسجيل مستخدم جديد</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span><span>اغلاق</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Modal body text goes here.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">تسجيل</button>
-        </div>
+    </div>
+<!-- start all.html-->
+<!-- start signup-modal.html-->
+<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">تسجيل مستخدم جديد</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span><span>اغلاق</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">تسجيل</button>
       </div>
     </div>
   </div>
-<!-- end sign-up.html-->
-    </div>
+</div>
+
+<!-- end signup-modal.html-->
+<!-- end all.html-->
 
     <!--Script-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

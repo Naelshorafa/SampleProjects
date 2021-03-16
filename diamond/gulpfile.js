@@ -1,16 +1,19 @@
+'use strict';
+
+const browserify = require('browserify');
 const gulp = require('gulp');
+const source = require('vinyl-source-stream');
+const buffer = require('vinyl-buffer');
+const log = require('gulplog');
 const htmlextender = require('gulp-html-extend');
 const image = require('gulp-image');
 const sass = require('gulp-sass');
-const concat = require('gulp-concat');
 sass.compiler = require('node-sass');
 const postcss = require('gulp-postcss');
 const rtlcss = require('gulp-rtlcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const browserSync = require('browser-sync').create();
-const copy = require('copy');
-
 
 // Compile html pages
 gulp.task('html', function () {
@@ -33,28 +36,37 @@ gulp.task('sass', function () {
 // Copy and optimize images
 gulp.task('images', function () {
     return gulp.src('./src/images/**/*')
-      .pipe(image())
-      .pipe(gulp.dest('./dist/images'));
-  });
+        .pipe(image())
+        .pipe(gulp.dest('./dist/images'));
+});
 
-// TODO: Copy fonts
-gulp.task('copy', function () {
+// Copy and optimize fonts
+gulp.task('fonts', function () {
     return gulp.src('./src/fonts/**/*')
-    .pipe(gulp.dest('./dist/fonts'));
-  });
+        .pipe(gulp.dest('./dist/fonts'));
+});
 
-// TODO: Minify, concat js
-gulp.task('scripts', function() {
-    return gulp.src('./src/js/*.js')
-      .pipe(concat('script.js'))
-      .pipe(gulp.dest('./dist/js'));
-  });
+// TODO: Minify (uglify) js
+gulp.task('scripts', function () {
+    // set up the browserify instance on a task basis
+    var b = browserify({
+        entries: './src/js/script.js',
+        debug: true
+    });
+
+    return b.bundle()
+        .pipe(source('script.js'))
+        .pipe(buffer())
+        .on('error', log.error)
+        .pipe(gulp.dest('./dist/js'));
+
+});
 
 // Default gulp task
-gulp.task('default', gulp.parallel('html', 'sass', 'images','scripts'));
+gulp.task('default', gulp.parallel('html', 'sass', 'images', 'fonts', 'scripts'));
 
 // Dev mode - local server
-gulp.task('watch',function () {
+gulp.task('watch', function () {
     gulp.parallel('default');
 
     browserSync.init({
@@ -63,6 +75,8 @@ gulp.task('watch',function () {
 
     gulp.watch('./src/scss/**/*', gulp.parallel('sass'));
     gulp.watch('./src/html/**/*', gulp.parallel('html'));
-    gulp.watch('./src/js/*.js', gulp.parallel('scripts'));
+    gulp.watch('./src/js/**/*', gulp.parallel('scripts'));
+
     gulp.watch('./dist/*.html').on('change', browserSync.reload);
+    gulp.watch('./dist/scripts/*.js').on('change', browserSync.reload);
 });

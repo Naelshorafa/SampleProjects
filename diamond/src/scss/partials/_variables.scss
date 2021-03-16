@@ -698,7 +698,7 @@ $input-height-lg:                       add($input-line-height * 1em, add($input
 $input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
 
-$form-check-input-width:                  1em;
+$form-check-input-width:                  1.8125em;
 $form-check-min-height:                   $font-size-base * $line-height-base;
 $form-check-padding-start:                $form-check-input-width + .5em;
 $form-check-margin-bottom:                .125rem;
@@ -709,16 +709,17 @@ $form-check-transition:                   null;
 $form-check-input-active-filter:          brightness(90%);
 
 $form-check-input-bg:                     $input-bg;
-$form-check-input-border:                 1px solid rgba(0, 0, 0, .25);
-$form-check-input-border-radius:          .25em;
+$form-check-input-border:                 2px solid #e0e0e0;
+$form-check-input-border-radius:          .5em;
 $form-check-radio-border-radius:          50%;
 $form-check-input-focus-border:           $input-focus-border-color;
 $form-check-input-focus-box-shadow:       $input-btn-focus-box-shadow;
 
-$form-check-input-checked-color:          $component-active-color;
-$form-check-input-checked-bg-color:       $component-active-bg;
-$form-check-input-checked-border-color:   $form-check-input-checked-bg-color;
-$form-check-input-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>");
+$form-check-input-checked-color:          #5ebbb7;
+$form-check-input-checked-bg-color:       #fff;
+$form-check-input-checked-border-color:   #e0e0e0;
+
+$form-check-input-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 26 26'><g transform='translate(.477 3.816)'><path fill='#{$form-check-input-checked-color}' d='M-11.208-18.938a1.425 1.425 0 0 1-1.012-.419l-5.486-5.486a1.43 1.43 0 0 1 0-2.024 1.43 1.43 0 0 1 2.024 0l4.474 4.474 7.808-7.813a1.43 1.43 0 0 1 2.024 0 1.43 1.43 0 0 1 0 2.024l-8.824 8.825a1.425 1.425 0 0 1-1.012.419' class='cls-1' transform='translate(18.125 30.625)'/></g></svg>");
 $form-check-radio-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>");
 
 $form-check-input-indeterminate-color:          $component-active-color;

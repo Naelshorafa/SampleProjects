@@ -5,9 +5,9 @@
     margin-bottom: 60px;
     font-weight: 900;
   }
-  .slider-cont {
+  .slider-container {
     position: relative;
-    .logo-slider {
+    .partners-slider {
       height: 95px;
       overflow: hidden;
       .item {
@@ -19,38 +19,29 @@
         }
       }
     }
-    .arrow-prev {
+    .slider-arrows-container {
       position: absolute;
-      top: -95%;
-      left: 95%;
-      .arrow{
-        font-size: 40px;
-        font-weight: 900;
-        display: block;
-        width: 40px;
+      top: -100px;
+      right: 0;
+      .arrow-prev,
+      .arrow-next {
+        position: relative;
+        display: inline-block;
         height: 40px;
-        background-color: #505050;
-        text-align: center;
-        line-height: 40px;
+        width: 40px;
+        background-image: url('../images/arrow-left-square.svg');
+        background-size: 100%;
+        transition: all 300ms;
         cursor: pointer;
-        border-radius: 13px;
+        &:hover{
+          opacity: 0.6;
+        }
+        &:active{
+          top: 1px;
+        }
       }
-    }
-    .arrow-next {
-      position: absolute;
-      top: -95%;
-      left: 90%;
-      .arrow{
-        font-size: 40px;
-        font-weight: 900;
-        display: block;
-        width: 40px;
-        height: 40px;
-        background-color: #505050;
-        text-align: center;
-        line-height: 40px;
-        cursor: pointer;
-        border-radius: 13px;
+      .arrow-prev{
+        transform: rotate(180deg);
       }
     }
   }
