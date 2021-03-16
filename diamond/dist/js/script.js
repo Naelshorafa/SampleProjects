@@ -4,5 +4,8 @@ $(document).ready(function () {
     slidesToScroll: 1,
     infinite: true,
     rtl: true,
+    prevArrow:'.arrow-prev',
+    nextArrow:'.arrow-next',
   });
 });
+

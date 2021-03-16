@@ -78,16 +78,16 @@
     .hotline {
       display: flex;
       width: 646px;
+      max-width: 645px;
       height: 110px;
       border-radius: 55px;
       background-color: rgba(0, 0, 0, 0.7);
       backdrop-filter: blur(30px);
-      margin-top: 30px;
       padding: 24px 42px 20px 40px;
       .image-cont {
         width: 42px;
         height: 38px;
-        margin-left: 18px;
+        margin-right: 18px;
         position: relative;
         top: 15px;
         img {
@@ -97,7 +97,7 @@
       .phone-num {
         display: flex;
         flex-direction: column;
-        margin-left: 30px;
+        margin-right: 30px;
         span {
           font-size: 20px;
           font-weight: 300;
@@ -111,7 +111,7 @@
       .img-cont {
         width: 258px;
         height: 62px;
-        margin-right: 34px;
+        margin-left: 34px;
         img {
           width: 100%;
         }
@@ -123,7 +123,7 @@
           border: solid 3px #ffffff;
           position: absolute;
           opacity: 0.35;
-          margin-right: -32px;
+          margin-left: -32px;
         }
       }
     }
