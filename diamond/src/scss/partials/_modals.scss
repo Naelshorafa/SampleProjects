@@ -1,0 +1,31 @@
+
+.modal-content {
+    .modal-body{
+        padding: 0 1.875rem;
+    }
+  .modal-title {
+    font-size: 31px;
+    font-weight: 900;
+    line-height: 1.58;
+  }
+  .forget-password {
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.53;
+  }
+  .modal-footer {
+    flex-direction: column;
+    .btn-primary {
+      font-weight: 900;
+      line-height: 1.56;
+      width: 100%;
+    }
+    .btn-info {
+      font-weight: 900;
+      line-height: 1.56;
+      color: #fff;
+      width: 100%;
+    }
+  }
+}
