@@ -3,11 +3,13 @@
 @import "partials/variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+// Libraries
+@import "../../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone";
+
 // Common
 @import "partials/fonts";
 @import "partials/common";
 @import "partials/forms";
-@import "partials/modals";
 
 // Main template
 @import "partials/header";

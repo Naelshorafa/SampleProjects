@@ -68,9 +68,9 @@ $colors: (
 
 // scss-docs-start theme-color-variables
 $primary:       #277691;
-$secondary:     $gray-600;
+$secondary:     #5ebbb7;
 $success:       $green;
-$info:          #5ebbb7;
+$info:          $cyan;
 $warning:       $yellow;
 $danger:        $red;
 $light:         $gray-100;
@@ -283,7 +283,7 @@ $body-text-align:           null;
 // Style anchor elements.
 
 $link-color:                              $primary;
-$link-decoration:                         underline;
+$link-decoration:                         none;
 $link-shade-percentage:                   20%;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage);
 $link-hover-decoration:                   null;
@@ -613,8 +613,8 @@ $btn-focus-box-shadow:        $input-btn-focus-box-shadow;
 $btn-disabled-opacity:        .65;
 $btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125);
 
-$btn-link-color:              $link-color;
-$btn-link-hover-color:        $link-hover-color;
+$btn-link-color:              $black;
+$btn-link-hover-color:        $primary;
 $btn-link-disabled-color:     $gray-600;
 
 // Allows for customizing button radius independently from global border radius
@@ -715,9 +715,9 @@ $form-check-radio-border-radius:          50%;
 $form-check-input-focus-border:           $input-focus-border-color;
 $form-check-input-focus-box-shadow:       $input-btn-focus-box-shadow;
 
-$form-check-input-checked-color:          #5ebbb7;
-$form-check-input-checked-bg-color:       #fff;
-$form-check-input-checked-border-color:   #e0e0e0;
+$form-check-input-checked-color:          $white;
+$form-check-input-checked-bg-color:       $secondary;
+$form-check-input-checked-border-color:   $secondary;
 
 $form-check-input-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 26 26'><g transform='translate(.477 3.816)'><path fill='#{$form-check-input-checked-color}' d='M-11.208-18.938a1.425 1.425 0 0 1-1.012-.419l-5.486-5.486a1.43 1.43 0 0 1 0-2.024 1.43 1.43 0 0 1 2.024 0l4.474 4.474 7.808-7.813a1.43 1.43 0 0 1 2.024 0 1.43 1.43 0 0 1 0 2.024l-8.824 8.825a1.425 1.425 0 0 1-1.012.419' class='cls-1' transform='translate(18.125 30.625)'/></g></svg>");
 $form-check-radio-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>");
@@ -1154,7 +1154,7 @@ $badge-border-radius:               $border-radius;
 // Modals
 
 // Padding applied to the modal body
-$modal-inner-padding:               $spacer;
+$modal-inner-padding:               1.75rem;
 
 // Margin between elements in footer, must be lower than or equal to 2 * $modal-inner-padding
 $modal-footer-margin-between:       .5rem;
@@ -1177,14 +1177,14 @@ $modal-backdrop-bg:                 $black;
 $modal-backdrop-opacity:            .5;
 $modal-header-border-color:         $border-color;
 $modal-footer-border-color:         $modal-header-border-color;
-$modal-header-border-width:         $modal-content-border-width;
-$modal-footer-border-width:         $modal-header-border-width;
+$modal-header-border-width:         0;
+$modal-footer-border-width:         0;
 $modal-header-padding-y:            $modal-inner-padding;
 $modal-header-padding-x:            $modal-inner-padding;
-$modal-header-padding:              $modal-header-padding-y $modal-header-padding-x; // Keep this for backwards compatibility
+$modal-header-padding:              $modal-header-padding-y $modal-header-padding-x 0 $modal-header-padding-y; // Keep this for backwards compatibility
 
 $modal-sm:                          300px;
-$modal-md:                          468px;
+$modal-md:                          500px;
 $modal-lg:                          800px;
 $modal-xl:                          1140px;
 

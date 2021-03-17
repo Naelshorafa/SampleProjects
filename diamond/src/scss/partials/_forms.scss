@@ -1,0 +1,52 @@
+.form-dark {
+  .form-control {
+    background-color: #f6f5f8;
+  }
+}
+
+.form-radio-inline-group {
+  display: flex;
+  padding: 5px;
+  border-radius: 13px;
+  background-color: #ffffff;
+  justify-content: space-between;
+  .form-radio-inline {
+    position: relative;
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      cursor: pointer;
+      &:checked {
+        & ~ .form-check-label {
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+          background-color: $secondary;
+          color: #fff;
+        }
+      }
+    }
+    .form-check-label {
+      padding: 12px 18px;
+      border-radius: 13px;
+      white-space: nowrap;
+      background-color: transparent;
+      box-shadow: none;
+      transition: all 300ms;
+    }
+  }
+}
+
+.form-radio-inline-group-label {
+  line-height: 58px;
+  font-weight: 700;
+}
+
+.from-control-datepicker{
+    background-image: url('../images/icon-calender.svg');   
+    background-size: 24px auto;
+    background-position: 18px center;
+    background-repeat: no-repeat;
+}

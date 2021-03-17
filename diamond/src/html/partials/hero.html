@@ -33,25 +33,24 @@
           <div class="mb-3">
             <div class="row">
               <div class="col-md-5">
-                <label>نوع وثيقة المركبة</label>
+                <label class="form-radio-inline-group-label">نوع وثيقة المركبة</label>
               </div>
               <div class="col-md-7">
-                <div class="form-check-inline-group">
-                  <div class="form-check form-check-inline">
+                <div class="form-radio-inline-group">
+                  <div class="form-radio-inline">
                     <input
-                      class="form-check-input"
                       type="radio"
                       name="vehicleDocumentType"
                       id="vehicleDocumentType1"
                       value="1"
+                      checked
                     />
                     <label class="form-check-label" for="vehicleDocumentType1"
                       >استمارة</label
                     >
                   </div>
-                  <div class="form-check form-check-inline">
+                  <div class="form-radio-inline">
                     <input
-                      class="form-check-input"
                       type="radio"
                       name="vehicleDocumentType"
                       id="vehicleDocumentType2"
@@ -98,7 +97,7 @@
           <div class="form-floating mb-5">
             <input
               type="text"
-              class="form-control form-control-lg"
+              class="form-control form-control-lg from-control-datepicker"
               id="startDate"
               placeholder="تاريخ بداية التأمين"
             />
