@@ -131,8 +131,9 @@
               data-bs-target="#forgot-password-modal"
               data-bs-toggle="modal"
               class="btn btn-link"
-              >هل نسيت كلمة المرور؟</button
             >
+              هل نسيت كلمة المرور؟
+            </button>
           </div>
           <div class="d-grid gap-2">
             <button type="submit" class="btn btn-lg btn-primary">دخول</button>
@@ -155,45 +156,41 @@
 <!-- end signin-modal.html-->
 <!-- start signup-modal.html-->
 <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">تسجيل مستخدم جديد</h5>
+        <h3 class="h2 modal-title"><strong>تسجيل مستخدم جديد</strong></h3>
         <button
           type="button"
-          class="close"
+          class="btn btn-link"
           data-bs-dismiss="modal"
           aria-label="Close"
         >
-          <span aria-hidden="true">&times;</span><span>اغلاق</span>
-        </button>
+        <span aria-hidden="true">&#x2715;</span>
+        <span>إغلاق</span>
+      </button>
       </div>
+
       <div class="modal-body">
-        <div class="modal-body">
+        <form class="form-dark">
           <div class="form-floating mb-2">
             <input
               type="text"
               class="form-control form-control-lg"
-              id="idNumber"
+              id="name"
               placeholder="الاسم كامل"
             />
-            <label for="idNumber" class="form-label">الاسم كامل</label>
+            <label for="name" class="form-label">الاسم كامل</label>
           </div>
-        </div>
-
-        <div class="modal-body">
           <div class="form-floating mb-2">
             <input
               type="text"
               class="form-control form-control-lg"
-              id="idNumber"
+              id="email"
               placeholder="البريد الإلكتروني"
             />
-            <label for="idNumber" class="form-label">البريد الإلكتروني</label>
+            <label for="email" class="form-label">البريد الإلكتروني</label>
           </div>
-        </div>
-
-        <div class="modal-body">
           <div class="form-floating mb-2">
             <input
               type="text"
@@ -203,32 +200,24 @@
             />
             <label for="idNumber" class="form-label">رقم الجوال</label>
           </div>
-        </div>
-
-        <div class="modal-body">
           <div class="form-floating mb-2">
             <input
               type="password"
               class="form-control form-control-lg"
-              id="idNumber"
+              id="password"
               placeholder="كلمة المرور"
             />
-            <label for="idNumber" class="form-label">كلمة المرور</label>
+            <label for="password" class="form-label">كلمة المرور</label>
           </div>
-        </div>
-
-        <div class="modal-body">
-          <div class="form-floating mb-2">
+          <div class="form-floating mb-5">
             <input
               type="password"
               class="form-control form-control-lg"
-              id="idNumber"
+              id="confirm-password"
               placeholder="تأكيد كلمة المرور"
             />
-            <label for="idNumber" class="form-label">تأكيد كلمة المرور</label>
+            <label for="confirm-password" class="form-label">تأكيد كلمة المرور</label>
           </div>
-        </div>
-        <div class="modal-body">
           <div class="form-check mb-4">
             <input
               class="form-check-input"
@@ -240,18 +229,20 @@
               أوافق على <a href="#">الشروط والأحكام</a> لمنصة HalaX
             </label>
           </div>
-        </div>
-      </div>
-      <div class="modal-footer">
+      
+      <div class="d-grid gap-2">
         <button
           type="button"
           class="btn btn-lg btn-primary"
           data-bs-toggle="modal"
-          data-bs-target="#signindone-modal"
+          data-bs-dismiss="modal"
+          data-bs-target="#signup-done-modal"
         >
           تسجيل
         </button>
       </div>
+    </div>
+      </form>
     </div>
   </div>
 </div>
@@ -262,65 +253,78 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">استعادة كلمة المرور</h5>
+        <h3 class="h2 modal-title"><strong>استعادة كلمة المرور</strong></h3>
         <button
           type="button"
-          class="close"
+          class="btn btn-link"
           data-bs-dismiss="modal"
           aria-label="Close"
         >
-          <span aria-hidden="true">&times;</span><span>اغلاق</span>
+          <span aria-hidden="true">&#x2715;</span>
+          <span>إغلاق</span>
         </button>
       </div>
-      <p>يرجى ادخال البريد اللاكتروني</p>
+
       <div class="modal-body">
-        <div class="modal-body">
-          <div class="form-floating mb-2">
+        <p><strong>يرجى ادخال البريد اللاكتروني</strong></p>
+        <form class="form-dark">
+          <div class="form-floating mb-4">
             <input
               type="text"
               class="form-control form-control-lg"
-              id="idNumber"
+              id="email"
               placeholder="البريد الإلكتروني"
             />
-            <label for="idNumber" class="form-label">البريد الإلكتروني</label>
+            <label for="email" class="form-label">البريد الإلكتروني</label>
           </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-lg btn-primary">ارسال</button>
+          <div class="d-grid gap-2">
+            <button
+              type="button"
+              class="btn btn-lg btn-primary"
+              data-bs-dismiss="modal"
+              data-bs-toggle="modal"
+            >
+              ارسال
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </div>
 
 <!-- end forgot-password-modal.html-->
-<!-- start signin-done-modal.html-->
-<div class="modal fade" id="signindone-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-            <button
-              type="button"
-              class="btn btn-light"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span><span>اغلاق</span>
-            </button>
+<!-- start signup-done-modal.html-->
+<div class="modal fade" id="signup-done-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p> </p>
+        <button
+          type="button"
+          class="btn btn-link"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&#x2715;</span>
+          <span>إغلاق</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-container">
+          <div class="image-container mb-4">
+            <img src="images/signin-done.svg" />
           </div>
-        <div class="modal-body">
-          <div class="modal-body">
-              <img src="images/signin-done.svg">
-          </div>
-        </div>
-        <div class="modal-footer">
-          <p>تم انشاء <br>الحساب بنجاح</p>
+          <h3 class="h2 modal-title mb-5">
+            <strong>تم انشاء <br />الحساب بنجاح</strong>
+          </h3>
         </div>
       </div>
     </div>
   </div>
-  
-<!-- end signin-done-modal.html-->
+</div>
+
+<!-- end signup-done-modal.html-->
 <!-- end all.html-->
 
     <!--Script-->

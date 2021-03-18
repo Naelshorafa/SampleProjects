@@ -1,43 +1,39 @@
 <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">تسجيل مستخدم جديد</h5>
+        <h3 class="h2 modal-title"><strong>تسجيل مستخدم جديد</strong></h3>
         <button
           type="button"
-          class="close"
+          class="btn btn-link"
           data-bs-dismiss="modal"
           aria-label="Close"
         >
-          <span aria-hidden="true">&times;</span><span>اغلاق</span>
-        </button>
+        <span aria-hidden="true">&#x2715;</span>
+        <span>إغلاق</span>
+      </button>
       </div>
+
       <div class="modal-body">
-        <div class="modal-body">
+        <form class="form-dark">
           <div class="form-floating mb-2">
             <input
               type="text"
               class="form-control form-control-lg"
-              id="idNumber"
+              id="name"
               placeholder="الاسم كامل"
             />
-            <label for="idNumber" class="form-label">الاسم كامل</label>
+            <label for="name" class="form-label">الاسم كامل</label>
           </div>
-        </div>
-
-        <div class="modal-body">
           <div class="form-floating mb-2">
             <input
               type="text"
               class="form-control form-control-lg"
-              id="idNumber"
+              id="email"
               placeholder="البريد الإلكتروني"
             />
-            <label for="idNumber" class="form-label">البريد الإلكتروني</label>
+            <label for="email" class="form-label">البريد الإلكتروني</label>
           </div>
-        </div>
-
-        <div class="modal-body">
           <div class="form-floating mb-2">
             <input
               type="text"
@@ -47,32 +43,24 @@
             />
             <label for="idNumber" class="form-label">رقم الجوال</label>
           </div>
-        </div>
-
-        <div class="modal-body">
           <div class="form-floating mb-2">
             <input
               type="password"
               class="form-control form-control-lg"
-              id="idNumber"
+              id="password"
               placeholder="كلمة المرور"
             />
-            <label for="idNumber" class="form-label">كلمة المرور</label>
+            <label for="password" class="form-label">كلمة المرور</label>
           </div>
-        </div>
-
-        <div class="modal-body">
-          <div class="form-floating mb-2">
+          <div class="form-floating mb-5">
             <input
               type="password"
               class="form-control form-control-lg"
-              id="idNumber"
+              id="confirm-password"
               placeholder="تأكيد كلمة المرور"
             />
-            <label for="idNumber" class="form-label">تأكيد كلمة المرور</label>
+            <label for="confirm-password" class="form-label">تأكيد كلمة المرور</label>
           </div>
-        </div>
-        <div class="modal-body">
           <div class="form-check mb-4">
             <input
               class="form-check-input"
@@ -84,18 +72,20 @@
               أوافق على <a href="#">الشروط والأحكام</a> لمنصة HalaX
             </label>
           </div>
-        </div>
-      </div>
-      <div class="modal-footer">
+      
+      <div class="d-grid gap-2">
         <button
           type="button"
           class="btn btn-lg btn-primary"
           data-bs-toggle="modal"
-          data-bs-target="#signindone-modal"
+          data-bs-dismiss="modal"
+          data-bs-target="#signup-done-modal"
         >
           تسجيل
         </button>
       </div>
+    </div>
+      </form>
     </div>
   </div>
 </div>

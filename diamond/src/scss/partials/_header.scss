@@ -33,15 +33,21 @@
         padding-top: 30px;
       }
       .btn {
-        padding: 10px 22px;
-        min-width: 126px;
-        margin: 0 8px;
-        font-size: 15px;
+        padding: 8px 18px;
+        min-width: 90px;
+        margin: 0 4px;
+        font-size: 12px;
+        @include media-breakpoint-up("md", $grid-breakpoints) {
+          padding: 10px 22px;
+          min-width: 126px;
+          margin: 0 8px;
+          font-size: 15px;
+        }
       }
-      .btn-primary{
+      .btn-primary {
         font-weight: 900;
       }
-      .btn-light{
+      .btn-light {
         font-weight: 500;
       }
       .btn-lang {

@@ -1,0 +1,14 @@
+.modal-body {
+  .modal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .image-container {
+      width: 234px;
+      height: 234px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

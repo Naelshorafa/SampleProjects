@@ -69,7 +69,15 @@
     display: flex;
     flex-basis: 40%;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @include media-breakpoint-up("lg", $grid-breakpoints){
+      flex-wrap: nowrap;
+    }
     li {
+      @include media-breakpoint-down("lg", $grid-breakpoints){
+        flex-basis: 50%;
+      }
+      
       a {
         color: #000;
         transition: color 300ms;

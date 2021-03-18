@@ -2,7 +2,10 @@
   position: relative;
   padding-top: 164px;
   padding-bottom: 95px;
-  margin-bottom: 120px;
+  margin-bottom: 45px;
+  @include media-breakpoint-up("md", $grid-breakpoints) {
+    margin-bottom: 120px;
+  }
   background-image: url("../images/hero-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +33,10 @@
   }
   .hero-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    @include media-breakpoint-up("md", $grid-breakpoints) {
+      flex-direction: row;
+    }
   }
   .hero-info {
     flex-grow: 1;
@@ -42,17 +48,32 @@
       font-weight: 900;
       line-height: 1.31;
       small {
-        font-size: 55px;
+        font-size: 24px;
         font-weight: 500;
+        @include media-breakpoint-up("md", $grid-breakpoints) {
+          font-size: 42px;
+        }
+        @include media-breakpoint-up("lg", $grid-breakpoints){
+          font-size: 55px;
+        }
       }
       span {
-        font-size: 75px;
+        font-size: 30px;
         font-weight: 900;
+        @include media-breakpoint-up("md", $grid-breakpoints) {
+          font-size: 38px;
+        }
+        @include media-breakpoint-up("lg", $grid-breakpoints){
+          font-size: 75px;
+        }
       }
       &:last-of-type {
         small {
-          font-size: 65px;
+          font-size: 30px;
           font-weight: 900;
+          @include media-breakpoint-up("lg", $grid-breakpoints) {
+            font-size: 65px;
+          }
         }
       }
       &:first-child {
@@ -77,19 +98,39 @@
 
     .hotline {
       display: flex;
-      width: 646px;
-      max-width: 645px;
-      height: 110px;
+      max-width: 290px;
+      max-height: 110px;
       border-radius: 55px;
       background-color: rgba(0, 0, 0, 0.7);
       backdrop-filter: blur(30px);
-      padding: 24px 42px 20px 40px;
+      padding: 10px 16px;
+      margin-bottom: 20px;
+      @include media-breakpoint-up("md", $grid-breakpoints) {
+        padding: 15px 20px;
+        max-width: 355px;
+      }
+      @include media-breakpoint-up("lg", $grid-breakpoints) {
+        padding: 24px 42px 20px 40px;
+        max-width: 645px;
+      }
       .image-cont {
-        width: 42px;
-        height: 38px;
-        margin-right: 18px;
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
         position: relative;
-        top: 15px;
+        top: 10px;
+        @include media-breakpoint-up("md", $grid-breakpoints) {
+          width: 24px;
+          height: 24px;
+          margin-right: 12px;
+          top: 8px;
+        }
+        @include media-breakpoint-up("lg", $grid-breakpoints) {
+          width: 42px;
+          height: 38px;
+          margin-right: 18px;
+          top: 15px;
+        }
         img {
           width: 100%;
         }
@@ -97,33 +138,63 @@
       .phone-num {
         display: flex;
         flex-direction: column;
-        margin-right: 30px;
+        margin-right: 12px;
+        @include media-breakpoint-up("lg", $grid-breakpoints) {
+          margin-right: 30px;
+        }
         span {
-          font-size: 20px;
+          font-size: 12px;
           font-weight: 300;
+          @include media-breakpoint-up("md", $grid-breakpoints) {
+            font-size: 15px;
+          }
+          @include media-breakpoint-up("lg", $grid-breakpoints) {
+            font-size: 20px;
+          }
         }
         a {
-          font-size: 27px;
+          font-size: 14px;
           font-weight: 600;
           color: #fff;
+          @include media-breakpoint-up("lg", $grid-breakpoints) {
+            font-size: 27px;
+          }
         }
       }
       .img-cont {
-        width: 258px;
-        height: 62px;
-        margin-left: 34px;
+        width: 120px;
+        height: 30px;
+        margin-left: 12px;
+        @include media-breakpoint-up("md", $grid-breakpoints) {
+          width: 150px;
+          height: 40px;
+          margin-left: 34px;
+        }
+        @include media-breakpoint-up("lg", $grid-breakpoints) {
+          width: 258px;
+          height: 62px;
+        }
         img {
           width: 100%;
         }
         &::before {
           content: "";
           display: block;
-          height: 57px;
+          height: 38px;
           width: 0;
-          border: solid 3px #ffffff;
+          border: solid 2px #ffffff;
           position: absolute;
           opacity: 0.35;
-          margin-left: -32px;
+          margin-left: -14px;
+          @include media-breakpoint-up("md", $grid-breakpoints) {
+            height: 45px;
+            margin-left: -23px;
+          }
+          @include media-breakpoint-up("lg", $grid-breakpoints) {
+            height: 57px;
+            border: solid 3px #ffffff;
+            margin-left: -32px;
+          }
         }
       }
     }
@@ -132,20 +203,40 @@
     background-color: #f4f4f4;
     border-radius: 2.5rem;
     padding: 42px 32px;
-    flex-basis: 30%;
+    flex-basis: 48%;
     color: $black;
+    @include media-breakpoint-up("lg", $grid-breakpoints){
+      flex-basis: 40%;
+    }
+    @media(min-width:1680px){
+      flex-basis: 30%;
+    }
     .titles-container {
-      margin-bottom: 32px;
+      @include media-breakpoint-up("md", $grid-breakpoints) {
+        margin-bottom: 32px;
+      }
       .title {
-        font-size: 23px;
+        font-size: 18px;
         font-weight: 900;
         line-height: 1.39;
         margin-bottom: 2px;
+        @include media-breakpoint-up("md", $grid-breakpoints) {
+          font-size: 20px;
+        }
+        @include media-breakpoint-up("lg", $grid-breakpoints){
+          font-size: 23px;
+        }
       }
       .subtitle {
-        font-size: 17px;
+        font-size: 14px;
         font-weight: 300;
         line-height: 1.88;
+        @include media-breakpoint-up("md", $grid-breakpoints) {
+          font-size: 15px;
+        }
+        @include media-breakpoint-up("lg", $grid-breakpoints){
+          font-size: 17px;
+        }
       }
     }
   }
