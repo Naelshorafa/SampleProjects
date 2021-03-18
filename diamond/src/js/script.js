@@ -1,5 +1,5 @@
 AOS.init({
-  disable: 'mobile',
+  disable: "mobile",
 });
 "use strict";
 var $ = require("jquery");
@@ -73,7 +73,7 @@ $(function () {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
       {
