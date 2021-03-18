@@ -22,19 +22,28 @@
     top: 0;
     right: 0;
     z-index: 1;
-    width: 70%;
+    width: 100%;
     height: 100%;
     background-image: linear-gradient(
-      to right,
+      -45deg,
       rgba(0, 0, 0, 0) 0%,
       #000000 100%
     );
-    opacity: 0.6;
+    opacity: 0.8;
+    @include media-breakpoint-up("lg", $grid-breakpoints){
+      width: 70%;
+      opacity: 0.6;
+      background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0) 0%,
+        #000000 100%
+      );
+    }
   }
   .hero-content {
     display: flex;
     flex-direction: column;
-    @include media-breakpoint-up("md", $grid-breakpoints) {
+    @include media-breakpoint-up("lg", $grid-breakpoints) {
       flex-direction: row;
     }
   }
@@ -47,11 +56,20 @@
       font-size: 75px;
       font-weight: 900;
       line-height: 1.31;
+      @include media-breakpoint-up("md", $grid-breakpoints){
+        flex-direction: row;
+        font-size: 35px;
+
+      }
+      @include media-breakpoint-up("xl", $grid-breakpoints){
+        flex-direction: column;
+      }
       small {
         font-size: 24px;
         font-weight: 500;
         @include media-breakpoint-up("md", $grid-breakpoints) {
-          font-size: 42px;
+          font-size: 35px;
+          font-weight: 900;
         }
         @include media-breakpoint-up("lg", $grid-breakpoints){
           font-size: 55px;
@@ -61,7 +79,8 @@
         font-size: 30px;
         font-weight: 900;
         @include media-breakpoint-up("md", $grid-breakpoints) {
-          font-size: 38px;
+          font-size: 35px;
+        margin-left: 10px;
         }
         @include media-breakpoint-up("lg", $grid-breakpoints){
           font-size: 75px;
@@ -98,8 +117,6 @@
 
     .hotline {
       display: flex;
-      max-width: 290px;
-      max-height: 110px;
       border-radius: 55px;
       background-color: rgba(0, 0, 0, 0.7);
       backdrop-filter: blur(30px);
@@ -107,10 +124,9 @@
       margin-bottom: 20px;
       @include media-breakpoint-up("md", $grid-breakpoints) {
         padding: 15px 20px;
-        max-width: 355px;
       }
       @include media-breakpoint-up("lg", $grid-breakpoints) {
-        padding: 24px 42px 20px 40px;
+        padding: 24px 35px 20px 35px;
         max-width: 645px;
       }
       .image-cont {
@@ -120,10 +136,10 @@
         position: relative;
         top: 10px;
         @include media-breakpoint-up("md", $grid-breakpoints) {
-          width: 24px;
-          height: 24px;
+          width: 45px;
+          height: 45px;
           margin-right: 12px;
-          top: 8px;
+          top: 20px;
         }
         @include media-breakpoint-up("lg", $grid-breakpoints) {
           width: 42px;
@@ -138,15 +154,16 @@
       .phone-num {
         display: flex;
         flex-direction: column;
-        margin-right: 12px;
+        margin-left: 10px;
+        flex-wrap: nowrap;
         @include media-breakpoint-up("lg", $grid-breakpoints) {
-          margin-right: 30px;
+          margin-right: 22px;
         }
         span {
           font-size: 12px;
           font-weight: 300;
           @include media-breakpoint-up("md", $grid-breakpoints) {
-            font-size: 15px;
+            font-size: 30px;
           }
           @include media-breakpoint-up("lg", $grid-breakpoints) {
             font-size: 20px;
@@ -156,23 +173,24 @@
           font-size: 14px;
           font-weight: 600;
           color: #fff;
+          @include media-breakpoint-up("md", $grid-breakpoints) {
+            font-size: 32px;
+          }
           @include media-breakpoint-up("lg", $grid-breakpoints) {
             font-size: 27px;
           }
         }
       }
       .img-cont {
-        width: 120px;
-        height: 30px;
+        flex-basis: 50%;
         margin-left: 12px;
         @include media-breakpoint-up("md", $grid-breakpoints) {
-          width: 150px;
-          height: 40px;
-          margin-left: 34px;
+          margin-left: 50px;
         }
         @include media-breakpoint-up("lg", $grid-breakpoints) {
           width: 258px;
           height: 62px;
+          margin-left: 34px;
         }
         img {
           width: 100%;
@@ -185,14 +203,14 @@
           border: solid 2px #ffffff;
           position: absolute;
           opacity: 0.35;
-          margin-left: -14px;
+          margin-left: -8px;
           @include media-breakpoint-up("md", $grid-breakpoints) {
-            height: 45px;
+            height: 84px;
             margin-left: -23px;
+            border: solid 3px #ffffff;
           }
           @include media-breakpoint-up("lg", $grid-breakpoints) {
             height: 57px;
-            border: solid 3px #ffffff;
             margin-left: -32px;
           }
         }
@@ -221,7 +239,7 @@
         line-height: 1.39;
         margin-bottom: 2px;
         @include media-breakpoint-up("md", $grid-breakpoints) {
-          font-size: 20px;
+          font-size: 35px;
         }
         @include media-breakpoint-up("lg", $grid-breakpoints){
           font-size: 23px;
@@ -232,7 +250,7 @@
         font-weight: 300;
         line-height: 1.88;
         @include media-breakpoint-up("md", $grid-breakpoints) {
-          font-size: 15px;
+          font-size: 26px;
         }
         @include media-breakpoint-up("lg", $grid-breakpoints){
           font-size: 17px;

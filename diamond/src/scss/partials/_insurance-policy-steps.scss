@@ -23,7 +23,6 @@
     border-radius: 25px;
     background-image: linear-gradient(to bottom, #ffffff 32%, #f4f4f4);
     padding: 22px 24px;
-    margin-bottom: 24px;
     height: 100%;
     @include media-breakpoint-up("md", $grid-breakpoints){
       padding: 48px 24px;
