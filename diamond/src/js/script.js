@@ -1,8 +1,5 @@
 AOS.init({
-  disable: function() {
-    var maxWidth = 1190;
-    return window.innerWidth < maxWidth;
-  }
+  disable: 'mobile',
 });
 "use strict";
 var $ = require("jquery");
