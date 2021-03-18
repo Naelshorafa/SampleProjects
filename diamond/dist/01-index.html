@@ -13,18 +13,15 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     />
-        <!--Icon CSS-->
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
+    <!--AOS CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div id="index-page">
 <!-- start header.html-->
-<header class="header">
+<header class="header" data-aos="fade-down">
   <div class="container">
     <div class="header-logo">
         <div class="img-container">
@@ -46,7 +43,7 @@
 <section class="hero">
   <div class="container">
     <div class="hero-content">
-      <div class="hero-info">
+      <div class="hero-info" data-aos="fade-left">
         <p class="slogan">
           <small>تخلص من</small>
           <span>إلتباس التأمين،</span>
@@ -69,7 +66,7 @@
         </div>
       </div>
 
-      <div class="inquiry-form">
+      <div class="inquiry-form" data-aos="fade-up">
         <header class="titles-container">
           <h3 class="title">ماذا تنتظر .. إبدأ خطوتك الأولى</h3>
           <p class="subtitle">للتأمين على المركبات ضد الغير / شامل</p>
@@ -174,7 +171,7 @@
 
 <!-- end hero.html-->
 <!-- start success-partners.html-->
-<section class="success-partners">
+<section class="success-partners" data-aos="fade-left">
   <div class="container">
     <h1>شركاء النجاح</h1>
     <div class="slider-container">
@@ -238,8 +235,8 @@
 <!-- start insurance-policy-steps.html-->
 <section class="insurance-policy-steps">
   <div class="container">
-    <h2 class="heading">احصل على وثيقة التأمين ب 4 خطوات فقط</h2>
-    <div class="row">
+    <h2 class="heading" data-aos="fade-up">احصل على وثيقة التأمين ب 4 خطوات فقط</h2>
+    <div class="row" data-aos="fade-up">
       <div class="col-sm-12 col-md-6 col-lg-3">
         <div class="content">
           <div class="icon-container">
@@ -298,7 +295,7 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-section">
-      <div class="social-media">
+      <div class="social-media" data-aos="fade-left">
         <p>تابعنا عبر الشبكات الإجتماعية</p>
         <ul class="icons">
           <li>
@@ -315,7 +312,7 @@
           </li>
         </ul>
       </div>
-      <ul class="footer-menu">
+      <ul class="footer-menu" data-aos="fade-up">
         <li><a href="#">شروط البيع</a></li>
         <li><a href="#">حقوق المستهلك</a></li>
         <li><a href="#">شروط الاستخدام</a></li>
@@ -575,6 +572,8 @@
 <!-- end signup-done-modal.html-->
 <!-- end all.html-->
 
+    <!--AOS Script-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--Script-->
     <script src="js/script.js"></script>
   </body>

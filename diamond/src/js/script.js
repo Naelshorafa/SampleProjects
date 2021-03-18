@@ -1,3 +1,9 @@
+AOS.init({
+  disable: function() {
+    var maxWidth = 1190;
+    return window.innerWidth < maxWidth;
+  }
+});
 "use strict";
 var $ = require("jquery");
 require("../../node_modules/bootstrap/dist/js/bootstrap.bundle");

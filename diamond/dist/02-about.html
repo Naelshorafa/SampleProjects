@@ -13,18 +13,15 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     />
-        <!--Icon CSS-->
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
+    <!--AOS CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div id="<!-- @@var page_id -->">
 <!-- start header.html-->
-<header class="header">
+<header class="header" data-aos="fade-down">
   <div class="container">
     <div class="header-logo">
         <div class="img-container">
@@ -50,7 +47,7 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-section">
-      <div class="social-media">
+      <div class="social-media" data-aos="fade-left">
         <p>تابعنا عبر الشبكات الإجتماعية</p>
         <ul class="icons">
           <li>
@@ -67,7 +64,7 @@
           </li>
         </ul>
       </div>
-      <ul class="footer-menu">
+      <ul class="footer-menu" data-aos="fade-up">
         <li><a href="#">شروط البيع</a></li>
         <li><a href="#">حقوق المستهلك</a></li>
         <li><a href="#">شروط الاستخدام</a></li>
@@ -327,6 +324,8 @@
 <!-- end signup-done-modal.html-->
 <!-- end all.html-->
 
+    <!--AOS Script-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--Script-->
     <script src="js/script.js"></script>
   </body>
