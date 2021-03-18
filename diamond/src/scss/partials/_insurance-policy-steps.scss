@@ -2,7 +2,7 @@
   text-align: center;
   margin-bottom: 40px;
   @include media-breakpoint-up("md", $grid-breakpoints){
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
   .heading {
     font-size: 22px;

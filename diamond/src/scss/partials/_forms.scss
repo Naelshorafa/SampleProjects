@@ -9,12 +9,13 @@
   padding: 5px;
   border-radius: 13px;
   background-color: #ffffff;
-  justify-content: space-around;
+  justify-content: stretch;
   @include media-breakpoint-up("lg", $grid-breakpoints){
     justify-content: space-between;
   }
   .form-radio-inline {
     position: relative;
+    flex-grow: 1;
     input {
       position: absolute;
       top: 0;
@@ -28,6 +29,8 @@
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
           background-color: $secondary;
           color: #fff;
+          width: 100%;
+          text-align: center;
         }
       }
     }
