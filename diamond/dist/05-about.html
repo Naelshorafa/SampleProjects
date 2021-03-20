@@ -19,18 +19,31 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div id="other-page">
+    <div id="about-page">
 <!-- start header.html-->
 <header class="header" data-aos="fade-down">
   <div class="container">
     <div class="header-logo">
+      <a href="./01-index.html">
         <div class="img-container">
-      <img src="images/full-color-logo.svg" />
-    </div>
+          <img src="images/full-color-logo.svg" />
+        </div>
+      </a>
     </div>
     <div class="header-btns">
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signin-modal">تسجيل الدخول</button>
-      <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#malath-modal">الأسئلة الشائعة</a>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#signin-modal"
+      >
+        تسجيل الدخول
+      </button>
+      <a
+        href="#"
+        class="btn btn-light"
+        >الأسئلة الشائعة</a
+      >
       <a href="#" class="btn btn-light btn-lang">En</a>
     </div>
   </div>
@@ -39,20 +52,74 @@
 <!-- end header.html-->
 
 <!-- start page_content -->
-<!-- start other-details.html-->
-<section class="other-details">
-    <header class="header">
-        <button
-        type="button"
-        class="btn btn-link"
-        aria-label="Close"
-      >
-        <span aria-hidden="true">&#x2715;</span>
-      </button><h3>تفاصيل اخرى</h3>
-    </header>
-
+<!-- start hero-about.html-->
+<section class="hero-about">
+  <div class="container">
+    <h2 class="how-us mb-5">من نحن؟</h2>
+    <div class="about-us">
+      <div class="hero-about-info">
+        <h3 class="mb-3">شركة تكافل الراجحي للتأمين</h3>
+        <div class="hero-info-data mb-5">
+          <p>
+            نؤمن بمبدأنا وهو مساعدة الناس ليتمتعوا بصحة أفضل ويحافظوا عليها مدى
+            الحياة. ونعمل كل يوم لنحافظ على صدارتنا كشركة عالمية رائدة في مجال
+            الرعاية الصحية.
+          </p>
+          <p>
+            . هل تريد أن تعرف المزيد عن قصتنا؟ هنا يمكنك أن تستكشف كل شيء عن:
+            تاريخنا، قيمنا، دوافعنا، إلتزامنا تجاه مجتمعنا، علاقاتنا بمستثمرينا
+            وأين تجدنا.
+          </p>
+        </div>
+        <h3 class="why-us mb-3">لماذا نحن؟</h3>
+        <div class="why-us-data">
+          <p>
+            إن شبكة بوبا العالمية وانتشارها الواسع ساهمت في تمكين بوبا العربية
+            من الاطلاع بشكلٍ متواصل على أفضل الممارسات الطبية استناداً إلى
+            المعاييرالعالمية وتطبيقها في السعودية.
+          </p>
+          <p>
+            إن شبكة بوبا العالمية وانتشارها الواسع ساهمت في تمكين بوبا العربية
+            من الاطلاع بشكلٍ متواصل على أفضل إن شبكة بوبا العالمية وانتشارها
+            الواسع ساهمت في تمكين بوبا العربية من الاطلاع بشكلٍ متواصل على أفضل
+            الممارسات الطبية استناداً إلى المعاييرالعالمية وتطبيقها في السعودية.
+          </p>
+        </div>
+      </div>
+      <div class="hero-about-image">
+        <div class="image-container">
+          <img src="images/bmw-image.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- end other-details.html-->
+
+<!-- end hero-about.html-->
+<!-- start our-job-about.html-->
+<section class="our-job-about">
+  <div class="container">
+    <div class="our-job">
+      <h3 class="our-job mb-5">مهمتنا</h3>
+      <p>
+        لأننا نهتم بأدق التفاصيل الخاصة بكم، قررنا طرح مدونة بوبا العربية؛ لنضمن
+        لكم<br> الحصول على أفضل المعلومات الصحية من مصادر موثوقة.
+      </p>
+    </div>
+    <div class="our-look">
+      <h3 class="our-job mb-5">رؤيتنا</h3>
+      <p>
+        سعياً منا في تقديم أفضل خدمات الرعاية الصحية التي لها تأثير إيجابي في
+        حياة<br> أعضائنا، قمنا بإنشاء برنامج طبتم الذي يوفر مجموعة من الخدمات
+        المتميزة وغير<br> المسبوقة لإحاطة أعضائنا وعائلاتهم بالرعاية الصحية
+        المتكاملة من قبل أطبائنا عبر<br> تقديم إجابات سريعة وفورية على أسئلتهم
+        واستفساراتهم الطبية.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- end our-job-about.html-->
 
 
 <!-- end page_content -->
@@ -334,53 +401,6 @@
 </div>
 
 <!-- end signup-done-modal.html-->
-<!-- start malath-modal.html-->
-<div class="modal fade" id="malath-modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="h2 modal-title"><strong>معلومات شركة التأمين</strong></h3>
-        <button
-          type="button"
-          class="btn btn-link"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        >
-          <span aria-hidden="true">&#x2715;</span>
-          <span>إغلاق</span>
-        </button>
-      </div>
-
-      <div class="modal-body">
-        <div class="image-container mb-2">
-            <img src="images/malaz-logo.png" />
-        </div>
-        <h3 class="tittle mb-4">شركة ملاذ للتأمين التعاوني</h3>
-        <div class="malath-info mb-4">
-          <div class="malath-info-tittle">
-            <h5>الموقع الالكتروني</h5>
-            <h5>البريد الالكتروني</h5>
-            <h5>رقم الهاتف</h5>
-            <h5>رقم الفاكس</h5>
-          </div>
-          <div class="malath-info-data">
-            <p>malath.com.sa</p>
-            <p>customercare@malath.com.sa</p>
-            <p>920015815</p>
-            <p>114186333</p>
-          </div>
-        </div>
-        <div class="malath-Services mb-5">
-            <h5>خدمات الشركة</h5>
-            <p>الحساب الرسمي لشركة #ملاذ_للتأمين | مركز خدمة العملاء 8001280088 - خاضعة لإشراف ورقابة البنك المركزي السعودي
-            </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- end malath-modal.html-->
 <!-- end all.html-->
 
     <!--AOS Script-->

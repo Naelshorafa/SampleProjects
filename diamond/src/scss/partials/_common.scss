@@ -12,3 +12,17 @@ a {
   text-decoration: none;
   transition: all 300ms;
 }
+
+.btn-secondary{
+  &, &:hover{
+    color: $white;
+  }
+}
+
+.btn-arrow{
+  &:after{
+    content: "\232A";
+    font-weight: 900;
+    float: right;
+  }
+}

@@ -1,5 +1,5 @@
-<div class="modal fade" id="new-driver-modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-lg" role="document">
+<div class="modal fade" id="extra-driver-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-aside modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button
@@ -161,6 +161,10 @@
               type="checkbox"
               value=""
               id="driver-health"
+              data-bs-toggle="collapse"
+              data-bs-target="#health-details-collapsable"
+              aria-expanded="false"
+              aria-controls="health-details-collapsable"
             />
             <label class="form-check-label" for="driver-health">
               لدى السائق ظروف صحية أو قيود على الرخصة
@@ -169,80 +173,84 @@
               اختر الظروف الصحية أو القيود كما في رخصة القيادة
             </div>
           </div>
-          <fieldset class="form-control mb-5">
-            <div class="row">
-              <div class="col-sm-12 col-md-6">
-                <div class="form-check mb-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="auto-car"
-                  />
-                  <label class="form-check-label" for="auto-car">
-                    سيارة اوتوماتيك (1)
-                  </label>
+          <div class="collapse" id="health-details-collapsable">
+            <div class="mb-5 ps-4">
+              <fieldset>
+                <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                    <div class="form-check mb-2">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="auto-car"
+                      />
+                      <label class="form-check-label" for="auto-car">
+                        سيارة اوتوماتيك (1)
+                      </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="day-hour"
+                      />
+                      <label class="form-check-label" for="day-hour">
+                        لساعات النهار فقط (4)
+                      </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="Lenses"
+                      />
+                      <label class="form-check-label" for="Lenses">
+                        عدسات مقوية للنظر (3)
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <div class="form-check mb-2">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="prostheses"
+                      />
+                      <label class="form-check-label" for="prostheses">
+                        طرف صناعي (2)
+                      </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="earphone"
+                      />
+                      <label class="form-check-label" for="earphone">
+                        سماعة الأذن (5)
+                      </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="handicapped"
+                      />
+                      <label class="form-check-label" for="handicapped">
+                        سيارة خاصة للمعوقين (6)
+                      </label>
+                    </div>
+                  </div>
                 </div>
-                <div class="form-check mb-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="day-hour"
-                  />
-                  <label class="form-check-label" for="day-hour">
-                    لساعات النهار فقط (4)
-                  </label>
-                </div>
-                <div class="form-check mb-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="Lenses"
-                  />
-                  <label class="form-check-label" for="Lenses">
-                    عدسات مقوية للنظر (3)
-                  </label>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-6">
-                <div class="form-check mb-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="prostheses"
-                  />
-                  <label class="form-check-label" for="prostheses">
-                    طرف صناعي (2)
-                  </label>
-                </div>
-                <div class="form-check mb-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="earphone"
-                  />
-                  <label class="form-check-label" for="earphone">
-                    سماعة الأذن (5)
-                  </label>
-                </div>
-                <div class="form-check mb-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="handicapped"
-                  />
-                  <label class="form-check-label" for="handicapped">
-                    سيارة خاصة للمعوقين (6)
-                  </label>
-                </div>
-              </div>
+              </fieldset>
             </div>
-          </fieldset>
+          </div>
           <div class="form-check mb-2">
             <input
               class="form-check-input"
@@ -331,7 +339,7 @@
             </label>
           </div>
           <div class="row mb-3">
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-6">
               <div class="form-floating">
                 <select
                   class="form-select form-control form-control-lg"
@@ -341,9 +349,7 @@
                   <option>بريطانيا</option>
                   <option>المانيا</option>
                 </select>
-                <label for="choose-city" class="form-label"
-                  >أختر الدولة</label
-                >
+                <label for="choose-city" class="form-label">أختر الدولة</label>
               </div>
             </div>
             <div class="col-sm-12 col-md-6">
@@ -360,11 +366,6 @@
                   >اختر عدد السنوات</label
                 >
               </div>
-            </div>
-            <div class="col-sm-12 col-md-2">
-              <button type="submit" class="btn btn-lg btn-primary">
-                إضافة
-              </button>
             </div>
           </div>
         </form>

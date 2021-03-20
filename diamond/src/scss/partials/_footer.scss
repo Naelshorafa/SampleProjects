@@ -34,12 +34,12 @@
     }
   }
   .social-media {
-    flex-basis: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
     @media (min-width: 768px) {
       flex-direction: row;
+      flex-basis: 50%;
     }
     .icons {
       display: flex;
@@ -68,13 +68,13 @@
   }
   .footer-menu {
     display: flex;
-    flex-basis: 40%;
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
     padding: 0;
     @include media-breakpoint-up("xl", $grid-breakpoints){
       flex-wrap: nowrap;
+      flex-basis: 40%;
     }
     li {
       @include media-breakpoint-down("xl", $grid-breakpoints){

@@ -3,7 +3,10 @@
     background-color: #f6f5f8;
   }
   fieldset{
-    padding: 20px;
+    padding: 16px;
+    background-color: #f6f5f8;
+    border: solid 1px #e0e0e0;
+    border-radius: $border-radius-lg;
   }
 }
 
@@ -34,12 +37,12 @@
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
           background-color: $secondary;
           color: #fff;
-          width: 100%;
           text-align: center;
         }
       }
     }
     .form-check-label {
+      width: 100%;
       padding: 12px 18px;
       border-radius: 13px;
       white-space: nowrap;
