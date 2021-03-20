@@ -1,4 +1,12 @@
 .header {
+  #about-page & {
+    background-image: linear-gradient(to bottom, #f3f3f3, rgba(255, 255, 255, 0));
+    margin-bottom: 110px;
+  }
+  #process-page & {
+    background-image: linear-gradient(to bottom, #f3f3f3, rgba(255, 255, 255, 0));
+    margin-bottom: 110px;
+  }
   padding-top: 22px;
   @include media-breakpoint-up("md", $grid-breakpoints) {
     padding-top: 52px;
@@ -56,10 +64,16 @@
         padding: 8px;
         font-weight: 500;
         min-width: 44px;
-        color: #fff;
-        border-width: 3px;
+        color: #585858;
+        border: solid 2px #585858;
         backdrop-filter: blur(30px);
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(88, 88, 88, 0.2);
+        #index-page & {
+          background-color: rgba(255, 255, 255, 0.2); 
+          border-width: 3px;
+          color: #fff;
+        }
+        
       }
     }
   }

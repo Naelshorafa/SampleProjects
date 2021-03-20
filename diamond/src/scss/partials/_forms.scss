@@ -2,6 +2,9 @@
   .form-control {
     background-color: #f6f5f8;
   }
+  fieldset{
+    padding: 20px;
+  }
 }
 
 .form-radio-inline-group {
@@ -10,13 +13,14 @@
   border-radius: 13px;
   background-color: #ffffff;
   justify-content: stretch;
-  @include media-breakpoint-up("lg", $grid-breakpoints){
+  @include media-breakpoint-up("lg", $grid-breakpoints) {
     justify-content: space-between;
   }
   .form-radio-inline {
     position: relative;
-    text-align:center;
+    text-align: center;
     flex-grow: 1;
+    border-radius: 18px;
     input {
       position: absolute;
       top: 0;
@@ -51,9 +55,9 @@
   font-weight: 700;
 }
 
-.from-control-datepicker{
-    background-image: url('../images/icon-calender.svg');   
-    background-size: 24px auto;
-    background-position: 18px center;
-    background-repeat: no-repeat;
+.from-control-datepicker {
+  background-image: url("../images/icon-calender.svg");
+  background-size: 24px auto;
+  background-position: 18px center;
+  background-repeat: no-repeat;
 }

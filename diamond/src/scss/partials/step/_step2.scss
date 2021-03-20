@@ -1,0 +1,26 @@
+.step2{
+  fieldset{
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 20px;
+    h3{
+      font-size: 25px;
+      font-weight: 900;
+      margin-bottom: 35px;
+    }
+    .content{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      h5{
+        font-size: 17px;
+        font-weight: 900
+      }
+      p{
+        font-size: 17px;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

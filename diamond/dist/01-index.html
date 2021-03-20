@@ -30,7 +30,7 @@
     </div>
     <div class="header-btns">
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signin-modal">تسجيل الدخول</button>
-      <a href="#" class="btn btn-light">الأسئلة الشائعة</a>
+      <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#other-daitals-modal">الأسئلة الشائعة</a>
       <a href="#" class="btn btn-light btn-lang">En</a>
     </div>
   </div>
@@ -415,7 +415,6 @@
         <span>إغلاق</span>
       </button>
       </div>
-
       <div class="modal-body">
         <form class="form-dark">
           <div class="form-floating mb-2">
@@ -474,8 +473,7 @@
               أوافق على <a href="#">الشروط والأحكام</a> لمنصة HalaX
             </label>
           </div>
-      
-      <div class="d-grid gap-2">
+                <div class="d-grid gap-2">
         <button
           type="button"
           class="btn btn-lg btn-primary"
@@ -570,6 +568,674 @@
 </div>
 
 <!-- end signup-done-modal.html-->
+<!-- start malath-modal.html-->
+<div class="modal fade" id="malath-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="h2 modal-title"><strong>معلومات شركة التأمين</strong></h3>
+        <button
+          type="button"
+          class="btn btn-link"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&#x2715;</span>
+          <span>إغلاق</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="image-container mb-2">
+            <img src="images/malaz-logo.png" />
+        </div>
+        <h3 class="tittle mb-4">شركة ملاذ للتأمين التعاوني</h3>
+        <div class="malath-info mb-4">
+          <div class="malath-info-tittle">
+            <h5>الموقع الالكتروني</h5>
+            <h5>البريد الالكتروني</h5>
+            <h5>رقم الهاتف</h5>
+            <h5>رقم الفاكس</h5>
+          </div>
+          <div class="malath-info-data">
+            <p>malath.com.sa</p>
+            <p>customercare@malath.com.sa</p>
+            <p>920015815</p>
+            <p>114186333</p>
+          </div>
+        </div>
+        <div class="malath-Services mb-5">
+            <h5>خدمات الشركة</h5>
+            <p>الحساب الرسمي لشركة #ملاذ_للتأمين | مركز خدمة العملاء 8001280088 - خاضعة لإشراف ورقابة البنك المركزي السعودي
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end malath-modal.html-->
+<!-- start other-daitals-modal.html-->
+<div class="modal fade" id="other-daitals-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="btn btn-link"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&#x2715;</span>
+          <span>تفاصيل اخرى</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form-dark">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="form-floating mb-2">
+                <select
+                  class="form-select form-control form-control-lg"
+                  id="education"
+                >
+                  <option>اختر مستوى التعليم</option>
+                  <option>جامعي</option>
+                  <option>ثانوي</option>
+                </select>
+                <label for="education" class="form-label">مستوى التعليم</label>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="form-floating mb-2">
+                <select
+                  class="form-select form-control form-control-lg"
+                  id="children-num"
+                >
+                  <option>اختر عدد الأطفال</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <label for="children-num" class="form-label"
+                  >عدد الأطفال دون عمر ال 16</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 form-control">
+            <div class="row">
+              <div class="col-md-5">
+                <label class="form-radio-inline-group-label"
+                  >نوع ناقل الحركة</label
+                >
+              </div>
+              <div class="col-md-7">
+                <div class="form-radio-inline-group">
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="transmission-type"
+                      id="transmission-type1"
+                      value="1"
+                      checked
+                    />
+                    <label class="form-check-label" for="transmission-type1"
+                      >اوتوماتيكي</label
+                    >
+                  </div>
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="transmission-type"
+                      id="transmission-type2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="transmission-type2"
+                      >يدوي</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 form-control">
+            <div class="row">
+              <div class="col-md-7">
+                <label class="form-radio-inline-group-label"
+                  >هل المدينة هي نفس مدينة العنوان الوطني؟</label
+                >
+              </div>
+              <div class="col-md-5">
+                <div class="form-radio-inline-group">
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="same-city"
+                      id="same-city1"
+                      value="1"
+                      checked
+                    />
+                    <label class="form-check-label" for="same-city1">نعم</label>
+                  </div>
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="same-city"
+                      id="same-city2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="same-city2">لا</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 form-control">
+            <div class="row">
+              <div class="col-md-7">
+                <label class="form-radio-inline-group-label"
+                  >هل يوجد تعديلات على المركبة؟</label
+                >
+              </div>
+              <div class="col-md-5">
+                <div class="form-radio-inline-group">
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="car-changed"
+                      id="car-changed1"
+                      value="1"
+                      checked
+                    />
+                    <label class="form-check-label" for="car-changed1"
+                      >نعم</label
+                    >
+                  </div>
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="car-changed"
+                      id="car-changed2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="car-changed2"
+                      >لا</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 form-control">
+            <div class="row">
+              <div class="col-md-7">
+                <label class="form-radio-inline-group-label"
+                  >هل لدى مالك الوثيقة حوادث؟</label
+                >
+              </div>
+              <div class="col-md-5">
+                <div class="form-radio-inline-group">
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="accident-document"
+                      id="accident-document1"
+                      value="1"
+                      checked
+                    />
+                    <label class="form-check-label" for="accident-document1"
+                      >نعم</label
+                    >
+                  </div>
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="accident-document"
+                      id="accident-document2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="accident-document2"
+                      >لا</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-floating mb-2">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="purpose-use"
+              placeholder="الغرض من استخدام المركبة"
+            />
+            <label for="purpose-use" class="form-label"
+              >الغرض من استخدام المركبة</label
+            >
+          </div>
+          <div class="col-sm-12">
+            <div class="form-floating mb-2">
+              <select
+                class="form-select form-control form-control-lg"
+                id="car-stop"
+              >
+                <option>اختر مكان ايقاف المركبة</option>
+                <option>في الشارع</option>
+                <option>في الكراج</option>
+              </select>
+              <label for="car-stop" class="form-label"
+                >مكان ايقاف المركبة في الليل</label
+              >
+            </div>
+          </div>
+          <div class="form-floating mb-2">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="number-kilometers"
+              placeholder="عدد الكيلومترات المتوقع قطعها سنوياً"
+            />
+            <label for="number-kilometers" class="form-label"
+              >عدد الكيلومترات المتوقع قطعها سنوياً</label
+            >
+          </div>
+        </form>
+        <div class="buttons">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <button type="submit" class="btn btn-lg btn-primary">
+                اضافة
+              </button>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <button type="button" class="btn btn-lg btn-dark">إلغاء</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end other-daitals-modal.html-->
+<!-- start new-driver-modal.html-->
+<div class="modal fade" id="new-driver-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="btn btn-link"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&#x2715;</span>
+          <span>إضافة سائق إضافي</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form-dark">
+          <div class="form-floating mb-2">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="idNumber"
+              placeholder="رقم هوية/إقامة السائق"
+            />
+            <label for="idNumber" class="form-label"
+              >رقم هوية/إقامة السائق</label
+            >
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="form-floating mb-2">
+                <select
+                  class="form-select form-control form-control-lg"
+                  id="education-level"
+                >
+                  <option>اختر مستوى التعليم</option>
+                  <option>جامعي</option>
+                  <option>ثانوي</option>
+                </select>
+                <label for="education-level" class="form-label"
+                  >مستوى التعليم</label
+                >
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="form-floating mb-2">
+                <select
+                  class="form-select form-control form-control-lg"
+                  id="children-num"
+                >
+                  <option>اختر عدد الأطفال</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <label for="children-num" class="form-label"
+                  >عدد الأطفال دون عمر ال 16</label
+                >
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="form-floating mb-5">
+                <input
+                  type="text"
+                  class="form-control form-control-lg from-control-datepicker"
+                  id="brithdaydate"
+                  placeholder="تاريخ الميلاد"
+                />
+                <label for="brithdaydate" class="form-label"
+                  >تاريخ الميلاد</label
+                >
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="form-floating mb-2">
+                <select
+                  class="form-select form-control form-control-lg"
+                  id="accident-num"
+                >
+                  <option>اختر عدد الحوادث</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <label for="accident-num" class="form-label">عدد الحوادث</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-check mb-2">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="address"
+            />
+            <label class="form-check-label" for="address">
+              عنوان المنزل غير مطابق لعنوان مالك الوثيقة
+            </label>
+          </div>
+          <div class="form-floating mb-4">
+            <select
+              class="form-select form-control form-control-lg"
+              id="choose-city"
+            >
+              <option>اختر المدينة</option>
+              <option>جده</option>
+              <option>الرياض</option>
+              <option>مكة</option>
+            </select>
+            <label for="choose-city" class="form-label">اختر المدينة</label>
+          </div>
+          <div class="form-check mb-2">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="address-job"
+            />
+            <label class="form-check-label" for="address-job">
+              هل عنوان العمل نفس عنوان مالك الوثيقة
+            </label>
+          </div>
+          <div class="form-floating mb-4">
+            <select
+              class="form-select form-control form-control-lg"
+              id="choose-city"
+            >
+              <option>اختر المدينة</option>
+              <option>جده</option>
+              <option>الرياض</option>
+              <option>مكة</option>
+            </select>
+            <label for="choose-city" class="form-label">اختر المدينة</label>
+          </div>
+          <div class="form-check mb-2">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="kinship-driver"
+            />
+            <label class="form-check-label" for="kinship-driver">
+              هل للسائق صلة قرابة بمالك الوثيقة؟
+            </label>
+          </div>
+          <div class="form-floating mb-4">
+            <select
+              class="form-select form-control form-control-lg"
+              id="kinship-choose"
+            >
+              <option>اختر صلة القرابة</option>
+              <option>ابن عم</option>
+              <option>اخ</option>
+            </select>
+            <label for="kinship-choose" class="form-label"
+              >اختر صلة القرابة</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="driver-health"
+            />
+            <label class="form-check-label" for="driver-health">
+              لدى السائق ظروف صحية أو قيود على الرخصة
+            </label>
+            <div id="healthHelp" class="form-text mb-3">
+              اختر الظروف الصحية أو القيود كما في رخصة القيادة
+            </div>
+          </div>
+          <fieldset class="form-control mb-5">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="auto-car"
+                  />
+                  <label class="form-check-label" for="auto-car">
+                    سيارة اوتوماتيك (1)
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="day-hour"
+                  />
+                  <label class="form-check-label" for="day-hour">
+                    لساعات النهار فقط (4)
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="Lenses"
+                  />
+                  <label class="form-check-label" for="Lenses">
+                    عدسات مقوية للنظر (3)
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="prostheses"
+                  />
+                  <label class="form-check-label" for="prostheses">
+                    طرف صناعي (2)
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="earphone"
+                  />
+                  <label class="form-check-label" for="earphone">
+                    سماعة الأذن (5)
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="handicapped"
+                  />
+                  <label class="form-check-label" for="handicapped">
+                    سيارة خاصة للمعوقين (6)
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-check mb-2">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="traffic-violation"
+            />
+            <label class="form-check-label" for="traffic-violation">
+              هل لدى السائق مخالفات مرورية
+            </label>
+            <div id="violationhelp" class="form-text mb-3">
+              اختر المخالفات المرورية
+            </div>
+          </div>
+          <fieldset class="form-control mb-5">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="speed-limit"
+                  />
+                  <label class="form-check-label" for="speed-limit">
+                    تجاوز السرعة المحددة
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="drift"
+                  />
+                  <label class="form-check-label" for="drift"> التفحيط </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="opposite-drive"
+                  />
+                  <label class="form-check-label" for="opposite-drive">
+                    القيادة عكس الإتجاه
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="
+                  skip-redlight"
+                  />
+                  <label class="form-check-label" for="skip-redlight">
+                    تجاوز الإشارة الحمراء
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="wrong-stop"
+                  />
+                  <label class="form-check-label" for="wrong-stop">
+                    مخالفة الوقوف الخطائ
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-check mb-2">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="other-license"
+            />
+            <label class="form-check-label" for="other-license">
+              هل لدى السائق رخصة قيادة صالحة من دول أخرى؟
+            </label>
+          </div>
+          <div class="row mb-3">
+            <div class="col-sm-12 col-md-4">
+              <div class="form-floating">
+                <select
+                  class="form-select form-control form-control-lg"
+                  id="choose-city"
+                >
+                  <option>اأختر الدولة</option>
+                  <option>بريطانيا</option>
+                  <option>المانيا</option>
+                </select>
+                <label for="choose-city" class="form-label"
+                  >أختر الدولة</label
+                >
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="form-floating">
+                <select
+                  class="form-select form-control form-control-lg"
+                  id="choose-year"
+                >
+                  <option>اختر عدد السنوات</option>
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+                <label for="choose-year" class="form-label"
+                  >اختر عدد السنوات</label
+                >
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-2">
+              <button type="submit" class="btn btn-lg btn-primary">
+                إضافة
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end new-driver-modal.html-->
 <!-- end all.html-->
 
     <!--AOS Script-->

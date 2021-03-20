@@ -1,0 +1,391 @@
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Slick CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css "
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+    <!--AOS CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="other-page">
+<!-- start header.html-->
+<header class="header" data-aos="fade-down">
+  <div class="container">
+    <div class="header-logo">
+        <div class="img-container">
+      <img src="images/full-color-logo.svg" />
+    </div>
+    </div>
+    <div class="header-btns">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signin-modal">تسجيل الدخول</button>
+      <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#malath-modal">الأسئلة الشائعة</a>
+      <a href="#" class="btn btn-light btn-lang">En</a>
+    </div>
+  </div>
+</header>
+
+<!-- end header.html-->
+
+<!-- start page_content -->
+<!-- start other-details.html-->
+<section class="other-details">
+    <header class="header">
+        <button
+        type="button"
+        class="btn btn-link"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&#x2715;</span>
+      </button><h3>تفاصيل اخرى</h3>
+    </header>
+
+</section>
+<!-- end other-details.html-->
+
+
+<!-- end page_content -->
+
+<!-- start footer.html-->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-section">
+      <div class="social-media" data-aos="fade-left">
+        <p>تابعنا عبر الشبكات الإجتماعية</p>
+        <ul class="icons">
+          <li>
+            <a href="#"><img src="images/twitter.svg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/linkedin.svg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/instagram.svg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/facebook.svg" /></a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer-menu" data-aos="fade-up">
+        <li><a href="#">شروط البيع</a></li>
+        <li><a href="#">حقوق المستهلك</a></li>
+        <li><a href="#">شروط الاستخدام</a></li>
+        <li><a href="#">سياسة الخصوصية</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <div class="logo-container">
+        <a href="#">
+          <img src="images/full-color-logo.svg" />
+        </a>
+      </div>
+      <p class="copyright">جميع الحقوق محفوظة لموقع دياموند 2021 ©</p>
+    </div>
+  </div>
+</footer>
+
+<!-- end footer.html-->
+    </div>
+<!-- start all.html-->
+<!-- start signin-modal.html-->
+<div class="modal fade" id="signin-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="h2 modal-title"><strong>تسجيل دخول</strong></h3>
+        <button
+          type="button"
+          class="btn btn-link"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&#x2715;</span>
+          <span>إغلاق</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form-dark">
+          <div class="form-floating mb-2">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="email"
+              placeholder="البريد الإلكتروني"
+            />
+            <label for="email" class="form-label">البريد الإلكتروني</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              class="form-control form-control-lg"
+              id="password"
+              placeholder="كلمة المرور"
+            />
+            <label for="password" class="form-label">كلمة المرور</label>
+          </div>
+          <div class="mb-4">
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              data-bs-target="#forgot-password-modal"
+              data-bs-toggle="modal"
+              class="btn btn-link"
+            >
+              هل نسيت كلمة المرور؟
+            </button>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-lg btn-primary">دخول</button>
+            <button
+              type="button"
+              class="btn btn-lg btn-secondary"
+              data-bs-dismiss="modal"
+              data-bs-toggle="modal"
+              data-bs-target="#signup-modal"
+            >
+              ليس لديك حساب؟ سجل هنا
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end signin-modal.html-->
+<!-- start signup-modal.html-->
+<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="h2 modal-title"><strong>تسجيل مستخدم جديد</strong></h3>
+        <button
+          type="button"
+          class="btn btn-link"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+        <span aria-hidden="true">&#x2715;</span>
+        <span>إغلاق</span>
+      </button>
+      </div>
+      <div class="modal-body">
+        <form class="form-dark">
+          <div class="form-floating mb-2">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="name"
+              placeholder="الاسم كامل"
+            />
+            <label for="name" class="form-label">الاسم كامل</label>
+          </div>
+          <div class="form-floating mb-2">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="email"
+              placeholder="البريد الإلكتروني"
+            />
+            <label for="email" class="form-label">البريد الإلكتروني</label>
+          </div>
+          <div class="form-floating mb-2">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="idNumber"
+              placeholder="رقم الجوال"
+            />
+            <label for="idNumber" class="form-label">رقم الجوال</label>
+          </div>
+          <div class="form-floating mb-2">
+            <input
+              type="password"
+              class="form-control form-control-lg"
+              id="password"
+              placeholder="كلمة المرور"
+            />
+            <label for="password" class="form-label">كلمة المرور</label>
+          </div>
+          <div class="form-floating mb-5">
+            <input
+              type="password"
+              class="form-control form-control-lg"
+              id="confirm-password"
+              placeholder="تأكيد كلمة المرور"
+            />
+            <label for="confirm-password" class="form-label">تأكيد كلمة المرور</label>
+          </div>
+          <div class="form-check mb-4">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="acceptTerms"
+            />
+            <label class="form-check-label" for="acceptTerms">
+              أوافق على <a href="#">الشروط والأحكام</a> لمنصة HalaX
+            </label>
+          </div>
+                <div class="d-grid gap-2">
+        <button
+          type="button"
+          class="btn btn-lg btn-primary"
+          data-bs-toggle="modal"
+          data-bs-dismiss="modal"
+          data-bs-target="#signup-done-modal"
+        >
+          تسجيل
+        </button>
+      </div>
+    </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- end signup-modal.html-->
+<!-- start forgot-password-modal.html-->
+<div class="modal fade" id="forgot-password-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="h2 modal-title"><strong>استعادة كلمة المرور</strong></h3>
+        <button
+          type="button"
+          class="btn btn-link"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&#x2715;</span>
+          <span>إغلاق</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p><strong>يرجى ادخال البريد اللاكتروني</strong></p>
+        <form class="form-dark">
+          <div class="form-floating mb-4">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="email"
+              placeholder="البريد الإلكتروني"
+            />
+            <label for="email" class="form-label">البريد الإلكتروني</label>
+          </div>
+          <div class="d-grid gap-2">
+            <button
+              type="button"
+              class="btn btn-lg btn-primary"
+              data-bs-dismiss="modal"
+              data-bs-toggle="modal"
+            >
+              ارسال
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end forgot-password-modal.html-->
+<!-- start signup-done-modal.html-->
+<div class="modal fade" id="signup-done-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p> </p>
+        <button
+          type="button"
+          class="btn btn-link"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&#x2715;</span>
+          <span>إغلاق</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-container">
+          <div class="image-container mb-4">
+            <img src="images/signin-done.svg" />
+          </div>
+          <h3 class="h2 modal-title mb-5">
+            <strong>تم انشاء <br />الحساب بنجاح</strong>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end signup-done-modal.html-->
+<!-- start malath-modal.html-->
+<div class="modal fade" id="malath-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="h2 modal-title"><strong>معلومات شركة التأمين</strong></h3>
+        <button
+          type="button"
+          class="btn btn-link"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&#x2715;</span>
+          <span>إغلاق</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="image-container mb-2">
+            <img src="images/malaz-logo.png" />
+        </div>
+        <h3 class="tittle mb-4">شركة ملاذ للتأمين التعاوني</h3>
+        <div class="malath-info mb-4">
+          <div class="malath-info-tittle">
+            <h5>الموقع الالكتروني</h5>
+            <h5>البريد الالكتروني</h5>
+            <h5>رقم الهاتف</h5>
+            <h5>رقم الفاكس</h5>
+          </div>
+          <div class="malath-info-data">
+            <p>malath.com.sa</p>
+            <p>customercare@malath.com.sa</p>
+            <p>920015815</p>
+            <p>114186333</p>
+          </div>
+        </div>
+        <div class="malath-Services mb-5">
+            <h5>خدمات الشركة</h5>
+            <p>الحساب الرسمي لشركة #ملاذ_للتأمين | مركز خدمة العملاء 8001280088 - خاضعة لإشراف ورقابة البنك المركزي السعودي
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end malath-modal.html-->
+<!-- end all.html-->
+
+    <!--AOS Script-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Script-->
+    <script src="js/script.js"></script>
+  </body>
+</html>

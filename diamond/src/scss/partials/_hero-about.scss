@@ -1,0 +1,32 @@
+.hero-about {
+    margin-bottom: 90px;
+    h2{
+        font-size: 30px;
+        font-weight: 900;
+    }
+  .about-us {
+    display: flex;
+    flex-direction: row;
+    h3{
+        font-size: 23px;
+        font-weight: 900;
+        line-height: 2;
+    }
+    p{
+        font-size: 17px;
+        font-weight: 900;
+    }
+    .hero-about-info {
+      flex-basis: 50%;
+    }
+    .hero-about-image{
+        flex-basis: 50%;
+        .image-container{
+            border-radius: 53px;
+            img{
+              width: 100%;
+            }
+        }
+    }
+  }
+}

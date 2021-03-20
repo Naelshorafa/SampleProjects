@@ -1,0 +1,241 @@
+<div class="modal fade" id="other-daitals-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="btn btn-link"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&#x2715;</span>
+          <span>تفاصيل اخرى</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form-dark">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="form-floating mb-2">
+                <select
+                  class="form-select form-control form-control-lg"
+                  id="education"
+                >
+                  <option>اختر مستوى التعليم</option>
+                  <option>جامعي</option>
+                  <option>ثانوي</option>
+                </select>
+                <label for="education" class="form-label">مستوى التعليم</label>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="form-floating mb-2">
+                <select
+                  class="form-select form-control form-control-lg"
+                  id="children-num"
+                >
+                  <option>اختر عدد الأطفال</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <label for="children-num" class="form-label"
+                  >عدد الأطفال دون عمر ال 16</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 form-control">
+            <div class="row">
+              <div class="col-md-5">
+                <label class="form-radio-inline-group-label"
+                  >نوع ناقل الحركة</label
+                >
+              </div>
+              <div class="col-md-7">
+                <div class="form-radio-inline-group">
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="transmission-type"
+                      id="transmission-type1"
+                      value="1"
+                      checked
+                    />
+                    <label class="form-check-label" for="transmission-type1"
+                      >اوتوماتيكي</label
+                    >
+                  </div>
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="transmission-type"
+                      id="transmission-type2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="transmission-type2"
+                      >يدوي</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 form-control">
+            <div class="row">
+              <div class="col-md-7">
+                <label class="form-radio-inline-group-label"
+                  >هل المدينة هي نفس مدينة العنوان الوطني؟</label
+                >
+              </div>
+              <div class="col-md-5">
+                <div class="form-radio-inline-group">
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="same-city"
+                      id="same-city1"
+                      value="1"
+                      checked
+                    />
+                    <label class="form-check-label" for="same-city1">نعم</label>
+                  </div>
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="same-city"
+                      id="same-city2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="same-city2">لا</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 form-control">
+            <div class="row">
+              <div class="col-md-7">
+                <label class="form-radio-inline-group-label"
+                  >هل يوجد تعديلات على المركبة؟</label
+                >
+              </div>
+              <div class="col-md-5">
+                <div class="form-radio-inline-group">
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="car-changed"
+                      id="car-changed1"
+                      value="1"
+                      checked
+                    />
+                    <label class="form-check-label" for="car-changed1"
+                      >نعم</label
+                    >
+                  </div>
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="car-changed"
+                      id="car-changed2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="car-changed2"
+                      >لا</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 form-control">
+            <div class="row">
+              <div class="col-md-7">
+                <label class="form-radio-inline-group-label"
+                  >هل لدى مالك الوثيقة حوادث؟</label
+                >
+              </div>
+              <div class="col-md-5">
+                <div class="form-radio-inline-group">
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="accident-document"
+                      id="accident-document1"
+                      value="1"
+                      checked
+                    />
+                    <label class="form-check-label" for="accident-document1"
+                      >نعم</label
+                    >
+                  </div>
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="accident-document"
+                      id="accident-document2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="accident-document2"
+                      >لا</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-floating mb-2">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="purpose-use"
+              placeholder="الغرض من استخدام المركبة"
+            />
+            <label for="purpose-use" class="form-label"
+              >الغرض من استخدام المركبة</label
+            >
+          </div>
+          <div class="col-sm-12">
+            <div class="form-floating mb-2">
+              <select
+                class="form-select form-control form-control-lg"
+                id="car-stop"
+              >
+                <option>اختر مكان ايقاف المركبة</option>
+                <option>في الشارع</option>
+                <option>في الكراج</option>
+              </select>
+              <label for="car-stop" class="form-label"
+                >مكان ايقاف المركبة في الليل</label
+              >
+            </div>
+          </div>
+          <div class="form-floating mb-2">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="number-kilometers"
+              placeholder="عدد الكيلومترات المتوقع قطعها سنوياً"
+            />
+            <label for="number-kilometers" class="form-label"
+              >عدد الكيلومترات المتوقع قطعها سنوياً</label
+            >
+          </div>
+        </form>
+        <div class="buttons">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <button type="submit" class="btn btn-lg btn-primary">
+                اضافة
+              </button>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <button type="button" class="btn btn-lg btn-dark">إلغاء</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
