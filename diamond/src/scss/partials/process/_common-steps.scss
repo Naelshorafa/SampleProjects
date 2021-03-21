@@ -1,7 +1,66 @@
-.prcoess-steps-progress{
-
+.prcoess-steps-progress-container {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  .prcoess-steps-progress {
+    position: relative;
+    z-index: 1;
+    counter-reset: step-number;
+    .nav-item {
+      counter-increment: step-number;
+      button {
+        position: relative;
+        padding-top: 60px;
+        background-color: transparent;
+        border: none;
+        color: #c5c5c5;
+        font-weight: 900;
+        &.active {
+          color: $primary;
+          &:before {
+            background-color: $primary;
+            border-color: $primary;
+          }
+          &:after {
+            color: #fff;
+          }
+        }
+        &:before,
+        &:after {
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          /*rtl:begin:ignore*/
+          transform: translateX(-50%);
+          left: 50%;
+          /*rtl:end:ignore*/
+          transition: all 0.3s;
+        }
+        &:before {
+          content: "";
+          height: 48px;
+          width: 48px;
+          border: 2px solid #b9b9b9;
+          border-radius: 50%;
+          background-color: #fff;
+        }
+        &:after {
+          content: "0" counter(step-number);
+          line-height: 50px;
+          color: #b9b9b9;
+        }
+      }
+    }
+  }
+  .progress{
+    position: absolute;
+    width: 100%;
+    top: 22px;
+    left: 50px;
+    height: 2px;
+    width: calc(100% - 100px);
+  }
 }
-
-.prcoess-steps-content{
-    padding: 56px 0;
+.prcoess-steps-content {
+  padding: 56px 0;
 }

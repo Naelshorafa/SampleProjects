@@ -1,5 +1,7 @@
-AOS.init();
 "use strict";
+
+AOS.init();
+
 var $ = require("jquery");
 require("../../node_modules/bootstrap/dist/js/bootstrap.bundle");
 require("slick-carousel");
@@ -60,6 +62,12 @@ $(function () {
     rtl: true,
   };
 
+  $(".from-control-datepicker").datepicker({
+    format: "d M yyyy",
+    language: "ar",
+    autoclose: true,
+  });
+
   $(".success-partners .partners-slider").slick({
     slidesToShow: 9,
     slidesToScroll: 1,
@@ -89,22 +97,9 @@ $(function () {
     ],
   });
 
-  $(".from-control-datepicker").datepicker({
-    format: "d M yyyy",
-    language: "ar",
-    autoclose: true,
+
+
+  $('[data-bs-toggle="tab"]').on('show.bs.tab', function () {
+    console.log('hello');
   });
 });
-(function ($) {  
-  $(document).ready(function(){
-  $(".ac-label").click(function(e){
-    e.preventDefault();
-    $check = $(this).prev();
-    if($check.prop('checked'))
-      $check.prop( "checked", false );
-    else 
-      $check.prop( "checked", true );
-    });
-
-  });
-})(jQuery);
