@@ -31,6 +31,7 @@
       padding: 4px 10px;
       th {
         padding: 4px 10px;
+        width: 150px;
       }
     }
   }
@@ -78,6 +79,7 @@
     .upload-btn{
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
     }
     .img-container{
       display: flex;

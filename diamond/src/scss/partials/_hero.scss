@@ -58,7 +58,7 @@
       line-height: 1.31;
       @include media-breakpoint-up("md", $grid-breakpoints){
         flex-direction: row;
-        font-size: 35px;
+        font-size: 28px;
 
       }
       @include media-breakpoint-up("xl", $grid-breakpoints){
@@ -75,7 +75,7 @@
           font-size: 45px;
         }
         @include media-breakpoint-up("xl", $grid-breakpoints){
-          font-size: 55px;
+          font-size: 44px;
         }
       }
       span {
@@ -89,7 +89,7 @@
           font-size: 45px;
         }
         @include media-breakpoint-up("xl", $grid-breakpoints){
-          font-size: 75px;
+          font-size: 60px;
         }
       }
       &:last-of-type {
@@ -100,7 +100,7 @@
             font-size: 45px;
           }
           @include media-breakpoint-up("xl", $grid-breakpoints) {
-            font-size: 65px;
+            font-size: 52px;
           }
         }
       }
