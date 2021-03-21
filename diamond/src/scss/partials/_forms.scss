@@ -2,11 +2,18 @@
   .form-control {
     background-color: #f6f5f8;
   }
-  fieldset{
+  fieldset {
     padding: 16px;
     background-color: #f6f5f8;
     border: solid 1px #e0e0e0;
     border-radius: $border-radius-lg;
+  }
+}
+
+.form-control,
+.form-select {
+  &.dark {
+    background-color: #f4f4f4;
   }
 }
 
@@ -16,6 +23,9 @@
   border-radius: 13px;
   background-color: #ffffff;
   justify-content: stretch;
+  &.dark {
+    background-color: #f4f4f4;
+  }
   @include media-breakpoint-up("lg", $grid-breakpoints) {
     justify-content: space-between;
   }

@@ -97,9 +97,9 @@ $(function () {
     ],
   });
 
-
-
   $('[data-bs-toggle="tab"]').on('show.bs.tab', function () {
     console.log('hello');
   });
 });
+
+

@@ -1,7 +1,9 @@
 <section class="step2">
   <fieldset class="mb-5">
     <div class="owner-info">
-      <h3>معلومات مالك الوثيقة والمركبة</h3>
+      <h3 class="mb-4">
+        <strong>معلومات مالك الوثيقة والمركبة</strong>
+      </h3>
       <div class="row">
         <div class="col-sm-12 col-md-9 col-lg-5">
           <table>
@@ -64,52 +66,51 @@
       </div>
     </div>
   </fieldset>
-  <div class="row mb-3">
-    <div class="col-sm-12 col-md-5 col-xl-4">
-        <div class="row">
-          <div class="col-md-4 col-xl-3">
-            <label class="form-radio-inline-group-label">نوع التأمين</label>
+  <div class="filtering-form mb-3">
+    <div class="row gx-3 gy-3 align-items-center align-content-between">
+      <div
+        class="d-flex col-xs-12 col-md-7 col-lg-6 col-xl-5 align-items-start"
+      >
+        <label class="form-radio-inline-group-label me-4">نوع التأمين</label>
+        <div class="form-radio-inline-group dark">
+          <div class="form-radio-inline">
+            <input
+              type="radio"
+              name="vehicleDocumentType"
+              id="vehicleDocumentType1"
+              value="1"
+              checked
+            />
+            <label class="form-check-label" for="vehicleDocumentType1"
+              >تأمين ضد الغير</label
+            >
           </div>
-          <div class="col-md-4">
-            <div class="form-radio-inline-group">
-              <div class="form-radio-inline">
-                <input
-                  type="radio"
-                  name="vehicleDocumentType"
-                  id="vehicleDocumentType1"
-                  value="1"
-                  checked
-                />
-                <label class="form-check-label" for="vehicleDocumentType1"
-                  >تأمين ضد الغير</label
-                >
-              </div>
-              <div class="form-radio-inline">
-                <input
-                  type="radio"
-                  name="vehicleDocumentType"
-                  id="vehicleDocumentType2"
-                  value="2"
-                />
-                <label class="form-check-label" for="vehicleDocumentType2"
-                  >تأمين شامل</label
-                >
-              </div>
-            </div>
+          <div class="form-radio-inline">
+            <input
+              type="radio"
+              name="vehicleDocumentType"
+              id="vehicleDocumentType2"
+              value="2"
+            />
+            <label class="form-check-label" for="vehicleDocumentType2"
+              >تأمين شامل</label
+            >
           </div>
         </div>
-    </div>
-    <div class="col-sm-12 col-md-7 col-xl-8 d-flex justify-content-end">
-      <div class="col-sm-12 col-md-5">
-        <select class="form-select" aria-label="sort-salary">
+      </div>
+      <div class="col-xs-12 col-md-5 col-lg-6 col-xl-3">
+        <select
+          class="form-select form-control-lg dark"
+          aria-label="sort-salary"
+        >
           <option selected>ترتيب العروض حسب السعر</option>
           <option value="1">One</option>
           <option value="2">Two</option>
           <option value="3">Three</option>
         </select>
       </div>
-      <div class="col-sm-12 col-md-5">
-        <button type="button" class="btn btn-lg btn-warning">
+      <div class="col-xs-12 col-lg-3 col-xl-4">
+        <button type="button" class="btn btn-lg btn-warning w-100">
           سينقضي وقت التسعيرة خلال 6 ساعات و 46 دقيقة
         </button>
       </div>
@@ -117,22 +118,26 @@
   </div>
   <fieldset class="mb-5">
     <div class="row">
-      <div class="col-sm-12 col-md-9">
+      <div class="col-sm-12 col-md-8 col-xl-9">
         <div class="row">
-          <div class="col-sm-12 col-md-2">
-            <div class="img-container">
-            <a href="#"><img src="images/company-logo.png" /></a>
-          </div>
-            <button type="button" class="btn btn-lg btn-secondary-invert">
-              ضد الغير
-            </button>
+          <div class="col-sm-12 col-md-2 d-flex flex-md-column">
+            <div class="company-logo-container">
+              <a href="#"><img src="images/company-logo.png" /></a>
+            </div>
+            <div
+              class="d-flex flex-grow-1 align-items-center text-center mx-auto"
+            >
+              <button type="button" class="btn btn-lg btn-secondary-invert">
+                ضد الغير
+              </button>
+            </div>
           </div>
           <div class="col-sm-12 col-md-10">
             <h4>شركة تكافل الراجحي للتأمين</h4>
             <div class="row">
-              <div class="col-sm-12 col-md-6">
+              <div class="col-xs-12 col-lg-6">
                 <h5>التأمين يشمل على</h5>
-                <ul>
+                <ul class="insurance-includes-list">
                   <li>المخاطر الطبيعية</li>
                   <li>تغطية الاصابات الجسدية للغير</li>
                   <li>تغطية تلف ممتلكات الغير</li>
@@ -148,10 +153,12 @@
                   <li>خسارة او تلف مركبتك</li>
                 </ul>
               </div>
-              <div class="col-sm-12 col-md-6">
+              <div class="col-xs-12 col-lg-6">
                 <h5>تغطيات اضافية</h5>
-                <ul>
-                  <li>المخاطر الطبيعية</li>
+                <ul class="insurance-extra-list">
+                  <li>المخاطر الطبيعية
+                    <span data-bs-toggle="tooltip" title="تأمين إضافي للمخاطر الطبيعية"></span>
+                  </li>
                   <li>تغطية الاصابات الجسدية للغير</li>
                   <li>تغطية تلف ممتلكات الغير</li>
                 </ul>
@@ -160,46 +167,44 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-3">
+      <div class="col-sm-12 col-md-4 col-xl-3">
         <table>
           <tbody>
             <tr>
-              <th>خصم عدم وجود مطالبات</th>
+              <td>خصم عدم وجود مطالبات</td>
               <td>000.00 ر.س</td>
             </tr>
             <tr>
-              <th>خصم مبلغ التحمل</th>
+              <td>خصم مبلغ التحمل</td>
               <td>000.00 ر.س</td>
             </tr>
-          </tbody>
-          <tbody class="seclect-salary">
             <tr>
-              <th>خيارات قيم التحمل (ر س )</th>
+              <td>خيارات قيم التحمل (ر س )</td>
               <td>
-                <select class="form-select form-dark" aria-label="sort-salary">
+                <select class="form-select dark" aria-label="sort-salary">
                   <option selected>2000</option>
                   <option value="1">3000</option>
                   <option value="2">4000</option>
-                  <option value="3">5000</option></select
-                ></td>
+                  <option value="3">5000</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th>السعر</th>
+              <th>3445.64 ر.س</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <a href="#">الشروط والاحكام</a>
               </td>
             </tr>
           </tbody>
-          <tbody class="tody-salary">
-            <tr>
-              <th>السعر</th>
-              <td>3445.64 ر.س</td>
-            </tr>
-          </tbody>
         </table>
-        <a href="#">الشروط والاحكام</a>
-        <div class="d-grid gap-2">
+        <div class="d-grid gap-2 mt-3">
           <button type="submit" class="btn btn-lg btn-primary">اختيار</button>
-          <button
-            type="button"
-            class="btn btn-lg btn-primary-invert "
-          >
-          او استبدلها بتأمين شامل 3445.64 ر.س
+          <button type="button" class="btn btn-lg btn-primary-invert">
+            او استبدلها بتأمين شامل 3445.64 ر.س
           </button>
         </div>
       </div>
@@ -210,8 +215,10 @@
       <div class="col-sm-12 col-md-9">
         <div class="row">
           <div class="col-sm-12 col-md-2">
-            
-            <a href="#malath-modal"><div class="img-container"><img src="images/malath-link.png" /></div></a>
+            <a href="#malath-modal"
+              ><div class="company-logo-container">
+                <img src="images/malath-link.png" /></div
+            ></a>
             <button type="button" class="btn btn-lg btn-secondary-invert">
               ضد الغير
             </button>
@@ -269,8 +276,8 @@
                   <option selected>2000</option>
                   <option value="1">3000</option>
                   <option value="2">4000</option>
-                  <option value="3">5000</option></select
-                ></td>
+                  <option value="3">5000</option>
+                </select>
               </td>
             </tr>
           </tbody>
@@ -284,11 +291,8 @@
         <a href="#">الشروط والاحكام</a>
         <div class="d-grid gap-2">
           <button type="submit" class="btn btn-lg btn-primary">اختيار</button>
-          <button
-            type="button"
-            class="btn btn-lg btn-primary-invert"
-          >
-          او استبدلها بتأمين شامل 3445.64 ر.س
+          <button type="button" class="btn btn-lg btn-primary-invert">
+            او استبدلها بتأمين شامل 3445.64 ر.س
           </button>
         </div>
       </div>
@@ -299,7 +303,10 @@
       <div class="col-sm-12 col-md-9">
         <div class="row">
           <div class="col-sm-12 col-md-2">
-            <a href="#"><div class="img-container"><img src="images/company-logo.png" /></div></a>
+            <a href="#"
+              ><div class="company-logo-container">
+                <img src="images/company-logo.png" /></div
+            ></a>
             <button type="button" class="btn btn-lg btn-secondary-invert">
               ضد الغير
             </button>
@@ -357,8 +364,8 @@
                   <option selected>2000</option>
                   <option value="1">3000</option>
                   <option value="2">4000</option>
-                  <option value="3">5000</option></select
-                ></td>
+                  <option value="3">5000</option>
+                </select>
               </td>
             </tr>
           </tbody>
@@ -372,11 +379,8 @@
         <a href="#">الشروط والاحكام</a>
         <div class="d-grid gap-2">
           <button type="submit" class="btn btn-lg btn-primary">اختيار</button>
-          <button
-            type="button"
-            class="btn btn-lg btn-primary-invert"
-          >
-          او استبدلها بتأمين شامل 3445.64 ر.س
+          <button type="button" class="btn btn-lg btn-primary-invert">
+            او استبدلها بتأمين شامل 3445.64 ر.س
           </button>
         </div>
       </div>
@@ -387,7 +391,10 @@
       <div class="col-sm-12 col-md-9">
         <div class="row">
           <div class="col-sm-12 col-md-2">
-            <a href="#"><div class="img-container"><img src="images/company-logo.png" /></div></a>
+            <a href="#"
+              ><div class="company-logo-container">
+                <img src="images/company-logo.png" /></div
+            ></a>
             <button type="button" class="btn btn-lg btn-secondary-invert">
               ضد الغير
             </button>
@@ -445,8 +452,8 @@
                   <option selected>2000</option>
                   <option value="1">3000</option>
                   <option value="2">4000</option>
-                  <option value="3">5000</option></select
-                ></td>
+                  <option value="3">5000</option>
+                </select>
               </td>
             </tr>
           </tbody>
@@ -460,11 +467,8 @@
         <a href="#">الشروط والاحكام</a>
         <div class="d-grid gap-2">
           <button type="submit" class="btn btn-lg btn-primary">اختيار</button>
-          <button
-            type="button"
-            class="btn btn-lg btn-primary-invert "
-          >
-          او استبدلها بتأمين شامل 3445.64 ر.س
+          <button type="button" class="btn btn-lg btn-primary-invert">
+            او استبدلها بتأمين شامل 3445.64 ر.س
           </button>
         </div>
       </div>

@@ -32,3 +32,23 @@ fieldset {
   padding: 20px;
   border-radius: 20px;
 }
+.btn-secondary-invert {
+  color: $secondary;
+  border: 1px solid $secondary;
+  background-color: #f4f4f4;
+  &:hover {
+    color: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    background-color: $secondary;
+  }
+}
+.btn-primary-invert {
+  color: $primary;
+  border: 1px solid $primary;
+  background-color: #f4f4f4;
+  &:hover {
+    color: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    background-color:$primary;
+  }
+}

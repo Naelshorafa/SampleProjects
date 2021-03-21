@@ -1,55 +1,18 @@
 .step3 {
-  h4 {
-    font-size: 23px;
-    font-weight: 900;
-    margin-bottom: 16px;
-  }
-  h5 {
-    font-size: 17px;
-    font-weight: 900;
-  }
-  ul {
-    padding-left: 0;
-    li {
-      list-style: none;
-      //list-style-image: url();
-    }
-  }
-  h3 {
-    font-size: 25px;
-    font-weight: 900;
-    margin-bottom: 33px;
-  }
-  .img-container{
+  .company-logo-container {
     max-width: 137px;
-    img{
+    img {
       width: 100%;
-    }
-  }
-  table {
-    tr {
-      padding: 4px 10px;
-      th {
-        padding: 4px 10px;
-        width: 150px;
-      }
     }
   }
   .details {
     background-color: rgba(167, 225, 250, 0.5);
     padding: 27px 21px 45px 25px;
     border-radius: 20px;
-    .details1 {
-      margin-bottom: 50px;
-    }
-    .details2 {
-      margin-bottom: 40px;
-    }
     .btn-warning {
       font-size: 14px;
       color: #fff;
       padding: 12px;
-      margin-bottom: 114px;
     }
     a {
       text-decoration: underline;
@@ -64,27 +27,53 @@
     font-weight: 900;
     margin-bottom: 26px;
   }
-  .pay-way{
+  .car-photo {
     margin-bottom: 98px;
-    .pay-btn{
-      display: flex;
-      flex-direction: row;
-      fieldset{
-        margin-right: 24px;
-      }
-    }
-  }
-  .car-photo{
-    margin-bottom: 98px;
-    .upload-btn{
+    .upload-btn {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
     }
-    .img-container{
+    .img-container {
       display: flex;
       flex-direction: column;
-      margin-right: 56px ;
+      margin-right: 56px;
+    }
+  }
+
+  .payment-method {
+    background-color: #f7f7f7;
+    display: flex;
+    align-content: center;
+    display: block;
+    padding-bottom: 56%;
+    position: relative;
+    img {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      width: 45%;
+    }
+    input {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      opacity: 0;
+      &:checked {
+        opacity: 1; 
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: $secondary;
+        background-image: $form-check-input-checked-bg-image;
+      }
     }
   }
 }

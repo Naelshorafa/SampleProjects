@@ -52,7 +52,7 @@
       }
     }
   }
-  .progress{
+  .progress {
     position: absolute;
     width: 100%;
     top: 22px;
@@ -63,4 +63,55 @@
 }
 .prcoess-steps-content {
   padding: 56px 0;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  table {
+    width: 100%;
+    tr {
+      td,
+      th {
+        padding: 10px 4px;
+      }
+      th {
+        width: 150px;
+      }
+    }
+  }
+
+  .insurance-includes-list {
+    li {
+      position: relative;
+      padding-left: 26px;
+      margin-bottom: 4px;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        border-radius: 7px;
+        background-color: $secondary;
+        background-image: $form-check-input-checked-bg-image;
+      }
+    }
+  }
+  .insurance-extra-list{
+    li{
+      position: relative;
+      padding-right: 24px;
+      span{
+        position: absolute;
+        top: 1px;
+        right: 0;
+        height: 20px;
+        width: 20px;
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><g fill='#797979'><path d='M22 12A10 10 0 1 1 12 2a10 10 0 0 1 10 10z' opacity='0.25' transform='translate(-2 -2)'/><path fill-rule='evenodd' d='M11.133 9.5a1 1 0 0 1-1.733-1 2.978 2.978 0 1 1 4.1 4c-.664.406-.25 1.5-1.5 1.5a1 1 0 0 1-1-1 1.021 1.021 0 0 1 0-.1 2.191 2.191 0 0 1 .52-1.272 3.594 3.594 0 0 1 .9-.762c1.52-.906-.33-2.751-1.287-1.366zM12 15a1 1 0 1 0 1 1 1 1 0 0 0-1-1z' transform='translate(-2 -2)'/></g></svg>");
+      }
+    }
+  }
 }

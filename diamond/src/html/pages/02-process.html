@@ -10,7 +10,6 @@
     >
       <li class="nav-item" role="presentation">
         <button
-          class="active"
           id="step1-tab"
           data-bs-toggle="tab"
           data-bs-target="#step1"
@@ -37,6 +36,7 @@
       </li>
       <li class="nav-item" role="presentation">
         <button
+          class="active"
           id="step3-tab"
           data-bs-toggle="tab"
           data-bs-target="#step3"
@@ -63,12 +63,18 @@
       </li>
     </ul>
     <div class="progress">
-      <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      <div
+        class="progress-bar"
+        role="progressbar"
+        aria-valuenow="0"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
     </div>
   </div>
   <div class="tab-content prcoess-steps-content" id="myTabContent">
     <div
-      class="tab-pane fade show active"
+      class="tab-pane fade"
       id="step1"
       role="tabpanel"
       aria-labelledby="step1-tab"
@@ -84,7 +90,7 @@
       <!-- @@include ../partials/process/step2.html -->
     </div>
     <div
-      class="tab-pane fade"
+      class="tab-pane fade show active"
       id="step3"
       role="tabpanel"
       aria-labelledby="step3-tab"
