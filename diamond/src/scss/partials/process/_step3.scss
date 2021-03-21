@@ -20,6 +20,12 @@
     font-weight: 900;
     margin-bottom: 33px;
   }
+  .img-container{
+    max-width: 137px;
+    img{
+      width: 100%;
+    }
+  }
   table {
     tr {
       padding: 4px 10px;
@@ -55,12 +61,28 @@
   h2 {
     font-size: 30px;
     font-weight: 900;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
   }
   .pay-way{
     margin-bottom: 98px;
+    .pay-btn{
+      display: flex;
+      flex-direction: row;
+      fieldset{
+        margin-right: 24px;
+      }
+    }
   }
   .car-photo{
     margin-bottom: 98px;
+    .upload-btn{
+      display: flex;
+      flex-direction: row;
+    }
+    .img-container{
+      display: flex;
+      flex-direction: column;
+      margin-right: 56px ;
+    }
   }
 }

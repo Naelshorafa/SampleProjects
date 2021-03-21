@@ -127,7 +127,7 @@
   <h3 class="h2 title mb-3"><strong>برجاء استكمال البيانات</strong></h3>
   <form class="form-dark">
     <div class="row mb-5">
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-7">
         <div class="mb-3 form-control">
           <div class="row">
             <div class="col-md-5">
@@ -165,7 +165,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-5">
         <div class="form-floating mb-2">
           <input
             type="text"
@@ -176,7 +176,7 @@
           <label for="car-salary" class="form-label">قيمة المركبة</label>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-7">
         <div class="mb-3 form-control">
           <div class="row">
             <div class="col-md-7">
@@ -212,7 +212,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-5">
         <div class="form-floating mb-2">
           <input
             type="text"
@@ -267,7 +267,7 @@
     <div class="owner-info">
       <h3>معلومات مالك الوثيقة والمركبة</h3>
       <div class="row">
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-9 col-lg-4">
           <table>
             <tbody>
               <tr>
@@ -289,7 +289,7 @@
             </tbody>
           </table>
         </div>
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-9 col-lg-4">
           <table>
             <tbody>
               <tr>
@@ -307,7 +307,7 @@
             </tbody>
           </table>
         </div>
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-9 col-lg-4">
           <table>
             <tbody>
               <tr>
@@ -332,7 +332,7 @@
     <div class="col-sm-12 col-md-5">
       <div class="mb-3">
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-md-4 col-xl-3">
             <label class="form-radio-inline-group-label">نوع التأمين</label>
           </div>
           <div class="col-md-4">
@@ -386,7 +386,9 @@
       <div class="col-sm-12 col-md-9">
         <div class="row">
           <div class="col-sm-12 col-md-2">
+            <div class="img-container">
             <a href="#"><img src="images/company-logo.png" /></a>
+          </div>
             <button type="button" class="btn btn-lg btn-secondary-invert">
               ضد الغير
             </button>
@@ -474,7 +476,8 @@
       <div class="col-sm-12 col-md-9">
         <div class="row">
           <div class="col-sm-12 col-md-2">
-            <a href="#malath-modal"><img src="images/malath-link.png" /></a>
+            
+            <a href="#malath-modal"><div class="img-container"><img src="images/malath-link.png" /></div></a>
             <button type="button" class="btn btn-lg btn-secondary-invert">
               ضد الغير
             </button>
@@ -562,7 +565,7 @@
       <div class="col-sm-12 col-md-9">
         <div class="row">
           <div class="col-sm-12 col-md-2">
-            <a href="#"><img src="images/company-logo.png" /></a>
+            <a href="#"><div class="img-container"><img src="images/company-logo.png" /></div></a>
             <button type="button" class="btn btn-lg btn-secondary-invert">
               ضد الغير
             </button>
@@ -650,7 +653,7 @@
       <div class="col-sm-12 col-md-9">
         <div class="row">
           <div class="col-sm-12 col-md-2">
-            <a href="#"><img src="images/company-logo.png" /></a>
+            <a href="#"><div class="img-container"><img src="images/company-logo.png" /></div></a>
             <button type="button" class="btn btn-lg btn-secondary-invert">
               ضد الغير
             </button>
@@ -751,7 +754,10 @@
       <fieldset class="mb-3">
         <div class="row">
           <div class="col-sm-12 col-md-2">
-            <a href="#malath-modal"><img src="images/malath-link.png" /></a>
+            <a href="#malath-modal"
+              ><div class="img-container">
+                <img src="images/malath-link.png" /></div
+            ></a>
           </div>
           <div class="col-sm-12 col-md-9">
             <h4>شركة تكافل الراجحي للتأمين</h4>
@@ -786,7 +792,7 @@
           </div>
         </div>
       </fieldset>
-      <fieldset class="mb-3">
+      <fieldset class="mb-5">
         <h3>معلومات مالك الوثيقة والمركبة</h3>
         <div class="row">
           <div class="col-sm-12 col-md-6">
@@ -843,6 +849,105 @@
           </div>
         </div>
       </fieldset>
+      <div class="pay-way">
+        <h2>اختر طريقة الدفع</h2>
+        <div class="pay-btn">
+          <fieldset>
+            <label>
+              <input type="radio" name="test" value="small" checked />
+              <img src="images/visa.svg" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <label>
+              <input type="radio" name="test" value="small" checked />
+              <img src="images/mastercard.svg" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <label>
+              <input type="radio" name="test" value="small" checked />
+              <img src="images/mada.svg" />
+            </label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="car-photo">
+        <h2>اضافة صور السيارة</h2>
+        <div class="upload-btn">
+          <div class="img-container">
+            <fieldset>
+              <input type="image" src="images/car-front.svg" />
+            </fieldset>
+            <p>مقدمة المركبة</p>
+          </div>
+          <div class="img-container">
+            <fieldset>
+              <input type="image" src="images/car-right.svg" />
+            </fieldset>
+            <p>جهة اليمين</p>
+          </div>
+          <div class="img-container">
+            <fieldset>
+              <input type="image" src="images/car-left.svg" />
+            </fieldset>
+            <p>جهة اليسار</p>
+          </div>
+          <div class="img-container">
+            <fieldset>
+              <input type="image" src="images/car-back.svg" />
+            </fieldset>
+            <p>ظهر المركبة</p>
+          </div>
+          <div class="img-container">
+            <fieldset>
+              <input type="image" src="images/car-id.svg" />
+            </fieldset>
+            <p>صورة رقم الهيكل</p>
+          </div>
+        </div>
+      </div>
+      <form class="form-dark">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="form-floating mb-2">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="رقم الحساب الدولي الخاص بمالك الوثيقة (الايبان)"
+              />
+              <label for="floatingPassword"
+                >رقم الحساب الدولي الخاص بمالك الوثيقة (الايبان)</label
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <div class="form-floating mb-2">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="email"
+                  placeholder="البريد الإلكتروني"
+                />
+                <label for="email" class="form-label">البريد الإلكتروني</label>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="form-floating mb-2">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="mobile-number"
+                  placeholder="رقم الجوال"
+                />
+                <label for="mobile-number" class="form-label">رقم الجوال</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
     <div class="col-sm-12 col-md-3">
       <div class="details">
@@ -926,119 +1031,6 @@
       </div>
     </div>
   </div>
-  <div class="pay-way">
-    <h2>اختر طريقة الدفع</h2>
-    <div class="row">
-      <div class="col-sm-12 col-md-9">
-        <div class="row">
-          <div class="col-sm-12 col-md-3">
-            <fieldset>
-              <label>
-                <input type="radio" name="test" value="small" checked />
-                <img src="images/visa.svg" />
-              </label>
-            </fieldset>
-          </div>
-          <div class="col-sm-12 col-md-3">
-            <fieldset>
-              <label>
-                <input type="radio" name="test" value="small" checked />
-                <img src="images/mastercard.svg" />
-              </label>
-            </fieldset>
-          </div>
-          <div class="col-sm-12 col-md-3">
-            <fieldset>
-              <label>
-                <input type="radio" name="test" value="small" checked />
-                <img src="images/mada.svg" />
-              </label>
-            </fieldset>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="car-photo">
-    <h2>اضافة صور السيارة</h2>
-    <div class="row">
-      <div class="col-sm-12 col-md-10">
-        <div class="row">
-          <div class="col-sm-12 col-md-2">
-            <fieldset>
-              <input type="image" src="images/car-front.svg" />
-            </fieldset>
-            <p>مقدمة المركبة</p>
-          </div>
-          <div class="col-sm-12 col-md-2">
-            <fieldset>
-              <input type="image" src="images/car-right.svg" />
-            </fieldset>
-            <p>جهة اليمين</p>
-          </div>
-          <div class="col-sm-12 col-md-2">
-            <fieldset>
-              <input type="image" src="images/car-left.svg" />
-            </fieldset>
-            <p>جهة اليسار</p>
-          </div>
-          <div class="col-sm-12 col-md-2">
-            <fieldset>
-              <input type="image" src="images/car-back.svg" />
-            </fieldset>
-            <p>ظهر المركبة</p>
-          </div>
-          <div class="col-sm-12 col-md-2">
-            <fieldset>
-              <input type="image" src="images/car-id.svg" />
-            </fieldset>
-            <p>صورة رقم الهيكل</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <form class="form-dark">
-    <div class="row">
-      <div class="col-sm-12 col-md-4">
-        <div class="form-floating mb-2">
-          <input
-            type="password"
-            class="form-control"
-            id="floatingPassword"
-            placeholder="رقم الحساب الدولي الخاص بمالك الوثيقة (الايبان)"
-          />
-          <label for="floatingPassword"
-            >رقم الحساب الدولي الخاص بمالك الوثيقة (الايبان)</label
-          >
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-4">
-          <div class="form-floating mb-2">
-            <input
-              type="text"
-              class="form-control form-control-lg"
-              id="email"
-              placeholder="البريد الإلكتروني"
-            />
-            <label for="email" class="form-label">البريد الإلكتروني</label>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <div class="form-floating mb-2">
-            <input
-              type="text"
-              class="form-control form-control-lg"
-              id="mobile-number"
-              placeholder="رقم الجوال"
-            />
-            <label for="mobile-number" class="form-label">رقم الجوال</label>
-          </div>
-        </div>
-      </div>
-    </div>
-  </form>
 </section>
 
 <!-- end step3.html-->
@@ -1349,7 +1341,7 @@
             >
           </div>
         </form>
-        <div class="d-grid gap-3 mb-4 d-flex col-md-9">
+        <div class="d-grid gap-3 mb-4 d-flex col-md-9 mx-auto">
           <button type="button" role="button" class="btn btn-lg btn-primary w-50" data-bs-toggle="modal"
           data-bs-target="#extra-daitals-modal">
           اضافة
@@ -1455,7 +1447,7 @@
               </div>
             </div>
           </div>
-          <div class="form-check mb-2">
+          <div class="form-check mb-3">
             <input
               class="form-check-input"
               type="checkbox"
@@ -1484,7 +1476,7 @@
               <label for="choose-city" class="form-label">اختر المدينة</label>
             </div>
           </div>
-          <div class="form-check mb-2">
+          <div class="form-check mb-3">
             <input
               class="form-check-input"
               type="checkbox"
@@ -1513,7 +1505,7 @@
               <label for="choose-city" class="form-label">اختر المدينة</label>
             </div>
           </div>
-          <div class="form-check mb-2">
+          <div class="form-check mb-3">
             <input
               class="form-check-input"
               type="checkbox"
@@ -1788,7 +1780,7 @@
               </div>
             </div>
           </div>
-          <div class="d-grid gap-3 mb-4 d-flex col-md-9">
+          <div class="d-grid gap-3 mb-4 d-flex col-md-9 mx-auto">
             <button type="button" role="button" class="btn btn-lg btn-primary w-50" data-bs-toggle="modal"
             data-bs-target="#extra-daitals-modal">
             اضافة

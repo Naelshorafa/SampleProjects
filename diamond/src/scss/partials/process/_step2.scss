@@ -22,8 +22,14 @@
         }
       }
     }
-    img {
-      margin-bottom: 75px;
+    .img-container{
+      max-width: 137px;
+      img {
+        margin-bottom: 75px;
+        width: 100%;
+  
+      }
+
     }
     .btn-secondary-invert {
       color: #5ebbb7;
