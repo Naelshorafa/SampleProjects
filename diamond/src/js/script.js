@@ -1,6 +1,4 @@
-AOS.init({
-  disable: "mobile",
-});
+AOS.init();
 "use strict";
 var $ = require("jquery");
 require("../../node_modules/bootstrap/dist/js/bootstrap.bundle");
