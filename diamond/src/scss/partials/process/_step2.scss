@@ -1,26 +1,68 @@
-.step2{
-  fieldset{
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 20px;
-    h3{
+.step2 {
+  fieldset {
+    h3 {
       font-size: 25px;
       font-weight: 900;
       margin-bottom: 35px;
     }
-    .content{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      h5{
-        font-size: 17px;
-        font-weight: 900
+    h5 {
+      font-size: 17px;
+      font-weight: 900;
+    }
+    p {
+      font-size: 17px;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    table {
+      tr {
+        padding: 10px;
+        th {
+          padding: 10px;
+        }
       }
-      p{
-        font-size: 17px;
-        font-weight: 400;
-        margin-bottom: 0;
+    }
+    img {
+      margin-bottom: 75px;
+    }
+    .btn-secondary-invert {
+      color: #5ebbb7;
+      border: 1px solid #5ebbb7;
+      background-color: #f4f4f4;
+      &:hover {
+        color: #f4f4f4;
+        border: 1px solid #f4f4f4;
+        background-color: #5ebbb7;
       }
+    }
+    h4 {
+      font-size: 23px;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+    h5 {
+      font-size: 17px;
+      font-weight: 900;
+    }
+    ul {
+      padding-left: 0;
+      li {
+        list-style: none;
+        //list-style-image: url();
+      }
+    }
+    .tody-salary {
+      tr {
+        font-size: 20px;
+        font-weight: 900;
+      }
+    }
+  }
+  a {
+    color: #000;
+    text-decoration: underline;
+    &:hover {
+      color: $primary;
     }
   }
 }

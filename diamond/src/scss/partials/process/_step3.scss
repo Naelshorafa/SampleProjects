@@ -1,0 +1,66 @@
+.step3 {
+  h4 {
+    font-size: 23px;
+    font-weight: 900;
+    margin-bottom: 16px;
+  }
+  h5 {
+    font-size: 17px;
+    font-weight: 900;
+  }
+  ul {
+    padding-left: 0;
+    li {
+      list-style: none;
+      //list-style-image: url();
+    }
+  }
+  h3 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 33px;
+  }
+  table {
+    tr {
+      padding: 4px 10px;
+      th {
+        padding: 4px 10px;
+      }
+    }
+  }
+  .details {
+    background-color: rgba(167, 225, 250, 0.5);
+    padding: 27px 21px 45px 25px;
+    border-radius: 20px;
+    .details1 {
+      margin-bottom: 50px;
+    }
+    .details2 {
+      margin-bottom: 40px;
+    }
+    .btn-warning {
+      font-size: 14px;
+      color: #fff;
+      padding: 12px;
+      margin-bottom: 114px;
+    }
+    a {
+      text-decoration: underline;
+      color: $primary;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  .pay-way{
+    margin-bottom: 98px;
+  }
+  .car-photo{
+    margin-bottom: 98px;
+  }
+}

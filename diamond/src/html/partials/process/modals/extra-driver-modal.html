@@ -1,5 +1,8 @@
 <div class="modal fade" id="extra-driver-modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-dialog-aside modal-dialog-scrollable modal-lg" role="document">
+  <div
+    class="modal-dialog modal-dialog-aside modal-dialog-scrollable modal-lg"
+    role="document"
+  >
     <div class="modal-content">
       <div class="modal-header">
         <button
@@ -91,22 +94,28 @@
               type="checkbox"
               value=""
               id="address"
+              data-bs-toggle="collapse"
+              data-bs-target="#address-collapsable"
+              aria-expanded="false"
+              aria-controls="address-collapsable"
             />
             <label class="form-check-label" for="address">
               عنوان المنزل غير مطابق لعنوان مالك الوثيقة
             </label>
           </div>
-          <div class="form-floating mb-4">
-            <select
-              class="form-select form-control form-control-lg"
-              id="choose-city"
-            >
-              <option>اختر المدينة</option>
-              <option>جده</option>
-              <option>الرياض</option>
-              <option>مكة</option>
-            </select>
-            <label for="choose-city" class="form-label">اختر المدينة</label>
+          <div class="collapse" id="address-collapsable">
+            <div class="form-floating mb-4">
+              <select
+                class="form-select form-control form-control-lg"
+                id="choose-city"
+              >
+                <option>اختر المدينة</option>
+                <option>جده</option>
+                <option>الرياض</option>
+                <option>مكة</option>
+              </select>
+              <label for="choose-city" class="form-label">اختر المدينة</label>
+            </div>
           </div>
           <div class="form-check mb-2">
             <input
@@ -114,22 +123,28 @@
               type="checkbox"
               value=""
               id="address-job"
+              data-bs-toggle="collapse"
+              data-bs-target="#address-job-collapsable"
+              aria-expanded="false"
+              aria-controls="address-job-collapsable"
             />
             <label class="form-check-label" for="address-job">
               هل عنوان العمل نفس عنوان مالك الوثيقة
             </label>
           </div>
-          <div class="form-floating mb-4">
-            <select
-              class="form-select form-control form-control-lg"
-              id="choose-city"
-            >
-              <option>اختر المدينة</option>
-              <option>جده</option>
-              <option>الرياض</option>
-              <option>مكة</option>
-            </select>
-            <label for="choose-city" class="form-label">اختر المدينة</label>
+          <div class="collapse" id="address-job-collapsable">
+            <div class="form-floating mb-4">
+              <select
+                class="form-select form-control form-control-lg"
+                id="choose-city"
+              >
+                <option>اختر المدينة</option>
+                <option>جده</option>
+                <option>الرياض</option>
+                <option>مكة</option>
+              </select>
+              <label for="choose-city" class="form-label">اختر المدينة</label>
+            </div>
           </div>
           <div class="form-check mb-2">
             <input
@@ -137,23 +152,29 @@
               type="checkbox"
               value=""
               id="kinship-driver"
+              data-bs-toggle="collapse"
+              data-bs-target="#kinship-driver-collapsable"
+              aria-expanded="false"
+              aria-controls="kinship-driver-collapsable"
             />
             <label class="form-check-label" for="kinship-driver">
               هل للسائق صلة قرابة بمالك الوثيقة؟
             </label>
           </div>
-          <div class="form-floating mb-4">
-            <select
-              class="form-select form-control form-control-lg"
-              id="kinship-choose"
-            >
-              <option>اختر صلة القرابة</option>
-              <option>ابن عم</option>
-              <option>اخ</option>
-            </select>
-            <label for="kinship-choose" class="form-label"
-              >اختر صلة القرابة</label
-            >
+          <div class="collapse" id="kinship-driver-collapsable">
+            <div class="form-floating mb-4">
+              <select
+                class="form-select form-control form-control-lg"
+                id="kinship-choose"
+              >
+                <option>اختر صلة القرابة</option>
+                <option>ابن عم</option>
+                <option>اخ</option>
+              </select>
+              <label for="kinship-choose" class="form-label"
+                >اختر صلة القرابة</label
+              >
+            </div>
           </div>
           <div class="form-check">
             <input
@@ -189,6 +210,8 @@
                         سيارة اوتوماتيك (1)
                       </label>
                     </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
                     <div class="form-check mb-2">
                       <input
                         class="form-check-input"
@@ -200,6 +223,8 @@
                         لساعات النهار فقط (4)
                       </label>
                     </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
                     <div class="form-check mb-2">
                       <input
                         class="form-check-input"
@@ -224,6 +249,8 @@
                         طرف صناعي (2)
                       </label>
                     </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
                     <div class="form-check mb-2">
                       <input
                         class="form-check-input"
@@ -235,6 +262,8 @@
                         سماعة الأذن (5)
                       </label>
                     </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
                     <div class="form-check mb-2">
                       <input
                         class="form-check-input"
@@ -257,6 +286,10 @@
               type="checkbox"
               value=""
               id="traffic-violation"
+              data-bs-toggle="collapse"
+              data-bs-target="#traffic-violation-collapsable"
+              aria-expanded="false"
+              aria-controls="traffic-violation-collapsable"
             />
             <label class="form-check-label" for="traffic-violation">
               هل لدى السائق مخالفات مرورية
@@ -265,106 +298,126 @@
               اختر المخالفات المرورية
             </div>
           </div>
-          <fieldset class="form-control mb-5">
-            <div class="row">
-              <div class="col-sm-12 col-md-6">
-                <div class="form-check mb-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="speed-limit"
-                  />
-                  <label class="form-check-label" for="speed-limit">
-                    تجاوز السرعة المحددة
-                  </label>
-                </div>
-                <div class="form-check mb-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="drift"
-                  />
-                  <label class="form-check-label" for="drift"> التفحيط </label>
-                </div>
-                <div class="form-check mb-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="opposite-drive"
-                  />
-                  <label class="form-check-label" for="opposite-drive">
-                    القيادة عكس الإتجاه
-                  </label>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-6">
-                <div class="form-check mb-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="
+          <div class="collapse" id="traffic-violation-collapsable">
+            <div class="mb-5 ps-4">
+              <fieldset>
+                <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                    <div class="form-check mb-2">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="speed-limit"
+                      />
+                      <label class="form-check-label" for="speed-limit">
+                        تجاوز السرعة المحددة
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <div class="form-check mb-2">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="drift"
+                      />
+                      <label class="form-check-label" for="drift">
+                        التفحيط
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <div class="form-check mb-2">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="opposite-drive"
+                      />
+                      <label class="form-check-label" for="opposite-drive">
+                        القيادة عكس الإتجاه
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <div class="form-check mb-2">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="
                   skip-redlight"
-                  />
-                  <label class="form-check-label" for="skip-redlight">
-                    تجاوز الإشارة الحمراء
-                  </label>
+                      />
+                      <label class="form-check-label" for="skip-redlight">
+                        تجاوز الإشارة الحمراء
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <div class="form-check mb-2">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="wrong-stop"
+                      />
+                      <label class="form-check-label" for="wrong-stop">
+                        مخالفة الوقوف الخطائ
+                      </label>
+                    </div>
+                  </div>
                 </div>
-                <div class="form-check mb-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="wrong-stop"
-                  />
-                  <label class="form-check-label" for="wrong-stop">
-                    مخالفة الوقوف الخطائ
-                  </label>
-                </div>
-              </div>
+              </fieldset>
             </div>
-          </fieldset>
+          </div>
           <div class="form-check mb-2">
             <input
               class="form-check-input"
               type="checkbox"
               value=""
               id="other-license"
+              data-bs-toggle="collapse"
+              data-bs-target="#other-license-collapsable"
+              aria-expanded="false"
+              aria-controls="other-license-collapsable"
             />
             <label class="form-check-label" for="other-license">
               هل لدى السائق رخصة قيادة صالحة من دول أخرى؟
             </label>
           </div>
-          <div class="row mb-3">
-            <div class="col-sm-12 col-md-6">
-              <div class="form-floating">
-                <select
-                  class="form-select form-control form-control-lg"
-                  id="choose-city"
-                >
-                  <option>اأختر الدولة</option>
-                  <option>بريطانيا</option>
-                  <option>المانيا</option>
-                </select>
-                <label for="choose-city" class="form-label">أختر الدولة</label>
+          <div class="collapse" id="other-license-collapsable">
+            <div class="row mb-3">
+              <div class="col-sm-12 col-md-6">
+                <div class="form-floating">
+                  <select
+                    class="form-select form-control form-control-lg"
+                    id="choose-city"
+                  >
+                    <option>اأختر الدولة</option>
+                    <option>بريطانيا</option>
+                    <option>المانيا</option>
+                  </select>
+                  <label for="choose-city" class="form-label"
+                    >أختر الدولة</label
+                  >
+                </div>
               </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-              <div class="form-floating">
-                <select
-                  class="form-select form-control form-control-lg"
-                  id="choose-year"
-                >
-                  <option>اختر عدد السنوات</option>
-                  <option>1</option>
-                  <option>2</option>
-                </select>
-                <label for="choose-year" class="form-label"
-                  >اختر عدد السنوات</label
-                >
+              <div class="col-sm-12 col-md-6">
+                <div class="form-floating">
+                  <select
+                    class="form-select form-control form-control-lg"
+                    id="choose-year"
+                  >
+                    <option>اختر عدد السنوات</option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                  <label for="choose-year" class="form-label"
+                    >اختر عدد السنوات</label
+                  >
+                </div>
               </div>
             </div>
           </div>
