@@ -10,16 +10,9 @@
     margin-bottom: 8px;
     @include media-breakpoint-up("md", $grid-breakpoints){
       font-size: 42px;
-      margin-bottom: 54px;
     }
   }
-  .row {
-    margin: 0 -8px;
-    > * {
-      padding: 0 8px;
-    }
-  }
-  .content {
+    .content {
     border-radius: 25px;
     background-image: linear-gradient(to bottom, #ffffff 32%, #f4f4f4);
     padding: 22px 24px;
@@ -66,26 +59,4 @@
   }
 }
 
-@keyframes bounce-icon {
-  0% {
-    transform: scale(1, 1) translateY(0);
-  }
-  10% {
-    transform: scale(1.1, 0.9) translateY(0);
-  }
-  30% {
-    transform: scale(0.9, 1.1) translateY(-50px);
-  }
-  50% {
-    transform: scale(1.05, 0.95) translateY(0);
-  }
-  57% {
-    transform: scale(1, 1) translateY(-7px);
-  }
-  64% {
-    transform: scale(1, 1) translateY(0);
-  }
-  100% {
-    transform: scale(1, 1) translateY(0);
-  }
-}
+
