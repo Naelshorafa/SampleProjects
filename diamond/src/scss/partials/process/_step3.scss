@@ -9,11 +9,7 @@
     background-color: rgba(167, 225, 250, 0.5);
     padding: 27px 21px 45px 25px;
     border-radius: 20px;
-    .btn-warning {
-      font-size: 14px;
-      color: #fff;
-      padding: 12px;
-    }
+
     a {
       text-decoration: underline;
       color: $primary;
@@ -27,17 +23,36 @@
     font-weight: 900;
     margin-bottom: 26px;
   }
-  .car-photo {
+  .car-photos {
     margin-bottom: 98px;
-    .upload-btn {
+    .car-method {
+      background-color: #f7f7f7;
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      align-content: center;
+      display: block;
+      padding-bottom: 104%;
+      position: relative;
+      padding-right: 24px;
+      margin-bottom: 8px;
+      span{
+        position: absolute;
+        top: 10px;
+        right: 10;
+        height: 20px;
+        width: 20px;
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><g fill='#797979'><path d='M22 12A10 10 0 1 1 12 2a10 10 0 0 1 10 10z' opacity='0.25' transform='translate(-2 -2)'/><path fill-rule='evenodd' d='M11.133 9.5a1 1 0 0 1-1.733-1 2.978 2.978 0 1 1 4.1 4c-.664.406-.25 1.5-1.5 1.5a1 1 0 0 1-1-1 1.021 1.021 0 0 1 0-.1 2.191 2.191 0 0 1 .52-1.272 3.594 3.594 0 0 1 .9-.762c1.52-.906-.33-2.751-1.287-1.366zM12 15a1 1 0 1 0 1 1 1 1 0 0 0-1-1z' transform='translate(-2 -2)'/></g></svg>");
+      }
+      img {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 40%;
+      }
     }
-    .img-container {
-      display: flex;
-      flex-direction: column;
-      margin-right: 56px;
+    p {
+      text-align: center;
+      font-weight: 900;
     }
   }
 
@@ -61,7 +76,7 @@
       left: 20px;
       opacity: 0;
       &:checked {
-        opacity: 1; 
+        opacity: 1;
       }
       &:after {
         content: "";
@@ -74,6 +89,22 @@
         background-color: $secondary;
         background-image: $form-check-input-checked-bg-image;
       }
+    }
+  }
+  .details {
+    tr {
+      td,
+      th {
+        padding: 4px;
+      }
+      th {
+        width: 220px;
+      }
+    }
+    .details1 {
+      width: 100%;
+      border-bottom: 2px solid #fff;
+      margin-bottom: 25px;
     }
   }
 }

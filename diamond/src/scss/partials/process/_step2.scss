@@ -1,8 +1,13 @@
 .step2 {
   .company-logo-container {
     max-width: 137px;
+    margin: 0 auto;
     img {
       width: 100%;
+    }
+    @include media-breakpoint-down("md", $grid-breakpoints){
+      margin-right: 20px;
+      width: 70px;
     }
   }
   a {
