@@ -2,17 +2,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--Slick CSS-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css "
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-    />
     <!--AOS CSS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--CSS-->
@@ -1091,7 +1080,7 @@
           </div>
         </div>
       </div>
-      <div class="car-photos">
+      <div class="car-photos mb-5">
         <h2>اضافة صور السيارة</h2>
         <div class="row gx-6">
           <div class="col">
@@ -1162,8 +1151,8 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-12 col-md-6 mb-3">
+        <div class="row gx-3 gy-3">
+          <div class="col-sm-12 col-md-6">
             <div class="form-floating">
               <input
                 type="text"
@@ -1174,7 +1163,7 @@
               <label for="email" class="form-label">البريد الإلكتروني</label>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 mb-3">
+          <div class="col-sm-12 col-md-6">
             <div class="form-floating">
               <input
                 type="text"
@@ -1378,7 +1367,7 @@
         <div class="modal-body">
           <div class="row">
             <div class="col-sm-12 col-md-6">
-              <div class="form-floating mb-2">
+              <div class="form-floating mb-3">
                 <select class="form-select form-control" id="education">
                   <option>اختر مستوى التعليم</option>
                   <option>جامعي</option>
@@ -1388,7 +1377,7 @@
               </div>
             </div>
             <div class="col-sm-12 col-md-6">
-              <div class="form-floating mb-2">
+              <div class="form-floating mb-3">
                 <select class="form-select form-control" id="children-num">
                   <option>اختر عدد الأطفال</option>
                   <option>1</option>
@@ -1401,7 +1390,7 @@
               </div>
             </div>
           </div>
-          <div class="mb-3 form-control">
+          <div class="form-control mb-3">
             <div class="row">
               <div class="col-md-5">
                 <label class="form-radio-inline-group-label"
@@ -1437,7 +1426,7 @@
               </div>
             </div>
           </div>
-          <div class="mb-3 form-control">
+          <div class="form-control mb-3">
             <div class="row">
               <div class="col-md-7">
                 <label class="form-radio-inline-group-label"
@@ -1469,7 +1458,7 @@
               </div>
             </div>
           </div>
-          <div class="mb-3 form-control">
+          <div class="form-control mb-3">
             <div class="row">
               <div class="col-md-7">
                 <label class="form-radio-inline-group-label"
@@ -1505,7 +1494,7 @@
               </div>
             </div>
           </div>
-          <div class="mb-3 form-control">
+          <div class="form-control mb-3">
             <div class="row">
               <div class="col-md-7">
                 <label class="form-radio-inline-group-label"
@@ -1541,7 +1530,7 @@
               </div>
             </div>
           </div>
-          <div class="form-floating mb-2">
+          <div class="form-floating mb-3">
             <input
               type="text"
               class="form-control"
@@ -1552,19 +1541,17 @@
               >الغرض من استخدام المركبة</label
             >
           </div>
-          <div class="col-sm-12">
-            <div class="form-floating mb-2">
-              <select class="form-select form-control" id="car-stop">
-                <option>اختر مكان ايقاف المركبة</option>
-                <option>في الشارع</option>
-                <option>في الكراج</option>
-              </select>
-              <label for="car-stop" class="form-label"
-                >مكان ايقاف المركبة في الليل</label
-              >
-            </div>
+          <div class="form-floating mb-3">
+            <select class="form-select form-control" id="car-stop">
+              <option>اختر مكان ايقاف المركبة</option>
+              <option>في الشارع</option>
+              <option>في الكراج</option>
+            </select>
+            <label for="car-stop" class="form-label"
+              >مكان ايقاف المركبة في الليل</label
+            >
           </div>
-          <div class="form-floating mb-2">
+          <div class="form-floating mb-3">
             <input
               type="text"
               class="form-control"
@@ -1577,7 +1564,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <div class="d-flex gap-3 col-md-9 mx-auto">
+          <div class="d-flex gap-3 col-12 col-md-9 mx-auto">
             <button
               type="button"
               role="button"
@@ -1624,20 +1611,22 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="form-floating mb-2">
-            <input
-              type="text"
-              class="form-control form-control-lg"
-              id="idNumber"
-              placeholder="رقم هوية/إقامة السائق"
-            />
-            <label for="idNumber" class="form-label"
-              >رقم هوية/إقامة السائق</label
-            >
-          </div>
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
-              <div class="form-floating mb-2">
+          <div class="row gx-2 gy-2 mb-3 mb-md-5">
+            <div class="col-12">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="idNumber"
+                  placeholder="رقم هوية/إقامة السائق"
+                />
+                <label for="idNumber" class="form-label"
+                  >رقم هوية/إقامة السائق</label
+                >
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-floating">
                 <select
                   class="form-select form-control form-control-lg"
                   id="education-level"
@@ -1651,8 +1640,8 @@
                 >
               </div>
             </div>
-            <div class="col-sm-12 col-md-6">
-              <div class="form-floating mb-2">
+            <div class="col-12 col-md-6">
+              <div class="form-floating">
                 <select
                   class="form-select form-control form-control-lg"
                   id="children-num"
@@ -1667,8 +1656,8 @@
                 >
               </div>
             </div>
-            <div class="col-sm-12 col-md-6">
-              <div class="form-floating mb-5">
+            <div class="col-12 col-md-6">
+              <div class="form-floating">
                 <input
                   type="text"
                   class="form-control form-control-lg from-control-datepicker"
@@ -1680,8 +1669,8 @@
                 >
               </div>
             </div>
-            <div class="col-sm-12 col-md-6">
-              <div class="form-floating mb-2">
+            <div class="col-12 col-md-6">
+              <div class="form-floating">
                 <select
                   class="form-select form-control form-control-lg"
                   id="accident-num"
@@ -1805,7 +1794,7 @@
             <div class="mb-5 ps-4">
               <fieldset>
                 <div class="row">
-                  <div class="col-sm-12 col-md-6">
+                  <div class="col-12 col-md-6">
                     <div class="form-check mb-2">
                       <input
                         class="form-check-input"
@@ -1818,7 +1807,7 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-sm-12 col-md-6">
+                  <div class="col-12 col-md-6">
                     <div class="form-check mb-2">
                       <input
                         class="form-check-input"
@@ -1831,7 +1820,7 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-sm-12 col-md-6">
+                  <div class="col-12 col-md-6">
                     <div class="form-check mb-2">
                       <input
                         class="form-check-input"
@@ -1844,7 +1833,7 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-sm-12 col-md-6">
+                  <div class="col-12 col-md-6">
                     <div class="form-check mb-2">
                       <input
                         class="form-check-input"
@@ -1857,7 +1846,7 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-sm-12 col-md-6">
+                  <div class="col-12 col-md-6">
                     <div class="form-check mb-2">
                       <input
                         class="form-check-input"
@@ -1870,7 +1859,7 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-sm-12 col-md-6">
+                  <div class="col-12 col-md-6">
                     <div class="form-check mb-2">
                       <input
                         class="form-check-input"
@@ -1909,7 +1898,7 @@
             <div class="mb-5 ps-4">
               <fieldset>
                 <div class="row">
-                  <div class="col-sm-12 col-md-6">
+                  <div class="col-12 col-md-6">
                     <div class="form-check mb-2">
                       <input
                         class="form-check-input"
@@ -1922,7 +1911,7 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-sm-12 col-md-6">
+                  <div class="col-12 col-md-6">
                     <div class="form-check mb-2">
                       <input
                         class="form-check-input"
@@ -1935,7 +1924,7 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-sm-12 col-md-6">
+                  <div class="col-12 col-md-6">
                     <div class="form-check mb-2">
                       <input
                         class="form-check-input"
@@ -1948,7 +1937,7 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-sm-12 col-md-6">
+                  <div class="col-12 col-md-6">
                     <div class="form-check mb-2">
                       <input
                         class="form-check-input"
@@ -1962,7 +1951,7 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-sm-12 col-md-6">
+                  <div class="col-12 col-md-6">
                     <div class="form-check mb-2">
                       <input
                         class="form-check-input"
@@ -1996,7 +1985,7 @@
           </div>
           <div class="collapse" id="other-license-collapsable">
             <div class="row mb-3">
-              <div class="col-sm-12 col-md-6">
+              <div class="col-12 col-md-6">
                 <div class="form-floating">
                   <select
                     class="form-select form-control form-control-lg"
@@ -2011,7 +2000,7 @@
                   >
                 </div>
               </div>
-              <div class="col-sm-12 col-md-6">
+              <div class="col-12 col-md-6">
                 <div class="form-floating">
                   <select
                     class="form-select form-control form-control-lg"
@@ -2030,7 +2019,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <div class="d-grid gap-3 mb-4 d-flex col-md-9 mx-auto">
+          <div class="d-grid gap-3 d-flex col-12 col-md-9 mx-auto">
             <button
               type="button"
               role="button"

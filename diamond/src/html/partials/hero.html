@@ -88,11 +88,14 @@
           <div class="form-floating mb-2">
             <input
               type="text"
-              class="form-control form-control-lg"
+              class="form-control form-control-lg is-invalid"
               id="serialNo"
               placeholder="الرقم التسلسلي"
             />
             <label for="serialNo" class="form-label">الرقم التسلسلي</label>
+            <div id="serialNoFeedback" class="invalid-feedback">
+              أدخل الرقم التسلسلي، يجب أن يكون رقماً
+            </div>
           </div>
           <div class="form-floating mb-5">
             <input

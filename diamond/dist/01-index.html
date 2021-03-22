@@ -2,17 +2,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--Slick CSS-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css "
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-    />
     <!--AOS CSS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--CSS-->
@@ -143,11 +132,14 @@
           <div class="form-floating mb-2">
             <input
               type="text"
-              class="form-control form-control-lg"
+              class="form-control form-control-lg is-invalid"
               id="serialNo"
               placeholder="الرقم التسلسلي"
             />
             <label for="serialNo" class="form-label">الرقم التسلسلي</label>
+            <div id="serialNoFeedback" class="invalid-feedback">
+              أدخل الرقم التسلسلي، يجب أن يكون رقماً
+            </div>
           </div>
           <div class="form-floating mb-5">
             <input
