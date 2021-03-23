@@ -186,6 +186,10 @@
           font-size: 14px;
           font-weight: 600;
           color: #fff;
+          &:hover{
+            color: $primary;
+            text-decoration: underline;
+          }
           @include media-breakpoint-up("md", $grid-breakpoints) {
             font-size: 32px;
           }

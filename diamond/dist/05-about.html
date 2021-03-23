@@ -10,7 +10,7 @@
   <body>
     <div id="about-page">
 <!-- start header.html-->
-<header class="header" data-aos="fade-down">
+<header class="header">
   <div class="container">
     <div class="header-logo">
       <a href="./01-index.html">
@@ -117,7 +117,7 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-section">
-      <div class="social-media" data-aos="fade-left">
+      <div class="social-media">
         <p>تابعنا عبر الشبكات الإجتماعية</p>
         <ul class="icons">
           <li>
@@ -134,7 +134,7 @@
           </li>
         </ul>
       </div>
-      <ul class="footer-menu" data-aos="fade-up">
+      <ul class="footer-menu">
         <li><a href="#">شروط البيع</a></li>
         <li><a href="#">حقوق المستهلك</a></li>
         <li><a href="#">شروط الاستخدام</a></li>
@@ -191,28 +191,31 @@
             />
             <label for="password" class="form-label">كلمة المرور</label>
           </div>
-          <div class="mb-4">
+          <div class="d-grid gap-3">
+            <button type="submit" class="btn btn-lg btn-primary">تسجيل دخول</button>
+            <div class="havent-acount mx-auto">
+              <button
+                type="button"
+                data-bs-dismiss="modal"
+                data-bs-target="#forgot-password-modal"
+                data-bs-toggle="modal"
+                class="btn btn-link"
+              >
+                هل نسيت كلمة المرور؟
+              </button>
+            </div>
+            <div class="havent-acount mx-auto">
+              <span>ليس لديك حساب؟</span>
             <button
               type="button"
-              data-bs-dismiss="modal"
-              data-bs-target="#forgot-password-modal"
-              data-bs-toggle="modal"
               class="btn btn-link"
-            >
-              هل نسيت كلمة المرور؟
-            </button>
-          </div>
-          <div class="d-grid gap-2">
-            <button type="submit" class="btn btn-lg btn-primary">دخول</button>
-            <button
-              type="button"
-              class="btn btn-lg btn-secondary"
               data-bs-dismiss="modal"
               data-bs-toggle="modal"
               data-bs-target="#signup-modal"
             >
-              ليس لديك حساب؟ سجل هنا
+             تسجيل حساب جديد
             </button>
+            </div>
           </div>
         </form>
       </div>

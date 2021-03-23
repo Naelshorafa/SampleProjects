@@ -80,3 +80,13 @@
     }
   }
 }
+.havent-acount{
+  button{
+    color: $primary;
+    font-weight: 900;
+    padding:0;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

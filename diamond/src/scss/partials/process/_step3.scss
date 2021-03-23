@@ -7,9 +7,20 @@
   }
   .details {
     background-color: rgba(167, 225, 250, 0.5);
-    padding: 27px 21px 45px 25px;
+    padding: 27px 0 45px 0;
     border-radius: 20px;
-
+    tr {
+      td,
+      th {
+        padding: 4px;
+      }
+      th {
+        width: 220px;
+      }
+    }
+    .tittle{
+      padding: 0 22px;
+    }
     a {
       text-decoration: underline;
       color: $primary;
@@ -71,9 +82,14 @@
     }
     input {
       position: absolute;
-      top: 20px;
-      left: 20px;
+      width: 0;
+      top: 10px;
+      left: 10px;
       opacity: 0;
+      @include media-breakpoint-up("sm", $grid-breakpoints){
+        top: 20px;
+        left: 20px;
+      }
       &:checked {
         opacity: 1;
       }
@@ -82,28 +98,33 @@
         position: absolute;
         top: -5px;
         left: -5px;
-        height: 30px;
-        width: 30px;
+        height: 10px;
+        width: 10px;
         border-radius: 50%;
         background-color: $secondary;
         background-image: $form-check-input-checked-bg-image;
+        @include media-breakpoint-up("sm", $grid-breakpoints){
+          height: 30px;
+          width: 30px;
+        }
       }
     }
   }
-  .details {
-    tr {
-      td,
-      th {
-        padding: 4px;
-      }
-      th {
-        width: 220px;
-      }
-    }
-    .details1 {
-      width: 100%;
+    .details-container {
       border-bottom: 2px solid #fff;
-      margin-bottom: 25px;
+      margin-bottom: 18px;
+      padding: 27px 22px 30px 22px;
+    }
+    .details-container1{
+      border-bottom: 2px solid #fff;
+      margin-bottom: 18px;
+      padding: 0 22px 20px 22px;
+    }
+    .details-container2{
+      padding: 0 25px;
+    }
+    .count-salary{
+      font-weight: 900;
+      font-size: 20px;
     }
   }
-}
