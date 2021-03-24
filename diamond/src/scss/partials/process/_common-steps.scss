@@ -1,7 +1,11 @@
 .prcoess-steps-progress-container {
+  padding-top:100px;
   max-width: 600px;
   margin: 0 auto;
   position: relative;
+  ul{
+    flex-wrap: nowrap;
+  }
   .prcoess-steps-progress {
     position: relative;
     z-index: 1;
@@ -55,7 +59,7 @@
   .progress {
     position: absolute;
     width: 100%;
-    top: 22px;
+    top: 122px;
     left: 50px;
     height: 2px;
     width: calc(100% - 100px);

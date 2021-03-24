@@ -7,8 +7,11 @@
   }
   .details {
     background-color: rgba(167, 225, 250, 0.5);
-    padding: 27px 0 45px 0;
+    padding: 12px 0;
     border-radius: 20px;
+    @include media-breakpoint-up("sm", $grid-breakpoints) {
+      padding: 24px 0;
+    }
     tr {
       td,
       th {
@@ -16,24 +19,50 @@
       }
       th {
         width: 220px;
-        @include media-breakpoint-down("sm", $grid-breakpoints){
-          width: 155px;
-          font-size: 12px;
-        }
-
       }
-      td{
+      td {
         text-align: right;
       }
     }
     .tittle {
-      padding: 0 22px;
+      padding: 0 12px;
+      @include media-breakpoint-down("md", $grid-breakpoints){
+        padding: 24px;
+      }
+
     }
     a {
       text-decoration: underline;
       color: $primary;
       &:hover {
         color: #000;
+      }
+    }
+    .details-container {
+      border-bottom: 2px solid #fff;
+      margin-bottom: 18px;
+      padding: 12px;
+      @include media-breakpoint-up("md", $grid-breakpoints){
+        padding: 24px;
+      }
+
+    }
+    .details-container1 {
+      border-bottom: 2px solid #fff;
+      margin-bottom: 18px;
+      padding: 12px;
+      @include media-breakpoint-up("md", $grid-breakpoints){
+        padding: 24px;
+      }
+    }
+    .details-container2 {
+      padding: 0 25px;
+    }
+    .count-salary {
+      p {
+        font-weight: 900;
+        font-size: 23px;
+        margin-bottom: 0;
       }
     }
   }
@@ -116,26 +145,6 @@
           width: 30px;
         }
       }
-    }
-  }
-  .details-container {
-    border-bottom: 2px solid #fff;
-    margin-bottom: 18px;
-    padding: 27px 22px 30px 22px;
-  }
-  .details-container1 {
-    border-bottom: 2px solid #fff;
-    margin-bottom: 18px;
-    padding: 0 22px 20px 22px;
-  }
-  .details-container2 {
-    padding: 0 25px;
-  }
-  .count-salary {
-    p {
-      font-weight: 900;
-      font-size: 23px;
-      margin-bottom: 0;
     }
   }
 }
