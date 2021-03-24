@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div id="process-page">
+    <div id="process-page" class="site-content-wrapper">
 <!-- start header.html-->
 <header class="header">
   <div class="container">
@@ -123,7 +123,7 @@
 <!-- start step1.html-->
 <section class="step-1">
   <h3 class="title mb-3"><strong>برجاء استكمال البيانات</strong></h3>
-  <form class="form-dark" method="GET" action="./step2.html">
+  <form class="form-dark" method="GET" action="step2.html">
     <div class="row mb-5 gy-2">
       <div class="col-sm-12 col-md-7">
         <div class="form-control">
@@ -164,7 +164,7 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-5">
-        <div class="form-floating">
+        <div class="form-floating input-group">
           <input
             type="text"
             class="form-control"
@@ -172,7 +172,9 @@
             placeholder="قيمة المركبة"
             
           />
+          <span class="input-group-text">ر.س</span>
           <label for="car-salary" class="form-label" >قيمة المركبة </label>
+          
           
         </div>
       </div>
@@ -265,13 +267,16 @@
 <section class="step2">
   <fieldset class="mb-5">
     <div class="owner-info">
-      <h4 class="" 
-      id="owner-information"
-      data-bs-toggle="collapse"
-      data-bs-target="#owner-information-collapsable"
-      aria-expanded="false"
-      aria-controls="owner-information-collapsable">
-        <strong>معلومات مالك الوثيقة والمركبة</strong>
+      <h4>
+        <a
+        role="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#owner-information-collapsable"
+          aria-expanded="false"
+          aria-controls="owner-information-collapsable"
+          >
+          <strong>معلومات مالك الوثيقة والمركبة</strong>
+        </a>
       </h4>
       <div class="collapse" id="owner-information-collapsable">
         <div class="row">
@@ -334,14 +339,13 @@
             </table>
           </div>
         </div>
-
       </div>
     </div>
   </fieldset>
   <div class="filtering-form mb-3">
     <div class="row gx-3 gy-3 align-items-center align-content-between">
       <div
-        class="d-flex col-xs-12 col-md-7 col-lg-6 col-xl-5 align-items-start"
+        class="d-flex col-xs-12 col-md-7 col-lg-6 col-xl-5 align-items-start flex-column flex-md-row"
       >
         <label class="form-radio-inline-group-label me-4">نوع التأمين</label>
         <div class="form-radio-inline-group dark">
@@ -382,9 +386,9 @@
         </select>
       </div>
       <div class="col-xs-12 col-lg-3 col-xl-4">
-        <button type="button" class="btn btn-lg btn-warning w-100">
+        <div class="alert alert-custom-warning text-center" role="alert">
           سينقضي وقت التسعيرة خلال 6 ساعات و 46 دقيقة
-        </button>
+        </div>
       </div>
     </div>
   </div>
@@ -396,10 +400,12 @@
             <div class="company-logo-container mb-3">
               <a href="#"><img src="images/company-logo.png" /></a>
             </div>
-            <div
-              class="d-flex  align-items-center text-center mx-auto"
-            >
-              <button type="button" class="btn btn-md btn-secondary-invert" disabled>
+            <div class="d-flex align-items-center text-center mx-auto">
+              <button
+                type="button"
+                class="btn btn-md btn-secondary-invert"
+                disabled
+              >
                 ضد الغير
               </button>
             </div>
@@ -519,9 +525,9 @@
             </tr>
           </tbody>
         </table>
-        <div class="choose-btn d-grid gap-2 mt-3">
-          <button type="submit" class="btn btn-lg btn-primary">اختيار</button>
-          <button type="button" class="btn btn-lg btn-primary-invert">
+        <div class="choose-btn d-grid gap-2">
+          <button type="submit" class="btn btn-primary">اختيار</button>
+          <button type="button" class="btn btn-primary-invert">
             او استبدلها بتأمين شامل 3445.64 ر.س
           </button>
         </div>
@@ -534,12 +540,16 @@
         <div class="row">
           <div class="col-sm-12 col-md-2 d-flex flex-md-column mb-3">
             <div class="company-logo-container mb-3">
-              <a data-bs-target="#malath-modal" data-bs-toggle="modal"><img src="images/malaz-logo.png" /></a>
+              <a data-bs-target="#malath-modal" data-bs-toggle="modal"
+                ><img src="images/malaz-logo.png"
+              /></a>
             </div>
-            <div
-              class="d-flex align-items-center text-center mx-auto"
-            >
-              <button type="button" class="btn btn-md btn-secondary-invert" disabled>
+            <div class="d-flex align-items-center text-center mx-auto">
+              <button
+                type="button"
+                class="btn btn-md btn-secondary-invert"
+                disabled
+              >
                 ضد الغير
               </button>
             </div>
@@ -659,9 +669,9 @@
             </tr>
           </tbody>
         </table>
-        <div class="choose-btn d-grid gap-2 mt-3">
-          <button type="submit" class="btn btn-lg btn-primary">اختيار</button>
-          <button type="button" class="btn btn-lg btn-primary-invert">
+        <div class="choose-btn d-grid gap-2">
+          <button type="submit" class="btn btn-primary">اختيار</button>
+          <button type="button" class="btn btn-primary-invert">
             او استبدلها بتأمين شامل 3445.64 ر.س
           </button>
         </div>
@@ -676,10 +686,12 @@
             <div class="company-logo-container mb-3">
               <a href="#"><img src="images/company-logo.png" /></a>
             </div>
-            <div
-              class="d-flex  align-items-center text-center mx-auto"
-            >
-              <button type="button" class="btn btn-md btn-secondary-invert" disabled>
+            <div class="d-flex align-items-center text-center mx-auto">
+              <button
+                type="button"
+                class="btn btn-md btn-secondary-invert"
+                disabled
+              >
                 ضد الغير
               </button>
             </div>
@@ -799,9 +811,9 @@
             </tr>
           </tbody>
         </table>
-        <div class="choose-btn d-grid gap-2 mt-3">
-          <button type="submit" class="btn btn-lg btn-primary">اختيار</button>
-          <button type="button" class="btn btn-lg btn-primary-invert">
+        <div class="choose-btn d-grid gap-2">
+          <button type="submit" class="btn btn-primary">اختيار</button>
+          <button type="button" class="btn btn-primary-invert">
             او استبدلها بتأمين شامل 3445.64 ر.س
           </button>
         </div>
@@ -816,10 +828,12 @@
             <div class="company-logo-container mb-3">
               <a href="#"><img src="images/company-logo.png" /></a>
             </div>
-            <div
-              class="d-flex  align-items-center text-center mx-auto"
-            >
-              <button type="button" class="btn btn-md btn-secondary-invert" disabled>
+            <div class="d-flex align-items-center text-center mx-auto">
+              <button
+                type="button"
+                class="btn btn-md btn-secondary-invert"
+                disabled
+              >
                 ضد الغير
               </button>
             </div>
@@ -939,9 +953,9 @@
             </tr>
           </tbody>
         </table>
-        <div class="choose-btn d-grid gap-2 mt-3">
-          <button type="submit" class="btn btn-lg btn-primary">اختيار</button>
-          <button type="button" class="btn btn-lg btn-primary-invert">
+        <div class="choose-btn d-grid gap-2">
+          <button type="submit" class="btn btn-primary">اختيار</button>
+          <button type="button" class="btn btn-primary-invert">
             او استبدلها بتأمين شامل 3445.64 ر.س
           </button>
         </div>
@@ -968,10 +982,17 @@
           <div class="col-sm-12 col-md-2">
             <div class="company-logo-container">
               <a data-bs-target="#malath-modal" data-bs-toggle="modal">
-                <div class="company-logo-container">
+                <div class="company-logo-container mb-3">
                   <img src="images/malath-link.png" />
                 </div>
               </a>
+              <button
+              type="button"
+              class="btn btn-md btn-secondary-invert"
+              disabled
+            >
+              ضد الغير
+            </button>
             </div>
           </div>
           <div class="col-sm-12 col-md-9">
@@ -1014,18 +1035,18 @@
         </div>
       </fieldset>
       <fieldset class="mb-5">
-        <h3
-          div
-          class=""
-          id="owner-information"
-          data-bs-toggle="collapse"
-          data-bs-target="#owner-information-collapsable"
-          aria-expanded="false"
-          aria-controls="owner-information-collapsable"
-        >
-          معلومات مالك الوثيقة والمركبة
-        </h3>
-        <div class="collapse" id="owner-information-collapsable">
+        <h4 class="mb-0">
+          <a
+          role="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#owner-information-collapsable"
+            aria-expanded="false"
+            aria-controls="owner-information-collapsable"
+            >
+            <strong>معلومات مالك الوثيقة والمركبة</strong>
+          </a>
+        </h4>
+        <div class="collapse pt-3" id="owner-information-collapsable">
           <div class="row">
             <div class="col-sm-12 col-md-6">
               <table>
@@ -1163,15 +1184,16 @@
       <form class="form-dark">
         <div class="row mb-3">
           <div class="col-sm-12 col-md-6">
-            <div class="form-floating">
+            <div class="form-floating input-group">
               <input
                 type="password"
                 class="form-control"
                 id="floatingPassword"
                 placeholder="رقم الحساب الدولي الخاص بمالك الوثيقة (الايبان)"
               />
-              <label for="floatingPassword"
-                >رقم الحساب الدولي الخاص بمالك الوثيقة (الايبان)</label
+              <span class="input-group-text">SA</span>
+              <label for="floatingPassword">
+                رقم الحساب الدولي الخاص بمالك الوثيقة (الايبان)</label
               >
             </div>
           </div>
@@ -1270,9 +1292,9 @@
             <span>شامل الضرائب والرسوم</span>
           </div>
           <div class="mb-5">
-            <button type="button" class="btn btn-lg btn-warning">
+            <div class="alert alert-custom-warning text-center" role="alert">
               سينقضي وقت التسعيرة خلال 6 ساعات و 46 دقيقة
-            </button>
+            </div>
           </div>
           <div class="form-check mb-4">
             <input
@@ -1353,35 +1375,43 @@
 
       <div class="modal-body">
         <div class="image-container mb-2">
-            <img src="images/malaz-logo.png" />
+          <img src="images/malaz-logo.png" />
         </div>
         <h3 class="tittle mb-4">شركة ملاذ للتأمين التعاوني</h3>
         <div class="malath-info mb-4">
-          <table>
-            <tbody>
-              <tr>
-                <th>الموقع الالكتروني</th>
-                <td>malath.com.sa</td>
-              </tr>
-              <tr>
-                <th>البريد الالكتروني</th>
-                <td>customercare@malath.com.sa</td>
-              </tr>
-              <tr>
-                <th>رقم الهاتف</th>
-                <td>920015815</td>
-              </tr>
-              <tr>
-                <th>رقم الفاكس</th>
-                <td>114186333</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <h5>الموقع الالكتروني</h5>
+            </div>
+            <div class="col-12 col-lg-6">
+              <p>malath.com.sa</p>
+            </div>
+            <div class="col-12 col-lg-5">
+              <h5>البريد الالكتروني</h5>
+            </div>
+            <div class="col-12 col-lg-7">
+              <p>customercare@malath.com.sa</p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <h5>رقم الهاتف</h5>
+            </div>
+            <div class="col-12 col-lg-6">
+              <p>920015815</p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <h5>رقم الفاكس</h5>
+            </div>
+            <div class="col-12 col-lg-6">
+              <p>114186333</p>
+            </div>
+          </div>
         </div>
         <div class="malath-Services mb-5">
-            <h5>خدمات الشركة</h5>
-            <p>الحساب الرسمي لشركة #ملاذ_للتأمين | مركز خدمة العملاء 8001280088 - خاضعة لإشراف ورقابة البنك المركزي السعودي
-            </p>
+          <h5>خدمات الشركة</h5>
+          <p>
+            الحساب الرسمي لشركة #ملاذ_للتأمين | مركز خدمة العملاء 8001280088 -
+            خاضعة لإشراف ورقابة البنك المركزي السعودي
+          </p>
         </div>
       </div>
     </div>
@@ -1707,6 +1737,7 @@
                   class="form-control form-control-lg from-control-datepicker"
                   id="brithdaydate"
                   placeholder="تاريخ الميلاد"
+                  readonly
                 />
                 <label for="brithdaydate" class="form-label"
                   >تاريخ الميلاد</label
@@ -2094,7 +2125,7 @@
 
 
 <!-- end page_content -->
-
+    </div>
 <!-- start footer.html-->
 <footer class="footer">
   <div class="container">
@@ -2135,7 +2166,6 @@
 </footer>
 
 <!-- end footer.html-->
-    </div>
 <!-- start all.html-->
 <!-- start signin-modal.html-->
 <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog">

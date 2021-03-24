@@ -116,10 +116,13 @@
     }
   }
 }
-.btn-warning {
-  font-size: 14px;
+.alert-custom-warning{
   color: #fff;
-  padding: 12px;
+  background-color: $warning;
+  border-color: $warning;
+  padding: 10px 12px;
+  font-size: 14px;
+  margin: 0;
 }
 .company-logo-container {
   max-width: 137px;

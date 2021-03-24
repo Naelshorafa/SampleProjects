@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div id="index-page">
+    <div id="index-page" class="site-content-wrapper">
 <!-- start header.html-->
 <header class="header">
   <div class="container">
@@ -141,12 +141,13 @@
               أدخل الرقم التسلسلي، يجب أن يكون رقماً
             </div>
           </div>
-          <div class="form-floating mb-5">
+          <div class="form-floating mb-5" >
             <input
               type="text"
               class="form-control form-control-lg from-control-datepicker"
               id="startDate"
               placeholder="تاريخ بداية التأمين"
+              readonly
             />
             <label for="startDate" class="form-label"
               >تاريخ بداية التأمين</label
@@ -295,7 +296,7 @@
 
 
 <!-- end page_content -->
-
+    </div>
 <!-- start footer.html-->
 <footer class="footer">
   <div class="container">
@@ -336,7 +337,6 @@
 </footer>
 
 <!-- end footer.html-->
-    </div>
 <!-- start all.html-->
 <!-- start signin-modal.html-->
 <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog">

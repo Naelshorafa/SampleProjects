@@ -16,6 +16,14 @@
       }
       th {
         width: 220px;
+        @include media-breakpoint-down("sm", $grid-breakpoints){
+          width: 155px;
+          font-size: 12px;
+        }
+
+      }
+      td{
+        text-align: right;
       }
     }
     .tittle {
@@ -126,7 +134,7 @@
   .count-salary {
     p {
       font-weight: 900;
-      font-size: 20px;
+      font-size: 23px;
       margin-bottom: 0;
     }
   }

@@ -7,10 +7,17 @@
           <div class="col-sm-12 col-md-2">
             <div class="company-logo-container">
               <a data-bs-target="#malath-modal" data-bs-toggle="modal">
-                <div class="company-logo-container">
+                <div class="company-logo-container mb-3">
                   <img src="images/malath-link.png" />
                 </div>
               </a>
+              <button
+              type="button"
+              class="btn btn-md btn-secondary-invert"
+              disabled
+            >
+              ضد الغير
+            </button>
             </div>
           </div>
           <div class="col-sm-12 col-md-9">
@@ -53,18 +60,18 @@
         </div>
       </fieldset>
       <fieldset class="mb-5">
-        <h3
-          div
-          class=""
-          id="owner-information"
-          data-bs-toggle="collapse"
-          data-bs-target="#owner-information-collapsable"
-          aria-expanded="false"
-          aria-controls="owner-information-collapsable"
-        >
-          معلومات مالك الوثيقة والمركبة
-        </h3>
-        <div class="collapse" id="owner-information-collapsable">
+        <h4 class="mb-0">
+          <a
+          role="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#owner-information-collapsable"
+            aria-expanded="false"
+            aria-controls="owner-information-collapsable"
+            >
+            <strong>معلومات مالك الوثيقة والمركبة</strong>
+          </a>
+        </h4>
+        <div class="collapse pt-3" id="owner-information-collapsable">
           <div class="row">
             <div class="col-sm-12 col-md-6">
               <table>
@@ -202,15 +209,16 @@
       <form class="form-dark">
         <div class="row mb-3">
           <div class="col-sm-12 col-md-6">
-            <div class="form-floating">
+            <div class="form-floating input-group">
               <input
                 type="password"
                 class="form-control"
                 id="floatingPassword"
                 placeholder="رقم الحساب الدولي الخاص بمالك الوثيقة (الايبان)"
               />
-              <label for="floatingPassword"
-                >رقم الحساب الدولي الخاص بمالك الوثيقة (الايبان)</label
+              <span class="input-group-text">SA</span>
+              <label for="floatingPassword">
+                رقم الحساب الدولي الخاص بمالك الوثيقة (الايبان)</label
               >
             </div>
           </div>
@@ -309,9 +317,9 @@
             <span>شامل الضرائب والرسوم</span>
           </div>
           <div class="mb-5">
-            <button type="button" class="btn btn-lg btn-warning">
+            <div class="alert alert-custom-warning text-center" role="alert">
               سينقضي وقت التسعيرة خلال 6 ساعات و 46 دقيقة
-            </button>
+            </div>
           </div>
           <div class="form-check mb-4">
             <input

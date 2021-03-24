@@ -1,20 +1,9 @@
 .header {
-  #about-page & {
-    background-image: linear-gradient(
-      to bottom,
-      #f3f3f3,
-      rgba(255, 255, 255, 0)
-    );
-    margin-bottom: 110px;
-  }
-  #process-page & {
-    background-image: linear-gradient(
-      to bottom,
-      #f3f3f3,
-      rgba(255, 255, 255, 0)
-    );
-    margin-bottom: 110px;
-  }
+  background-image: linear-gradient(
+    to bottom,
+    #f3f3f3,
+    rgba(255, 255, 255, 0)
+  );
   padding-top: 22px;
   @include media-breakpoint-up("md", $grid-breakpoints) {
     padding-top: 52px;
@@ -23,6 +12,7 @@
     position: absolute;
     width: 100%;
     z-index: 3;
+    background-image: none;
   }
   .container {
     display: flex;
