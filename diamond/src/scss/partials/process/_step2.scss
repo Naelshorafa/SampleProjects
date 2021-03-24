@@ -4,6 +4,9 @@
       padding: 0.75rem 0.75rem 0.75rem 2.25rem;
     }
   }
+  .col-border{
+    border-right: 1px solid #fff;
+  }
   .owner-info {
     h4 {
       @include media-breakpoint-down("sm", $grid-breakpoints) {
