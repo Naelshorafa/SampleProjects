@@ -698,8 +698,8 @@ $input-height-lg:                       add($input-line-height * 1em, add($input
 $input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
 
-$form-check-input-width:                  1.8125em;
-$form-check-min-height:                   $font-size-base * $line-height-base;
+$form-check-input-width:                  1.4em;
+$form-check-min-height:                   1.4em;
 $form-check-padding-start:                $form-check-input-width + .5em;
 $form-check-margin-bottom:                .125rem;
 $form-check-label-color:                  null;
