@@ -6,7 +6,10 @@
     }
   .about-us {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
+    @include media-breakpoint-up("lg", $grid-breakpoints){
+      flex-direction: row;
+    }
     h3{
         font-size: 23px;
         font-weight: 900;

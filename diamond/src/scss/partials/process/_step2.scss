@@ -1,7 +1,14 @@
 .step2 {
-  .filtering-form{
-    .form-select{
-      padding: .75rem .75rem .75rem 2.25rem;
+  .filtering-form {
+    .form-select {
+      padding: 0.75rem 0.75rem 0.75rem 2.25rem;
+    }
+  }
+  .owner-info {
+    h4 {
+      @include media-breakpoint-down("sm", $grid-breakpoints) {
+        font-size: 1rem;
+      }
     }
   }
   a {
@@ -10,5 +17,34 @@
     &:hover {
       color: $primary;
     }
+  }
+  .form-check-input {
+    width: 1em;
+    height: 1em;
+  }
+  .form-check-input[type="checkbox"] {
+    border-radius: 0.3em;
+  }
+}
+.align-items-start {
+  flex-wrap: wrap;
+}
+.btn-warning {
+  color: #fff;
+}
+.salary-option {
+  table {
+    tr {
+      td,
+      th {
+        padding: 4px;
+      }
+    }
+  }
+}
+.choose-btn {
+  .btn-primary,
+  .btn-primary-invert {
+    padding: 0.6rem;
   }
 }

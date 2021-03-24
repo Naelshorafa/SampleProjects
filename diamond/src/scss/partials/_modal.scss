@@ -17,18 +17,18 @@
 .modal-header {
   .modal-title {
     @include media-breakpoint-down("md", $grid-breakpoints) {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 }
 #malath-modal {
   .modal-content {
     .modal-body {
-      .image-container{
+      .image-container {
         width: 167px;
         height: 167px;
         margin: 0 auto;
-        img{
+        img {
           width: 100%;
         }
       }
@@ -37,18 +37,16 @@
         margin-bottom: 10px;
       }
       .malath-info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .malath-info-tittle{
-          font-size: 20px;
-          font-weight: 500;
-        }
-        .malath-info-data{
-          font-size: 18px;
-          text-align: right;
-          p{
-            margin-bottom: .5rem;
+        table {
+          width: 100%;
+          tr {
+            td,
+            th {
+              padding: 10px 4px;
+            }
+            td{
+              text-align: right;
+            }
           }
         }
       }
@@ -56,7 +54,7 @@
   }
 }
 
-.modal-dialog-aside{
+.modal-dialog-aside {
   @include media-breakpoint-up("lg", $grid-breakpoints) {
     position: fixed;
     right: -750px;
@@ -64,28 +62,28 @@
     height: 100%;
     width: 700px;
     margin: 0;
-    .modal.fade &{
-      transition: right .3s ease-out;
+    .modal.fade & {
+      transition: right 0.3s ease-out;
       transform: none;
     }
-    .modal.show &{
+    .modal.show & {
       right: 0;
     }
-    .modal-content{
+    .modal-content {
       border-radius: 0;
       height: 100%;
     }
-    .modal-footer{
-      background-color: #F7F7F7;
+    .modal-footer {
+      background-color: #f7f7f7;
     }
   }
 }
-.havent-acount{
-  button{
+.havent-acount {
+  button {
     color: $primary;
     font-weight: 900;
-    padding:0;
-    &:hover{
+    padding: 0;
+    &:hover {
       text-decoration: underline;
     }
   }
