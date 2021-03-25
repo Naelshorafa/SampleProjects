@@ -73,4 +73,14 @@
   background-size: 24px auto;
   background-position: 18px center;
   background-repeat: no-repeat;
+  form:not(.form-dark) &{
+    background-color: #fff;
+  }
+}
+.form-floating{
+  &.input-group{
+    label{
+      z-index: 3;
+    }
+  }
 }

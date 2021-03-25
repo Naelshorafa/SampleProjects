@@ -16,19 +16,14 @@
     border-radius: 25px;
     background-image: linear-gradient(to bottom, #ffffff 32%, #f4f4f4);
     padding: 22px 24px;
+    cursor: pointer;
+    transition: all .3s;
     @include media-breakpoint-up("md", $grid-breakpoints) {
       padding: 48px 24px;
       height: 100%;
     }
     &:hover {
-      cursor: pointer;
-      .icon-container {
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-        animation-name: bounce-icon;
-        animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
-      }
-      color: $primary;
+      background-image: linear-gradient(to bottom, #ffffff 32%, $secondary);
     }
     .icon-container {
       margin: 0 auto;
