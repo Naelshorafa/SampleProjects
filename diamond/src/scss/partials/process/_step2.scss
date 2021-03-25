@@ -4,8 +4,31 @@
       padding: 0.75rem 0.75rem 0.75rem 2.25rem;
     }
   }
-  .col-border{
-    border-right: 1px solid #fff;
+  .field-container {
+    @include media-breakpoint-up("lg", $grid-breakpoints) {
+      padding: 0;
+    }
+    .col-container {
+      @include media-breakpoint-up("lg", $grid-breakpoints) {
+        padding: 20px;
+      }
+    }
+    .col-container1{
+      padding: 20px;
+      @include media-breakpoint-up("xl", $grid-breakpoints) {
+        padding: 0;
+      }
+    }
+  }
+  .col-border {
+    @include media-breakpoint-up("lg", $grid-breakpoints) {
+      border-right: 1px solid #fff;
+    }
+    .tittle {
+      @include media-breakpoint-up("xl", $grid-breakpoints) {
+        padding: 64px 0 0 0;
+      }
+    }
   }
   .owner-info {
     h4 {
@@ -22,8 +45,6 @@
     }
   }
 }
-.btn{
-border-radius: 0.8125rem;
+.btn {
+  border-radius: 0.8125rem;
 }
-
-
