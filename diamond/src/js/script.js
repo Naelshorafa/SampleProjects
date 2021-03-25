@@ -61,12 +61,21 @@ $(function () {
     today: "هذا اليوم",
     rtl: true,
   };
-
   $(".from-control-datepicker").datepicker({
-    format: "d M yyyy",
-    language: "ar",
+    startDate: "+2d",
+    format: 'd M yyyy',
+    language: $('html').attr('lang'),
     autoclose: true,
   });
+
+  $(".from-control-birthdatepicker").datepicker({
+    endDate: "-16y",
+    minViewMode: 1,
+    format: 'M yyyy',
+    language: $('html').attr('lang'),
+    autoclose: true,
+  });
+  
 
   $(".success-partners .partners-slider").slick({
     slidesToShow: 7,
