@@ -1,0 +1,40 @@
+<!-- @@master ./main-template.html -->
+
+<!-- @@block = page_content -->
+<section class="process-content pt-5">
+  <div class="container">
+    <div class="prcoess-steps-progress-container mb-5 mt-5">
+      <ul
+        class="prcoess-steps-progress"
+        data-active-step="<!-- @@var active_step -->"
+      >
+        <li>
+          <a href="03-step1.html">ادخال البيانات</a>
+        </li>
+        <li>
+          <a href="04-step2.html">مشاهدة العروض</a>
+        </li>
+        <li>
+          <a href="05-step3.html">تقدم بالدفعة</a>
+        </li>
+        <li>
+          <a href="06-step4.html">طباعة الوثيقة</a>
+        </li>
+      </ul>
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          aria-valuenow="0"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+    </div>
+    <div class="step-content pt-5 pb-5">
+      <!-- @@placeholder = step_content -->
+    </div>
+  </div>
+</section>
+<!-- @@include ../partials/process/modals/all.html -->
+<!-- @@close -->

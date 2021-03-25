@@ -1,24 +1,111 @@
 .prcoess-steps-progress-container {
-  padding-top:100px;
   max-width: 600px;
   margin: 0 auto;
   position: relative;
-  ul{
-    flex-wrap: nowrap;
-  }
   .prcoess-steps-progress {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0;
+    margin: 0;
     position: relative;
     z-index: 1;
+    list-style: none;
     counter-reset: step-number;
-    .nav-item {
+    &[data-active-step="1"]{
+      li{
+        &:nth-child(1){
+          a{
+            color: $primary;
+            &:before {
+              background-color: $primary;
+              border-color: $primary;
+            }
+            &:after {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    &[data-active-step="2"]{
+      + .progress{
+        .progress-bar{
+          width: 33.33%;
+        }
+      }
+      li{
+        &:nth-child(1),&:nth-child(2){
+          a{
+            color: $primary;
+            &:before {
+              background-color: $primary;
+              border-color: $primary;
+            }
+            &:after {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    &[data-active-step="3"]{
+      + .progress{
+        .progress-bar{
+          width: 66.67%;
+        }
+      }
+      li{
+        &:nth-child(1),&:nth-child(2),&:nth-child(3){
+          a{
+            color: $primary;
+            &:before {
+              background-color: $primary;
+              border-color: $primary;
+            }
+            &:after {
+              color: #fff;
+            }
+          }
+        }
+      }
+      
+    }
+    &[data-active-step="4"]{
+      + .progress{
+        .progress-bar{
+          width: 100%;
+        }
+      }
+      li{
+        &:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4){
+          a{
+            color: $primary;
+            &:before {
+              background-color: $primary;
+              border-color: $primary;
+            }
+            &:after {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    li {
       counter-increment: step-number;
-      button {
+      a {
         position: relative;
         padding-top: 60px;
         background-color: transparent;
         border: none;
         color: #c5c5c5;
         font-weight: 900;
+        display: block;
+        @include media-breakpoint-down('md', $grid-breakpoints){
+          font-size: 10px;
+        }
         &.active {
           color: $primary;
           &:before {
@@ -59,14 +146,13 @@
   .progress {
     position: absolute;
     width: 100%;
-    top: 122px;
+    top: 22px;
     left: 50px;
     height: 2px;
     width: calc(100% - 100px);
   }
 }
-.prcoess-steps-content {
-  padding: 56px 0;
+.process-content {
   ul {
     padding: 0;
     margin: 0;
@@ -130,14 +216,21 @@
   margin: 0;
 }
 .company-logo-container {
-  max-width: 100px;
+  max-width: 70px;
   margin: 0 auto;
   cursor: pointer;
   img {
     width: 100%;
   }
-  @include media-breakpoint-down("md", $grid-breakpoints){
+  @include media-breakpoint-up("md", $grid-breakpoints){
     margin-right: 20px;
-    width: 70px;
+    width: 100px;
+  }
+}
+.owner-info {
+  h4 {
+    @include media-breakpoint-down("sm", $grid-breakpoints) {
+      font-size: 1rem;
+    }
   }
 }

@@ -1,5 +1,11 @@
-<section class="step-1">
+<!-- @@master ../templates/process.html { "active_step" : "1" } -->
+
+<!-- @@block = step_content -->
+<div class="step1">
   <h3 class="title mb-3"><strong>برجاء استكمال البيانات</strong></h3>
+  <div class="alert alert-danger">
+    حدث خطا اثناء محاولة معالجة البيانات.
+  </div>
   <form class="form-dark" method="GET" action="step2.html">
     <div class="row mb-5 gy-2">
       <div class="col-sm-12 col-md-7">
@@ -41,18 +47,15 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-5">
-        <div class="form-floating input-group">
+        <div class="form-floating input-group has-validation">
           <input
             type="text"
             class="form-control"
             id="car-salary"
             placeholder="قيمة المركبة"
-            
           />
           <span class="input-group-text">ر.س</span>
-          <label for="car-salary" class="form-label" >قيمة المركبة </label>
-          
-          
+          <label for="car-salary" class="form-label">قيمة المركبة </label>
         </div>
       </div>
       <div class="col-sm-12 col-md-7">
@@ -103,13 +106,25 @@
         </div>
       </div>
     </div>
-    <div class="d-grid gap-3 mb-5 d-flex justify-content-end col-md-6 offset-md-6 col-xl-5 offset-xl-7">
-      <button type="button" role="button" class="btn btn-lg btn-secondary w-50" data-bs-toggle="modal"
-      data-bs-target="#extra-daitals-modal">
+    <div
+      class="d-grid gap-3 mb-5 d-flex justify-content-end col-md-6 offset-md-6 col-xl-5 offset-xl-7"
+    >
+      <button
+        type="button"
+        role="button"
+        class="btn btn-lg btn-secondary w-50"
+        data-bs-toggle="modal"
+        data-bs-target="#extra-daitals-modal"
+      >
         تفاصيل اخرى
       </button>
-      <button type="button" role="button" class="btn btn-lg btn-primary w-50" data-bs-toggle="modal"
-      data-bs-target="#extra-driver-modal">
+      <button
+        type="button"
+        role="button"
+        class="btn btn-lg btn-primary w-50"
+        data-bs-toggle="modal"
+        data-bs-target="#extra-driver-modal"
+      >
         إضافة سائق إضافي
       </button>
     </div>
@@ -124,10 +139,15 @@
         أوافق على الشروط والأحكام وسياسة الخصوصية
       </label>
     </div>
-    <div class="col-lg-4 d-grid">
-        <button type="submit" class="btn btn-lg btn-primary text-start btn-arrow w-100">
-          أظهر العروض
-        </button>
+    <div class="col-lg-4 d-grid mb-5">
+      <button
+        type="submit"
+        class="btn btn-lg btn-primary text-start btn-arrow w-100"
+      >
+        أظهر العروض
+      </button>
     </div>
   </form>
-</section>
+</div>
+
+<!-- @@close -->

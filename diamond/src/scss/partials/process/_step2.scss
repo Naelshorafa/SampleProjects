@@ -13,10 +13,17 @@
         padding: 20px;
       }
     }
-    .col-container1{
-      padding: 20px;
+    .col-container1 {
+      @include media-breakpoint-up("lg", $grid-breakpoints) {
+        padding: 20px;
+      }
       @include media-breakpoint-up("xl", $grid-breakpoints) {
         padding: 0;
+      }
+      .form-check-input {
+        height: 18px;
+        width: 18px;
+        border-radius: 7px;
       }
     }
   }
@@ -27,13 +34,6 @@
     .tittle {
       @include media-breakpoint-up("xl", $grid-breakpoints) {
         padding: 64px 0 0 0;
-      }
-    }
-  }
-  .owner-info {
-    h4 {
-      @include media-breakpoint-down("sm", $grid-breakpoints) {
-        font-size: 1rem;
       }
     }
   }

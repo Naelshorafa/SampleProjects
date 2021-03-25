@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div id="index-page" class="site-content-wrapper">
+    <div id="<!-- @@var page_id -->" class="site-content-wrapper">
 <!-- start header.html-->
 <header class="header">
   <div class="container">
@@ -41,258 +41,86 @@
 <!-- end header.html-->
 
 <!-- start page_content -->
-<!-- start hero.html-->
-<section class="hero">
+<section class="customers-service">
   <div class="container">
-    <div class="hero-content">
-      <div class="hero-info" data-aos="fade-left">
-        <p class="slogan">
-          <small>تخلص من</small>
-          <span>إلتباس التأمين،</span>
-        </p>
-        <p class="slogan">
-          <small>أمِّن على سيارتك الآن</small>
-          <span>أفضل شركات التأمين</span>
-        </p>
-        <div class="hotline">
-          <div class="image-cont">
-            <img src="images/tele.svg" />
-          </div>
-          <div class="phone-num">
-            <span>الخط الساخن</span>
-            <a href="tel:0000 000 00">0000 000 00</a>
-          </div>
-          <div class="img-cont">
-            <img src="images/bank-logo.png" />
-          </div>
-        </div>
-      </div>
-
-      <div class="inquiry-form" data-aos="fade-up">
-        <header class="titles-container">
-          <h3 class="title">ماذا تنتظر .. إبدأ خطوتك الأولى</h3>
-          <p class="subtitle">للتأمين على المركبات ضد الغير / شامل</p>
-        </header>
-        <form class="" method="GET" action="03-step1.html">
-          <div class="mb-3">
-            <div class="row">
-              <div class="col-md-5">
-                <label class="form-radio-inline-group-label">نوع وثيقة المركبة</label>
-              </div>
-              <div class="col-md-7">
-                <div class="form-radio-inline-group">
-                  <div class="form-radio-inline">
-                    <input
-                      type="radio"
-                      name="vehicleDocumentType"
-                      id="vehicleDocumentType1"
-                      value="1"
-                      checked
-                    />
-                    <label class="form-check-label" for="vehicleDocumentType1"
-                      >استمارة</label
-                    >
-                  </div>
-                  <div class="form-radio-inline">
-                    <input
-                      type="radio"
-                      name="vehicleDocumentType"
-                      id="vehicleDocumentType2"
-                      value="2"
-                    />
-                    <label class="form-check-label" for="vehicleDocumentType2"
-                      >بطاقة جمركية</label
-                    >
-                  </div>
+      <h1 class="text-center mt-4 mb-5">خدمة العملاء</h1>
+      <div class="row text-center mb-5">
+          <div class="col-sm-12 col-lg-4">
+            <div class="content">
+                <div class="icon-container mb-5">
+                  <img src="images/document.svg" />
                 </div>
+                <a href="tel:920004778">920004778</a>
+                <p class="description mt-3">
+                    يمكنك التواصل معنا من خلال رقم خدمة العملاء في أوقات العمل الرسمية
+                </p>
               </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <div class="content">
+                <div class="icon-container mb-5">
+                  <img src="images/document.svg" />
+                </div>
+                <h4>info@dbroker.com.sa</h4>
+                <p class="description mt-3">
+                    لأنك قد تحتاج إالى المساعدة في أي وقت. لذلك أرسل بريدا إالكترونيا وسنتواصل معك في أقرب وقت ممكن
+                </p>
+              </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <div class="content">
+                <div class="icon-container mb-5">
+                  <img src="images/document.svg" />
+                </div>
+                <p class="description">
+                    المملكة العربية السعودية . الرياض, حي الربيع. رقم المبنى 7356 الوحدة رقم 1316 الرمز البريدي 13315 إضافة 3810
+                </p>
+              </div>
+          </div>
+      </div>
+      <div class="input-group mb-5">
+        <span class="col-12 input-group-text">التواصل الإداري</span>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-lg-4">
+          <div class="content">
+            <h4>الموضوع</h4>
+            <select
+            class="form-select form-lg"
+            aria-label="sort"
+          >
+            <option selected>طلب الحصول على خدمات</option>
+            <option value="1">طلب الحصول على عروض</option>
+            <option value="2">طلب الحصول على خصومات</option>
+          </select>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+          <div class="content">
+            <h4>رقم الجوال</h4>
+            <div class="mb-2">
+              <input type="password" class="form-control" placeholder="05********" aria-label="mobile" aria-describedby="basic-addon1">
+
             </div>
           </div>
-          <div class="form-floating mb-2">
-            <input
-              type="text"
-              class="form-control form-control-lg"
-              id="idNumber"
-              placeholder="رقم الهوية، الإقامة أو الشركة"
-            />
-            <label for="idNumber" class="form-label"
-              >رقم الهوية، الإقامة أو الشركة</label
-            >
-          </div>
-          <div class="form-floating mb-2">
-            <select class="form-select form-control-lg" id="insurancePurpose">
-              <option>اختر الغرض من التأمين</option>
-              <option>تأمين جديد شامل</option>
-              <option>تأمين ضد الغير</option>
-            </select>
-            <label for="insurancePurpose" class="form-label"
-              >الغرض من التأمين</label
-            >
-          </div>
-          <div class="form-floating mb-2">
-            <input
-              type="text"
-              class="form-control form-control-lg is-invalid"
-              id="serialNo"
-              placeholder="الرقم التسلسلي"
-            />
-            <label for="serialNo" class="form-label">الرقم التسلسلي</label>
-            <div id="serialNoFeedback" class="invalid-feedback">
-              أدخل الرقم التسلسلي، يجب أن يكون رقماً
+        </div>
+        <div class="col-sm-12 col-lg-4">
+          <div class="content">
+            <h4>البريد الإلكتروني</h4>
+            <div class="mb-2">
+              <input type="text" class="form-control" placeholder="ادخل البريد الإلكتروني" aria-label="email" aria-describedby="basic-addon1">
+
             </div>
           </div>
-          <div class="form-floating mb-5" >
-            <input
-              type="text"
-              class="form-control form-control-lg from-control-datepicker"
-              id="startDate"
-              placeholder="تاريخ بداية التأمين"
-              readonly
-            />
-            <label for="startDate" class="form-label"
-              >تاريخ بداية التأمين</label
-            >
-          </div>
-          <div class="form-check mb-4">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="acceptTerms"
-            />
-            <label class="form-check-label" for="acceptTerms">
-              أوافق على الشروط والأحكام وسياسة الخصوصية
-            </label>
-          </div>
-          <div class="d-grid col-md-8 offset-md-4">
-            <button type="submit" class="btn btn-lg btn-primary">
-              احصل على العروض
-            </button>
-          </div>
-        </form>
+        </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="col-8">
+          
+        </div>
+      </div>
   </div>
 </section>
-
-<!-- end hero.html-->
-<!-- start success-partners.html-->
-<section class="success-partners" data-aos="fade-left">
-  <div class="container">
-    <h1>شركاء النجاح</h1>
-    <div class="slider-container">
-      <div class="partners-slider">
-        <div class="item">
-          <img src="images/image1.png" />
-        </div>
-        <div class="item">
-          <img src="images/image2.png" />
-        </div>
-        <div class="item">
-          <img src="images/image3.png" />
-        </div>
-        <div class="item">
-          <img src="images/image4.png" />
-        </div>
-        <div class="item">
-          <img src="images/image5.png" />
-        </div>
-        <div class="item">
-          <img src="images/image6.png" />
-        </div>
-        <div class="item">
-          <img src="images/image7.png" />
-        </div>
-        <div class="item">
-          <img src="images/image8.png" />
-        </div>
-        <div class="item">
-          <img src="images/image9.png" />
-        </div>
-        <div class="item">
-          <img src="images/image3.png" />
-        </div>
-        <div class="item">
-          <img src="images/image4.png" />
-        </div>
-        <div class="item">
-          <img src="images/image5.png" />
-        </div>
-        <div class="item">
-          <img src="images/image6.png" />
-        </div>
-        <div class="item">
-          <img src="images/image7.png" />
-        </div>
-      </div>
-      <div class="slider-arrows-container">
-        <div class="arrow-prev">
-          <span class="arrow"></span>
-        </div>
-        <div class="arrow-next">
-          <span class="arrow"></span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- end success-partners.html-->
-<!-- start insurance-policy-steps.html-->
-<section class="insurance-policy-steps">
-  <div class="container">
-    <h2 class="heading" data-aos="fade-up">احصل على وثيقة التأمين ب 4 خطوات فقط</h2>
-    <div class="row gy-3 gx-2" data-aos="fade-up">
-      <div class=" col-sm-12 col-md-6 col-lg-3">
-        <div class="content">
-          <div class="icon-container">
-            <img src="images/document.svg" />
-          </div>
-          <h3 class="title">ادخال البيانات</h3>
-          <p class="description">
-            ادخل بياناتك الاساسية وسيتم الحصول على كافة البيانات المطلوبة
-          </p>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <div class="content">
-          <div class="icon-container">
-            <img src="images/price-tag.svg" />
-          </div>
-          <h3 class="title">مشاهدة العروض</h3>
-          <p class="description">
-            قم بمقارنة الاسعار والمزايا بين عدة عروض واختر العرض المناسب لك
-          </p>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <div class="content">
-          <div class="icon-container">
-            <img src="images/bill.svg" />
-          </div>
-          <h3 class="title">تقدم بالدفعة</h3>
-          <p class="description">
-            الدفع متاح بعدة وسائل فيزا كارد - ماستر كارد - مدى - STC Pay وغيرها
-          </p>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <div class="content">
-          <div class="icon-container">
-            <img src="images/personal-data.svg" />
-          </div>
-          <h3 class="title">طباعة الوثيقة</h3>
-          <p class="description">
-            ستحصل على الوثيقة مباشرة وتستطيع تحميلها وطباعتها لاحقاً من حسابك
-            الشخصي
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- end insurance-policy-steps.html-->
 
 
 <!-- end page_content -->

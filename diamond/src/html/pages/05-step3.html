@@ -1,4 +1,7 @@
-<section class="step3">
+<!-- @@master ../templates/process.html { "active_step" : "3" } -->
+
+<!-- @@block = step_content -->
+<div class="step3">
   <h3 class="h2 modal-title mb-5"><strong>الدفع</strong></h3>
   <div class="row">
     <div class="col-xs-12 col-lg-7 col-xxl-8">
@@ -12,12 +15,12 @@
                 </div>
               </a>
               <button
-              type="button"
-              class="btn btn-md btn-secondary-invert"
-              disabled
-            >
-              ضد الغير
-            </button>
+                type="button"
+                class="btn btn-md btn-secondary-invert"
+                disabled
+              >
+                ضد الغير
+              </button>
             </div>
           </div>
           <div class="col-sm-12 col-md-9">
@@ -59,15 +62,15 @@
           </div>
         </div>
       </fieldset>
-      <fieldset class="mb-5">
+      <fieldset class="mb-5 owner-info">
         <h4 class="mb-0">
           <a
-          role="button"
+            role="button"
             data-bs-toggle="collapse"
             data-bs-target="#owner-information-collapsable"
             aria-expanded="false"
             aria-controls="owner-information-collapsable"
-            >
+          >
             <strong>معلومات مالك الوثيقة والمركبة</strong>
           </a>
         </h4>
@@ -130,20 +133,20 @@
       </fieldset>
       <div class="payment-methods mb-5">
         <h4>اختر طريقة الدفع</h4>
-        <div class="row gx-4">
-          <div class="col">
+        <div class="row gx-4 gy-4">
+          <div class="col-12 col-md-4">
             <label class="payment-method">
               <input type="radio" name="test" value="small" checked />
               <img src="images/visa.svg" />
             </label>
           </div>
-          <div class="col">
+          <div class="col-12 col-md-4">
             <label class="payment-method">
               <input type="radio" name="test" value="small" checked />
               <img src="images/mastercard.svg" />
             </label>
           </div>
-          <div class="col">
+          <div class="col-12 col-md-4">
             <label class="payment-method">
               <input type="radio" name="test" value="small" checked />
               <img src="images/mada.svg" />
@@ -208,8 +211,8 @@
       </div>
       <form class="form-dark">
         <div class="row mb-3">
-          <div class="col-sm-12 col-md-6">
-            <div class="form-floating input-group">
+          <div class="col-12">
+            <div class="form-floating input-group has-validation">
               <input
                 type="password"
                 class="form-control"
@@ -253,7 +256,7 @@
       <div class="details">
         <div class="tittle"><h4>التفاصيل</h4></div>
         <section class="details-container">
-          <table class="details1">
+          <table>
             <tbody>
               <tr>
                 <th>سعر الوثيقة</th>
@@ -282,8 +285,8 @@
             </tbody>
           </table>
         </section>
-        <section class="details-container1">
-          <table class="details1">
+        <section class="details-container">
+          <table>
             <tbody>
               <tr>
                 <th>استئجار سيارة</th>
@@ -296,8 +299,8 @@
             </tbody>
           </table>
         </section>
-        <section class="details-container1">
-          <table class="details1">
+        <section class="details-container">
+          <table>
             <tbody>
               <tr>
                 <th>المجموعة الجزئي</th>
@@ -310,7 +313,7 @@
             </tbody>
           </table>
         </section>
-        <section class="details-container2">
+        <section class="details-container">
           <div class="count-salary mb-3">
             <p>المبلغ الاجمالي</p>
             <p>3445.64 ر.س</p>
@@ -344,4 +347,5 @@
       </div>
     </div>
   </div>
-</section>
+</div>
+<!-- @@close -->
