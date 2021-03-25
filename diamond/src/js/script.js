@@ -3,7 +3,7 @@
 AOS.init();
 
 var $ = require("jquery");
-require("../../node_modules/bootstrap/dist/js/bootstrap.bundle");
+var bootstrap = require("../../node_modules/bootstrap/dist/js/bootstrap");
 require("slick-carousel");
 require("bootstrap-datepicker");
 
@@ -105,13 +105,23 @@ $(function () {
         settings: {
           slidesToShow: 6,
         },
-      },      
+      },
     ],
   });
 
-  $('[data-bs-toggle="tab"]').on('show.bs.tab', function () {
-    console.log('hello');
-  });
+  // var tabElements = [].slice.call(document.querySelectorAll('[data-bs-toggle="tab"]'));
+  // tabElements.map(function(element){
+  //   element.addEventListener('shown.bs.tab', function (event) {
+  //     event.target // newly activated tab
+  //     event.relatedTarget // previous active tab
+  //     console.log('hello');
+  //   });
+  // });
+
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
 });
 
 
