@@ -37,17 +37,16 @@
         margin-bottom: 10px;
       }
       .malath-info {
-        h5{
+        h5 {
           font-size: 20px;
           font-weight: 900;
         }
-        p{
+        p {
           font-size: 18px;
           font-weight: 400;
           @include media-breakpoint-up("lg", $grid-breakpoints) {
             text-align: right;
           }
-          
         }
       }
     }
@@ -85,6 +84,13 @@
     padding: 0;
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+#extra-driver-modal {
+  table {
+    tr:nth-child(even) {
+      background-color: #f6f5f8;
     }
   }
 }

@@ -1,0 +1,9 @@
+.step1{
+    .add-info{
+        table{
+            tr:nth-child(even) {
+                background-color: #f6f5f8;
+              }
+        }
+    }
+}

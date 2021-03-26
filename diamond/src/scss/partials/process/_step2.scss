@@ -20,11 +20,6 @@
       @include media-breakpoint-up("xl", $grid-breakpoints) {
         padding: 0;
       }
-      .form-check-input {
-        height: 18px;
-        width: 18px;
-        border-radius: 7px;
-      }
     }
   }
   .col-border {
@@ -37,13 +32,7 @@
       }
     }
   }
-  a {
-    color: #000;
-    text-decoration: underline;
-    &:hover {
-      color: $primary;
-    }
-  }
+
 }
 .btn {
   border-radius: 0.8125rem;
