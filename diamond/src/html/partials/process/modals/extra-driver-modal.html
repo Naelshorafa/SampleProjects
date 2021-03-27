@@ -391,16 +391,22 @@
             </label>
           </div>
           <div class="collapse" id="other-license-collapsable">
-            <div class="row mb-3 gy-2 gx-2">
+            <div class="row mb-3 g-2">
               <div class="col-12 col-md-6 col-lg-4">
                 <div class="form-floating">
                   <select
-                    class="form-select form-control form-control-lg"
+                    class="form-select form-control form-control-lg select-search"
                     id="choose-city"
+                    data-show-subtext="true" data-live-search="true"
                   >
                     <option>اأختر الدولة</option>
                     <option>بريطانيا</option>
                     <option>المانيا</option>
+                    <option>هولندا</option>
+                    <option>السويد</option>
+                    <option>تركيا</option>
+                    <option>السعودية</option>
+                    <option>بلجيكا</option>
                   </select>
 
                   <label for="choose-city" class="form-label"
@@ -429,46 +435,52 @@
                 </button>
               </div>
             </div>
-              <div class="col-12 d-flex flex-gr">
-                <table class="mb-3">
-                  <thead>
-                    <tr>
-                      <th>الدولة</th>
-                      <th>اختر عدد السنوات</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>الامارات العربية المتحدة</td>
-                      <td>5</td>
-                      <td>icon</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+            <!--
+            <div class="col-12 d-flex flex-gr">
+              <table class="mb-3">
+                <thead>
+                  <tr>
+                    <th>الدولة</th>
+                    <th>اختر عدد السنوات</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>الامارات العربية المتحدة</td>
+                    <td>5</td>
+                    <td>icon</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            -->
           </div>
         </div>
         <div class="modal-footer">
-          <div class="d-grid gap-3 d-flex col-12 col-md-9 mx-auto">
-            <button
-              type="button"
-              role="button"
-              class="btn btn-lg btn-primary w-50"
-              data-bs-toggle="modal"
-              data-bs-target="#extra-daitals-modal"
-            >
-              اضافة
-            </button>
-            <button
-              type="button"
-              role="button"
-              class="btn btn-lg btn-dark w-50"
-              data-bs-toggle="modal"
-              data-bs-dismiss="modal"
-            >
-              إلغاء
-            </button>
+          <div class="col-12 col-md-9 mx-auto">
+            <div class="row gx-3">
+              <div class="col-6">
+                <button
+                  type="sybmit"
+                  role="button"
+                  class="btn btn-lg btn-primary w-100"
+                >
+                  اضافة
+                </button>
+              </div>
+              <div class="col-6">
+                <button
+                  type="button"
+                  role="button"
+                  class="btn btn-lg btn-dark w-100"
+                  data-bs-toggle="modal"
+                  data-bs-dismiss="modal"
+                >
+                  إلغاء
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

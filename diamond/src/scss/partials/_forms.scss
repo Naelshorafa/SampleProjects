@@ -1,12 +1,17 @@
 .form-dark {
   .form-control {
-    background-color: #f6f5f8;
+    background-color: #f4f4f4;
+  }
+  .dark-bg {
+    padding: 16px;
+    background-color: #f4f4f4;
+    border-radius: $border-radius-lg;
   }
   fieldset {
     padding: 16px;
-    background-color: #f6f5f8;
-    border: solid 1px #e0e0e0;
+    background-color: #f9f9f9;
     border-radius: $border-radius-lg;
+    border: solid 1px #e0e0e0;
   }
 }
 
@@ -73,13 +78,16 @@
   background-size: 24px auto;
   background-position: 18px center;
   background-repeat: no-repeat;
-  form:not(.form-dark) &{
+  form:not(.form-dark) & {
     background-color: #fff;
   }
 }
-.form-floating{
-  &.input-group{
-    label{
+.form-floating {
+  label {
+    white-space: nowrap;
+  }
+  &.input-group {
+    label {
       z-index: 3;
     }
   }

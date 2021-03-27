@@ -3,10 +3,8 @@
 <!-- @@block = step_content -->
 <div class="step1">
   <h3 class="title mb-3"><strong>برجاء استكمال البيانات</strong></h3>
-  <div class="alert alert-danger">
-    حدث خطا اثناء محاولة معالجة البيانات.
-  </div>
-  <form class="form-dark" method="GET" action="step2.html">
+  <div class="alert alert-danger">حدث خطا اثناء محاولة معالجة البيانات.</div>
+  <form class="form-dark" method="GET" action="./04-step2.html">
     <div class="row mb-5 gy-2">
       <div class="col-sm-12 col-md-7">
         <div class="form-control">
@@ -106,10 +104,14 @@
         </div>
       </div>
     </div>
+    <!--
     <div class="add-info">
       <div class="add-driver d-flex flex-column">
         <h3><strong>قائمة السائقين</strong></h3>
-        <p class="mb-4">لضمان تغطية التأمين لجميع سائقي المركبة (التأمين الشامل ) يجب ادخال كافة البيانات المطلوبة</p>
+        <p class="mb-4">
+          لضمان تغطية التأمين لجميع سائقي المركبة (التأمين الشامل ) يجب ادخال
+          كافة البيانات المطلوبة
+        </p>
         <table class="mb-3">
           <tr>
             <th>رقم هوية السائق</th>
@@ -176,22 +178,43 @@
             <td>icon</td>
           </tr>
         </table>
-        <a href="#">إضافة سائق إضافي</a>
+        <button
+          type="button"
+          class="btn btn-link"
+          data-bs-toggle="modal"
+          data-bs-target="#extra-driver-modal"
+        >
+          إضافة سائق إضافي
+        </button>
       </div>
     </div>
-    <div
-    class="d-grid gap-3 mb-5 d-flex justify-content-end col-md-6 offset-md-6 col-xl-5 offset-xl-7"
-  >
-    <button
-      type="button"
-      role="button"
-      class="btn btn-lg btn-secondary w-50"
-      data-bs-toggle="modal"
-      data-bs-target="#extra-driver-modal"
-    >
-      تفاصيل اخرى
-    </button>
-  </div>
+  -->
+    <div class="col-md-6 offset-md-6 col-lg-5 offset-lg-7 mb-5">
+      <div class="row gy-3">
+        <div class="col-12 col-sm-6">
+          <button
+            type="button"
+            role="button"
+            class="btn btn-lg btn-primary w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#extra-driver-modal"
+          >
+            إضافة سائق إضافي
+          </button>
+        </div>
+        <div class="col-12 col-sm-6">
+          <button
+            type="button"
+            role="button"
+            class="btn btn-lg btn-secondary w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#extra-details-modal"
+          >
+            تفاصيل اخرى
+          </button>
+        </div>
+      </div>
+    </div>
 
     <div class="form-check mb-3">
       <input

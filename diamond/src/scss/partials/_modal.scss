@@ -68,6 +68,10 @@
     .modal.show & {
       right: 0;
     }
+    .modal-header {
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+    }
     .modal-content {
       border-radius: 0;
       height: 100%;

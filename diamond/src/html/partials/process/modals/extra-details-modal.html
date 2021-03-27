@@ -1,4 +1,4 @@
-<div class="modal fade" id="extra-daitals-modal" tabindex="-1" role="dialog">
+<div class="modal fade" id="extra-details-modal" tabindex="-1" role="dialog">
   <div
     class="modal-dialog modal-dialog-aside modal-dialog-scrollable modal-lg"
     role="document"
@@ -6,7 +6,7 @@
     <form class="form-dark">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class=" modal-title"><strong>تفاصيل أخرى</strong></h5>
+          <h5 class="modal-title"><strong>تفاصيل أخرى</strong></h5>
           <button
             type="button"
             class="btn btn-link"
@@ -216,25 +216,31 @@
           </div>
         </div>
         <div class="modal-footer">
-          <div class="d-flex gap-3 col-12 col-md-9 mx-auto">
-            <button
-              type="button"
-              role="button"
-              class="btn btn-lg btn-primary w-50"
-              data-bs-toggle="modal"
-              data-bs-target="#extra-daitals-modal"
-            >
-              اضافة
-            </button>
-            <button
-              type="button"
-              role="button"
-              class="btn btn-lg btn-dark w-50"
-              data-bs-toggle="modal"
-              data-bs-dismiss="modal"
-            >
-              إلغاء
-            </button>
+          <div class="col-12 col-md-9 mx-auto">
+            <div class="row gx-3">
+              <div class="col-6">
+                <button
+                  type="submit"
+                  role="button"
+                  class="btn btn-lg btn-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#extra-daitals-modal"
+                >
+                  اضافة
+                </button>
+              </div>
+              <div class="col-6">
+                <button
+                  type="button"
+                  role="button"
+                  class="btn btn-lg btn-dark w-100"
+                  data-bs-toggle="modal"
+                  data-bs-dismiss="modal"
+                >
+                  إلغاء
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

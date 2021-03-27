@@ -4,19 +4,20 @@
 <div class="step2">
   <fieldset class="mb-3 mb-lg-5">
     <div class="owner-info ">
-      <h4>
+      <h4 class="mb-0">
         <a
           role="button"
           data-bs-toggle="collapse"
           data-bs-target="#owner-information-collapsable"
           aria-expanded="false"
           aria-controls="owner-information-collapsable"
-          class="text-start &or"
+          class="text-start owner-info-toggle"
         >
           <strong>معلومات مالك الوثيقة والمركبة</strong>
+          <span class="arrow"></span>
         </a>
       </h4>
-      <div class="collapse" id="owner-information-collapsable">
+      <div class="collapse pt-3" id="owner-information-collapsable">
         <div class="row">
           <div class="col-sm-12 col-md-9 col-lg-5">
             <table>
@@ -83,7 +84,7 @@
   <div class="filtering-form mb-3">
     <div class="row gx-3 gy-3 align-items-center align-content-between">
       <div
-        class="d-flex col-xs-12 col-md-7 col-lg-6 col-xl-5 align-items-start flex-column flex-md-row"
+        class="d-flex col-12 col-md-7 col-lg-6 col-xl-5 col-xxl-6 align-items-start flex-column flex-sm-row"
       >
         <label class="form-radio-inline-group-label me-4">نوع التأمين</label>
         <div class="form-radio-inline-group dark">
@@ -112,7 +113,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-md-5 col-lg-6 col-xl-3">
+      <div class="col-12 col-md-5 col-lg-6 col-xl-3">
         <select
           class="form-select form-control-lg dark"
           aria-label="sort-salary"
@@ -123,7 +124,7 @@
           <option value="3">Three</option>
         </select>
       </div>
-      <div class="col-xs-12 col-lg-3 col-xl-4">
+      <div class="col-12 col-xl-4 col-xxl-3">
         <div class="alert alert-custom-warning text-center" role="alert">
           سينقضي وقت التسعيرة خلال 6 ساعات و 46 دقيقة
         </div>
@@ -132,7 +133,7 @@
   </div>
   <fieldset class="field-container mb-5">
     <div class="row">
-      <div class="col-border col-sm-12 col-md-12 col-xl-5">
+      <div class="col-border col-sm-12 col-md-12 col-xl-5 col-xxl-6">
         <div class="col-container row">
           <div class="col-sm-12 col-md-3 d-flex flex-md-column mb-3">
             <div class="company-logo-container mb-3">
@@ -227,7 +228,7 @@
           </ul>
         </div>
       </div>
-      <div class="salary-option col-sm-12 col-md-7 col-xl-4">
+      <div class="salary-option col-sm-12 col-md-7 col-xl-4 col-xxl-3">
         <div class="col-container">
           <table>
             <tbody>
@@ -242,7 +243,7 @@
               <tr>
                 <td>خيارات قيم التحمل (ر س )</td>
                 <td>
-                  <select class="form-select dark" aria-label="sort-salary">
+                  <select class="form-select form-select-lg dark" aria-label="sort-salary">
                     <option selected>2000</option>
                     <option value="1">3000</option>
                     <option value="2">4000</option>
@@ -251,14 +252,11 @@
                 </td>
               </tr>
               <tr>
-                <th>السعر</th>
-                <th>3445.64 ر.س</th>
-              </tr>
-              <tr>
-                <td></td>
-                <td>
-                  <a href="#">الشروط والاحكام</a>
-                </td>
+                <th class="align-top">السعر</th>
+                <th>
+                  <span>3445.64 ر.س</span>
+                  <a href="#" class="terms-conditions-link">الشروط والاحكام</a>
+                </th>
               </tr>
             </tbody>
           </table>

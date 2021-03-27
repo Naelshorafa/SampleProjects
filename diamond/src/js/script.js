@@ -69,7 +69,6 @@ $(function () {
   });
 
   $(".from-control-birthdatepicker").datepicker({
-    endDate: "-16y",
     minViewMode: 1,
     format: 'M yyyy',
     language: $('html').attr('lang'),
@@ -117,15 +116,6 @@ $(function () {
       },
     ],
   });
-
-  // var tabElements = [].slice.call(document.querySelectorAll('[data-bs-toggle="tab"]'));
-  // tabElements.map(function(element){
-  //   element.addEventListener('shown.bs.tab', function (event) {
-  //     event.target // newly activated tab
-  //     event.relatedTarget // previous active tab
-  //     console.log('hello');
-  //   });
-  // });
 
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
