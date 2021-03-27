@@ -1074,10 +1074,10 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 
 $tooltip-font-size:                 $font-size-sm;
 $tooltip-max-width:                 200px;
-$tooltip-color:                     $white;
-$tooltip-bg:                        $black;
+$tooltip-color:                     $black;
+$tooltip-bg:                        $white;
 $tooltip-border-radius:             $border-radius;
-$tooltip-opacity:                   .9;
+$tooltip-opacity:                   1;
 $tooltip-padding-y:                 $spacer / 4;
 $tooltip-padding-x:                 $spacer / 2;
 $tooltip-margin:                    0;
