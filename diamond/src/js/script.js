@@ -80,7 +80,7 @@ $(function () {
     slidesToShow: 7,
     slidesToScroll: 1,
     infinite: true,
-    rtl: true,
+    rtl: $('html').attr('dir') == 'rtl',
     prevArrow: ".arrow-prev",
     nextArrow: ".arrow-next",
     responsive: [

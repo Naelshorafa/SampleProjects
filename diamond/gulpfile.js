@@ -13,6 +13,7 @@ const postcss = require('gulp-postcss');
 const rtlcss = require('gulp-rtlcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
+const rename = require('gulp-rename');
 const browserSync = require('browser-sync').create();
 
 // Compile html pages
@@ -24,10 +25,20 @@ gulp.task('html', function () {
 
 
 // Compile scss files, do all css stuff
-gulp.task('sass', function () {
-    return gulp.src('./src/scss/**/style.scss')
+gulp.task('sass-rtl', function () {
+    return gulp.src('./src/scss/style.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(rtlcss())
+        .pipe(postcss([autoprefixer, cssnano]))
+        .pipe(rename('style-rtl.css'))
+        .pipe(gulp.dest('./dist/css'))
+        .pipe(browserSync.stream()); // tell browser
+});
+
+// Compile scss Ltr
+gulp.task('sass', function () {
+    return gulp.src('./src/scss/style.scss')
+        .pipe(sass().on('error', sass.logError))
         .pipe(postcss([autoprefixer, cssnano]))
         .pipe(gulp.dest('./dist/css'))
         .pipe(browserSync.stream()); // tell browser
@@ -63,7 +74,7 @@ gulp.task('scripts', function () {
 });
 
 // Default gulp task
-gulp.task('default', gulp.parallel('html', 'sass', 'images', 'fonts', 'scripts'));
+gulp.task('default', gulp.parallel('html', 'sass', 'sass-rtl', 'images', 'fonts', 'scripts'));
 
 // Dev mode - local server
 gulp.task('watch', function () {
@@ -73,7 +84,7 @@ gulp.task('watch', function () {
         server: "./dist"
     });
 
-    gulp.watch('./src/scss/**/*', gulp.parallel('sass'));
+    gulp.watch('./src/scss/**/*', gulp.parallel('sass','sass-rtl'));
     gulp.watch('./src/html/**/*', gulp.parallel('html'));
     gulp.watch('./src/js/**/*', gulp.parallel('scripts'));
 

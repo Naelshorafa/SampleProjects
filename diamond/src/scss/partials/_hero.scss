@@ -105,7 +105,7 @@
             content: "";
             position: absolute;
             top: 0;
-            left: -16px;
+            left: -10px;
             z-index: -1;
             background-color: #3a3a3a;
             backdrop-filter: blur(30px);
@@ -113,6 +113,9 @@
             border-radius: 17px;
             width: calc(100% + 32px);
             height: calc(100% - 10px);
+            @include media-breakpoint-up("md", $grid-breakpoints) {
+              left: -16px;
+            }
           }
         }
       }
