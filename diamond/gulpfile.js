@@ -13,6 +13,7 @@ const postcss = require('gulp-postcss');
 const rtlcss = require('gulp-rtlcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
+const uglify = require('gulp-uglify');
 const browserSync = require('browser-sync').create();
 
 // Compile html pages
@@ -57,6 +58,7 @@ gulp.task('scripts', function () {
     return b.bundle()
         .pipe(source('script.js'))
         .pipe(buffer())
+        .pipe(uglify())
         .on('error', log.error)
         .pipe(gulp.dest('./dist/js'));
 
