@@ -1,11 +1,11 @@
-<html dir='rtl' lang='ar'>
+<html dir='<!-- @@var dir "rtl" -->' lang='<!-- @@var lang "ar" -->'>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--AOS CSS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--CSS-->
-    <link rel="stylesheet" href='css/style-rtl.css' />
+    <link rel="stylesheet" href='<!-- @@var style "css/style-rtl.css" -->' />
 
 <!-- start style -->
 
@@ -13,7 +13,7 @@
 <!-- end style -->
   </head>
   <body>
-    <div id="" class="site-content-wrapper">
+    <div id="<!-- @@var page_id -->" class="site-content-wrapper">
 <!-- start header.html-->
 <header class="header">
   <div class="container">
@@ -46,14 +46,14 @@
 <!-- end header.html-->
 
 <!-- start page_content -->
-<section class="contact-us pt-5 pb-5">
-  <div class="container">
-    <div class="col-xl-9 mx-auto">
-      <h2 class="text-center mb-5 pt-5"><strong>اتصل بنا</strong></h2>
-      <div class="row mb-5 g-4">
+<section class="customers-service pt-5">
+  <form>
+    <div class="container">
+      <h1 class="text-center pt-5 mb-5"><strong>خدمة العملاء</strong></h1>
+      <div class="row gy-5 gx-5">
         <div class="col-12 col-md-4">
-          <div class="content">
-            <div class="icon-container mb-5">
+          <div class="content mb-5">
+            <div class="icon-container mt-5 mb-5">
               <img src="images/telephone.svg" />
             </div>
             <h4 class="title mb-4">920004778</h4>
@@ -64,7 +64,7 @@
         </div>
         <div class="col-12 col-md-4">
           <div class="content">
-            <div class="icon-container mb-5">
+            <div class="icon-container mt-5 mb-5">
               <img src="images/email.svg" />
             </div>
             <h4 class="title mb-3">info@dbroker.com.sa</h4>
@@ -76,7 +76,7 @@
         </div>
         <div class="col-12 col-md-4">
           <div class="content">
-            <div class="icon-container mb-5">
+            <div class="icon-container mt-5 mb-5">
               <img src="images/map-marker.svg" />
             </div>
             <p class="description pt-3">
@@ -86,63 +86,56 @@
           </div>
         </div>
       </div>
-      <form class="mb-5">
-        <fieldset>
-          <h3 class="mb-4">التواصل الإداري</h3>
-          <div class="row g-3">
-            <div class="col-12 col-lg-4">
-              <div class="form-floating">
-                <select class="form-select form-control-lg" id="subject">
-                  <option>اختر الغرض من التأمين</option>
-                  <option>تأمين جديد شامل</option>
-                  <option>تأمين ضد الغير</option>
-                </select>
-                <label for="subject" class="form-label">الموضوع</label>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="form-floating">
-                <input
-                  type="text"
-                  class="form-control form-control-lg"
-                  id="mobileno"
-                  placeholder="رقم الجوال"
-                />
-                <label for="mobileno" class="form-label">رقم الجوال</label>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="form-floating">
-                <input
-                  type="text"
-                  class="form-control form-control-lg"
-                  id="email"
-                  placeholder="البريد الالكتروني"
-                />
-                <label for="email" class="form-label">البريد الالكتروني</label>
-              </div>
-            </div>
-            <div class="col-12 col-lg-9">
-              <div class="form-floating">
-                <textarea
-                  type="text"
-                  class="form-control form-control-lg"
-                  id="details"
-                  placeholder="التفاصيل"
-                ></textarea>
-                <label for="details" class="form-label">التفاصيل</label>
-              </div>
-            </div>
-            <div class="col-12 col-lg-3 d-flex align-items-center">
-              <button type="submit" class="btn btn-lg btn-secondary w-100">
-                ارسال
-              </button>
-            </div>
+      <div class="communication col-12 mb-2">
+        <p><strong>التواصل الإداري</strong></p>
+      </div>
+      <div class="row gy-3 gx-3">
+        <div class="communication-info col-12 col-md-4 mb-5">
+          <h5>الموضوع</h5>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="communication-info col-12 col-md-4 mb-5">
+          <h5>رقم الجوال</h5>
+          <input
+            type="password"
+            class="form-control"
+            id="mobile-num"
+            placeholder="ادخل رقم الجوال"
+          />
+        </div>
+        <div class="communication-info col-12 col-md-4 mb-5">
+          <h5>البريد الإلكتروني</h5>
+          <input
+            type="e-mail"
+            class="form-control"
+            id="e-mail"
+            placeholder="ادخل البريد الالكتروني"
+          />
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="communication-info col-12 col-lg-9">
+          <h5>التفاصيل</h5>
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              id="details"
+              style="height: 100px"
+            ></textarea>
           </div>
-        </fieldset>
-      </form>
-
-      <div class="map">
+        </div>
+        <div class="col-12 col-lg-3 d-flex align-items-center">
+          <button type="submit" class="btn btn-lg btn-success w-100 mt-5">
+            ارسال
+          </button>
+        </div>
+      </div>
+      <div class="map col-12 mb-5">
         <div class="mapouter">
           <div class="gmap_canvas">
             <iframe
@@ -154,12 +147,25 @@
               scrolling="no"
               marginheight="0"
               marginwidth="0"
-            ></iframe>
+            ></iframe
+            ><br /><style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                width: 100%;
+              }</style
+            ><style>
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                width: 100%;
+              }
+            </style>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </form>
 </section>
 
 <!-- end page_content -->
