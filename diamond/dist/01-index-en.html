@@ -1,11 +1,11 @@
-<html dir='rtl' lang='ar'>
+<html dir='ltr' lang='en'>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--AOS CSS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--CSS-->
-    <link rel="stylesheet" href='css/style-rtl.css' />
+    <link rel="stylesheet" href='css/style.css' />
 
 <!-- start style -->
 
@@ -13,7 +13,7 @@
 <!-- end style -->
   </head>
   <body>
-    <div id="" class="site-content-wrapper">
+    <div id="index-page" class="site-content-wrapper">
 <!-- start header.html-->
 <header class="header">
   <div class="container">
@@ -46,69 +46,259 @@
 <!-- end header.html-->
 
 <!-- start page_content -->
-<section class="process-content pt-5">
+<!-- start hero.html-->
+<section class="hero">
   <div class="container">
-    <div class="prcoess-steps-progress-container mb-5 mt-5">
-      <ul
-        class="prcoess-steps-progress"
-        data-active-step="4"
-      >
-        <li>
-          <a href="03-step1.html">ادخال البيانات</a>
-        </li>
-        <li>
-          <a href="04-step2.html">مشاهدة العروض</a>
-        </li>
-        <li>
-          <a href="05-step3.html">تقدم بالدفعة</a>
-        </li>
-        <li>
-          <a href="06-step4.html">طباعة الوثيقة</a>
-        </li>
-      </ul>
-      <div class="progress">
-        <div
-          class="progress-bar"
-          role="progressbar"
-          aria-valuenow="0"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        ></div>
-      </div>
-    </div>
-    <div class="step-content pt-5 pb-5">
-<!-- start step_content -->
-<div class="step4">
-  <div class="pay-done">
-    <div class="img-container mb-5">
-      <img src="images/pay-done.svg" />
-    </div>
-    <h3 class="mb-3">تمت عملية الدفع بنجاح</h3>
-    <h4>المبلغ الاجمالي</h4>
-    <h4>3445.64 ر.س</h4>
-    <p class="mb-4">شامل الضرائب والرسوم</p>
-    <div class="col-12 col-md-10 mx-auto">
-      <div class="row">
-        <div class="col-6">
-          <button type="button" class="btn btn-lg btn-secondary w-100">
-            تحميل الوثيقة
-          </button>
-        </div>
-        <div class="col-6">
-          <button type="submit" class="btn btn-lg btn-primary w-100">
-            طباعة الفاتورة
-          </button>
+    <div class="hero-content">
+      <div class="hero-info" data-aos="fade-left">
+        <p class="slogan">
+          <small>تخلص من</small>
+          <span>إلتباس التأمين،</span>
+        </p>
+        <p class="slogan">
+          <small>أمِّن على سيارتك الآن</small>
+          <span>أفضل شركات التأمين</span>
+        </p>
+        <div class="hotline">
+          <div class="image-cont">
+            <img src="images/tele.svg" />
+          </div>
+          <div class="phone-num">
+            <span>الخط الساخن</span>
+            <a href="tel:0000 000 00">0000 000 00</a>
+          </div>
+          <div class="img-cont">
+            <img src="images/bank-logo.png" />
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
 
-
-<!-- end step_content -->
+      <div class="inquiry-form" data-aos="fade-up">
+        <header class="titles-container">
+          <h3 class="title">ماذا تنتظر .. إبدأ خطوتك الأولى</h3>
+          <p class="subtitle">للتأمين على المركبات ضد الغير / شامل</p>
+        </header>
+        <form class="" method="GET" action="03-step1.html">
+          <div class="mb-3">
+            <div class="row">
+              <div class="col-md-5">
+                <label class="form-radio-inline-group-label">نوع وثيقة المركبة</label>
+              </div>
+              <div class="col-md-7">
+                <div class="form-radio-inline-group">
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="vehicleDocumentType"
+                      id="vehicleDocumentType1"
+                      value="1"
+                      checked
+                    />
+                    <label class="form-check-label" for="vehicleDocumentType1"
+                      >استمارة</label
+                    >
+                  </div>
+                  <div class="form-radio-inline">
+                    <input
+                      type="radio"
+                      name="vehicleDocumentType"
+                      id="vehicleDocumentType2"
+                      value="2"
+                    />
+                    <label class="form-check-label" for="vehicleDocumentType2"
+                      >بطاقة جمركية</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-floating mb-2">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="idNumber"
+              placeholder="رقم الهوية، الإقامة أو الشركة"
+            />
+            <label for="idNumber" class="form-label"
+              >رقم الهوية، الإقامة أو الشركة</label
+            >
+          </div>
+          <div class="form-floating mb-2">
+            <select class="form-select form-control-lg" id="insurancePurpose">
+              <option>اختر الغرض من التأمين</option>
+              <option>تأمين جديد شامل</option>
+              <option>تأمين ضد الغير</option>
+            </select>
+            <label for="insurancePurpose" class="form-label"
+              >الغرض من التأمين</label
+            >
+          </div>
+          <div class="form-floating mb-2">
+            <input
+              type="text"
+              class="form-control form-control-lg is-invalid"
+              id="serialNo"
+              placeholder="الرقم التسلسلي"
+            />
+            <label for="serialNo" class="form-label">الرقم التسلسلي</label>
+            <div id="serialNoFeedback" class="invalid-feedback">
+              أدخل الرقم التسلسلي، يجب أن يكون رقماً
+            </div>
+          </div>
+          <div class="form-floating mb-5" >
+            <input
+              type="text"
+              class="form-control form-control-lg from-control-datepicker"
+              id="startDate"
+              placeholder="تاريخ بداية التأمين"
+              readonly
+            />
+            <label for="startDate" class="form-label"
+              >تاريخ بداية التأمين</label
+            >
+          </div>
+          <div class="form-check mb-4">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="acceptTerms"
+            />
+            <label class="form-check-label" for="acceptTerms">
+              أوافق على الشروط والأحكام وسياسة الخصوصية
+            </label>
+          </div>
+          <div class="d-grid col-md-8 offset-md-4">
+            <button type="submit" class="btn btn-lg btn-primary">
+              احصل على العروض
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- end hero.html-->
+<!-- start success-partners.html-->
+<section class="success-partners">
+  <div class="container">
+    <h1>شركاء النجاح</h1>
+    <div class="slider-container">
+      <div class="partners-slider">
+        <div class="item">
+          <img src="images/image1.png" />
+        </div>
+        <div class="item">
+          <img src="images/image2.png" />
+        </div>
+        <div class="item">
+          <img src="images/image3.png" />
+        </div>
+        <div class="item">
+          <img src="images/image4.png" />
+        </div>
+        <div class="item">
+          <img src="images/image5.png" />
+        </div>
+        <div class="item">
+          <img src="images/image6.png" />
+        </div>
+        <div class="item">
+          <img src="images/image7.png" />
+        </div>
+        <div class="item">
+          <img src="images/image8.png" />
+        </div>
+        <div class="item">
+          <img src="images/image9.png" />
+        </div>
+        <div class="item">
+          <img src="images/image3.png" />
+        </div>
+        <div class="item">
+          <img src="images/image4.png" />
+        </div>
+        <div class="item">
+          <img src="images/image5.png" />
+        </div>
+        <div class="item">
+          <img src="images/image6.png" />
+        </div>
+        <div class="item">
+          <img src="images/image7.png" />
+        </div>
+      </div>
+      <div class="slider-arrows-container">
+        <div class="arrow-prev">
+          <span class="arrow"></span>
+        </div>
+        <div class="arrow-next">
+          <span class="arrow"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end success-partners.html-->
+<!-- start insurance-policy-steps.html-->
+<section class="insurance-policy-steps">
+  <div class="container">
+    <h2 class="heading" data-aos="fade-up">احصل على وثيقة التأمين ب 4 خطوات فقط</h2>
+    <div class="row gy-3 gx-2" data-aos="fade-up">
+      <div class=" col-sm-12 col-md-6 col-lg-3">
+        <div class="content">
+          <div class="icon-container">
+            <img src="images/document.svg" />
+          </div>
+          <h3 class="title">ادخال البيانات</h3>
+          <p class="description">
+            ادخل بياناتك الاساسية وسيتم الحصول على كافة البيانات المطلوبة
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="content">
+          <div class="icon-container">
+            <img src="images/price-tag.svg" />
+          </div>
+          <h3 class="title">مشاهدة العروض</h3>
+          <p class="description">
+            قم بمقارنة الاسعار والمزايا بين عدة عروض واختر العرض المناسب لك
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="content">
+          <div class="icon-container">
+            <img src="images/bill.svg" />
+          </div>
+          <h3 class="title">تقدم بالدفعة</h3>
+          <p class="description">
+            الدفع متاح بعدة وسائل فيزا كارد - ماستر كارد - مدى - STC Pay وغيرها
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="content">
+          <div class="icon-container">
+            <img src="images/personal-data.svg" />
+          </div>
+          <h3 class="title">طباعة الوثيقة</h3>
+          <p class="description">
+            ستحصل على الوثيقة مباشرة وتستطيع تحميلها وطباعتها لاحقاً من حسابك
+            الشخصي
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end insurance-policy-steps.html-->
+
 
 <!-- end page_content -->
     </div>
