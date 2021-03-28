@@ -40,6 +40,7 @@
         background-image: url("../images/arrow-left-square.svg");
         background-size: 100%;
         transition: all 300ms;
+        transform: scaleX(-1) #{"/*rtl:scaleX(1)*/"};
         cursor: pointer;
         &:hover {
           opacity: 0.6;
@@ -53,7 +54,7 @@
         }
       }
       .arrow-prev {
-        transform: rotate(180deg);
+        transform: rotate(0deg) #{"/*rtl:rotate(180deg)*/"};
       }
     }
   }

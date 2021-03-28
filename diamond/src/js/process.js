@@ -29,6 +29,10 @@ $(function () {
     $(document).on('click', '#extra-driver-modal .delete-other-license', function () {
         $(this).closest('tr').remove();
     });
+    // Delete Driver from Step1
+    $(document).on('click', '.table-responsive .btn-delete-icon', function () {
+        $(this).closest('tbody').remove();
+    });
 
     // Add other license from extra-details-modal
     $(document).on('click', '#extra-driver-modal .add-other-license', function () {
