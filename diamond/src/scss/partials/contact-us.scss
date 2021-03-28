@@ -1,0 +1,33 @@
+.contact-us {
+  .content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid #f4f4f4;
+    box-shadow: 3px 3px 12px $dark;
+    padding: 30px;
+    min-height: 330px;
+    .icon-container {
+      margin: 0 auto;
+      width: 50px;
+      height: 50px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+  }
+
+  
+}
+

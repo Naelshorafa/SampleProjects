@@ -392,12 +392,13 @@
           </div>
           <div class="collapse" id="other-license-collapsable">
             <div class="row mb-3 g-2">
-              <div class="col-12 col-md-6 col-lg-4">
+              <div class="col-12 col-md-6 col-lg-5">
                 <div class="form-floating">
                   <select
                     class="form-select form-control form-control-lg select-search"
-                    id="choose-city"
-                    data-show-subtext="true" data-live-search="true"
+                    id="other-license-country"
+                    data-show-subtext="true"
+                    data-live-search="true"
                   >
                     <option>اأختر الدولة</option>
                     <option>بريطانيا</option>
@@ -409,7 +410,7 @@
                     <option>بلجيكا</option>
                   </select>
 
-                  <label for="choose-city" class="form-label"
+                  <label for="other-license-country" class="form-label"
                     >أختر الدولة</label
                   >
                 </div>
@@ -418,43 +419,48 @@
                 <div class="form-floating">
                   <select
                     class="form-select form-control form-control-lg"
-                    id="choose-year"
+                    id="other-license-years"
                   >
                     <option>اختر عدد السنوات</option>
-                    <option>1</option>
-                    <option>2</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
                   </select>
-                  <label for="choose-year" class="form-label"
+                  <label for="other-license-years" class="form-label"
                     >اختر عدد السنوات</label
                   >
                 </div>
               </div>
               <div class="d-grid col-md-12 col-lg-3">
-                <button type="button" class="btn btn-lg btn-primary">
+                <button type="button" class="btn btn-lg btn-primary add-other-license">
                   اضافة
                 </button>
               </div>
             </div>
-            <!--
             <div class="col-12 d-flex flex-gr">
-              <table class="mb-3">
-                <thead>
-                  <tr>
-                    <th>الدولة</th>
-                    <th>اختر عدد السنوات</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>الامارات العربية المتحدة</td>
-                    <td>5</td>
-                    <td>icon</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="col-12 table-responsive">
+                <table class="table table-striped other-licenses-table">
+                  <thead>
+                    <tr>
+                      <th>الدولة</th>
+                      <th>عدد السنوات</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>الامارات العربية المتحدة</td>
+                      <td>5</td>
+                      <td class="text-center">
+                        <button class="btn btn-delete-icon delete-other-license" type="button">
+                          <span></span>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            -->
           </div>
         </div>
         <div class="modal-footer">
