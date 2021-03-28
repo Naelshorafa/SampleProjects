@@ -104,94 +104,99 @@
         </div>
       </div>
     </div>
-    <!--
-    <div class="add-info">
-      <div class="add-driver d-flex flex-column">
-        <h3><strong>قائمة السائقين</strong></h3>
-        <p class="mb-4">
-          لضمان تغطية التأمين لجميع سائقي المركبة (التأمين الشامل ) يجب ادخال
-          كافة البيانات المطلوبة
-        </p>
-        <table class="mb-3">
-          <tr>
-            <th>رقم هوية السائق</th>
-            <th>تاريخ الميلاد</th>
-            <th>الإسم الكامل</th>
-            <th>نسبة القيادة</th>
-            <th></th>
-          </tr>
-          <tr>
-            <td>88560000888787</td>
-            <td>data</td>
-            <td>هاني مصطفى عادل</td>
-            <td>
-              <div class="col-md-12">
-                <div class="form-radio-inline-group">
-                  <div class="form-radio-inline">
-                    <input
-                      type="radio"
-                      name="driver-per"
-                      id="driver-per1"
-                      value="1"
-                      checked
-                    />
-                    <label class="form-check-label" for="driver-per1"
-                      >25%</label
-                    >
-                  </div>
-                  <div class="form-radio-inline">
-                    <input
-                      type="radio"
-                      name="driver-per"
-                      id="driver-per2"
-                      value="2"
-                    />
-                    <label class="form-check-label" for="driver-per2"
-                      >50%</label
-                    >
-                  </div>
-                  <div class="form-radio-inline">
-                    <input
-                      type="radio"
-                      name="driver-per"
-                      id="driver-per"
-                      value="3"
-                    />
-                    <label class="form-check-label" for="driver-per3"
-                      >75%</label
-                    >
-                  </div>
-                  <div class="form-radio-inline">
-                    <input
-                      type="radio"
-                      name="driver-per"
-                      id="driver-per4"
-                      value="4"
-                    />
-                    <label class="form-check-label" for="driver-per4"
-                      >100%</label
-                    >
+
+    <div class="drivers-list">
+      <h3><strong>قائمة السائقين</strong></h3>
+      <p class="mb-4">
+        لضمان تغطية التأمين لجميع سائقي المركبة (التأمين الشامل ) يجب ادخال كافة
+        البيانات المطلوبة
+      </p>
+      <div class="table-responsive mb-3">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>رقم هوية السائق</th>
+              <th>تاريخ الميلاد</th>
+              <th>الإسم الكامل</th>
+              <th>نسبة القيادة</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>88560000888787</td>
+              <td>مايو 2020</td>
+              <td>هاني مصطفى عادل</td>
+              <td>
+                <div class="col-md-12">
+                  <div class="form-radio-inline-group">
+                    <div class="form-radio-inline">
+                      <input
+                        type="radio"
+                        name="driver-per"
+                        id="driver-per1"
+                        value="25"
+                      />
+                      <label class="form-check-label" for="driver-per1"
+                        >25%</label
+                      >
+                    </div>
+                    <div class="form-radio-inline">
+                      <input
+                        type="radio"
+                        name="driver-per"
+                        id="driver-per2"
+                        value="50"
+                      />
+                      <label class="form-check-label" for="driver-per2"
+                        >50%</label
+                      >
+                    </div>
+                    <div class="form-radio-inline">
+                      <input
+                        type="radio"
+                        name="driver-per"
+                        id="driver-per"
+                        value="75"
+                      />
+                      <label class="form-check-label" for="driver-per3"
+                        >75%</label
+                      >
+                    </div>
+                    <div class="form-radio-inline">
+                      <input
+                        type="radio"
+                        name="driver-per"
+                        id="driver-per4"
+                        value="100"
+                        checked
+                      />
+                      <label class="form-check-label" for="driver-per4"
+                        >100%</label
+                      >
+                    </div>
                   </div>
                 </div>
-              </div>
-            </td>
-            <td>icon</td>
-          </tr>
+              </td>
+              <td class="text-center">
+                <button
+                  class="btn btn-edit-icon"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-toggle="#extra-driver-modal"
+                >
+                  <span></span>
+                </button>
+                <button class="btn btn-delete-icon" type="button">
+                  <span></span>
+                </button>
+              </td>
+            </tr>
+          </tbody>
         </table>
-        <button
-          type="button"
-          class="btn btn-link"
-          data-bs-toggle="modal"
-          data-bs-target="#extra-driver-modal"
-        >
-          إضافة سائق إضافي
-        </button>
       </div>
-    </div>
-  -->
-    <div class="col-md-6 offset-md-6 col-lg-5 offset-lg-7 mb-5">
-      <div class="row gy-3">
-        <div class="col-12 col-sm-6">
+      <div class="row mb-5 gy-3">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
           <button
             type="button"
             role="button"
@@ -202,7 +207,7 @@
             إضافة سائق إضافي
           </button>
         </div>
-        <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-6 col-md-4 offset-md-4 col-xl-3 offset-xl-6">
           <button
             type="button"
             role="button"
