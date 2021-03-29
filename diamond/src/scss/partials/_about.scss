@@ -24,7 +24,9 @@
       font-weight: 900;
     }
     .hero-about-info {
-      flex-basis: 50%;
+      @include media-breakpoint-up("lg", $grid-breakpoints) {
+        flex-basis: 50%;
+      }
     }
     .hero-about-image {
       @include media-breakpoint-up("lg", $grid-breakpoints) {
