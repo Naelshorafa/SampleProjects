@@ -29,7 +29,9 @@
       flex-basis: 50%;
     }
     .hero-about-image{
+      @include media-breakpoint-up("lg", $grid-breakpoints){
         flex-basis: 50%;
+      }
         .image-container{
             border-radius: 53px;
             img{
