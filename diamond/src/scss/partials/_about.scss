@@ -1,67 +1,51 @@
 .hero-about {
   margin-bottom: 20px;
-  @include media-breakpoint-up("md", $grid-breakpoints){
+  @include media-breakpoint-up("md", $grid-breakpoints) {
     margin-bottom: 90px;
   }
-   
 
-    h2{
-        font-size: 30px;
-        font-weight: 900;
-
-    }
+  h2 {
+    font-size: 30px;
+    font-weight: 900;
+  }
   .about-us {
     display: flex;
     flex-direction: column-reverse;
-    @include media-breakpoint-up("lg", $grid-breakpoints){
+    @include media-breakpoint-up("lg", $grid-breakpoints) {
       flex-direction: row;
     }
-    h3{
-        font-size: 23px;
-        font-weight: 900;
-        line-height: 2;
+    h3 {
+      font-size: 23px;
+      font-weight: 900;
+      line-height: 2;
     }
-    p{
-        font-size: 17px;
-        font-weight: 900;
+    p {
+      font-size: 17px;
+      font-weight: 900;
     }
     .hero-about-info {
       flex-basis: 50%;
     }
-    .hero-about-image{
-      @include media-breakpoint-up("lg", $grid-breakpoints){
+    .hero-about-image {
+      @include media-breakpoint-up("lg", $grid-breakpoints) {
         flex-basis: 50%;
       }
-        .image-container{
-            border-radius: 53px;
-            img{
-              width: 100%;
-            }
+      .image-container {
+        border-radius: 53px;
+        img {
+          width: 100%;
         }
+      }
     }
   }
 }
 .our-job-about {
-.container {
-  display: flex;
-  flex-direction: row;
-  h3 {
-    font-size: 30px;
-    font-weight: 900;
-  }
-  p {
-    font-size: 17px;
-    font-weight: 900;
-  }
-  .our-job {
-    @include media-breakpoint-up("lg", $grid-breakpoints){
-      flex-basis: 50%;
+    h3 {
+      font-size: 30px;
+      font-weight: 900;
+    }
+    p {
+      font-size: 17px;
+      font-weight: 900;
     }
   }
-  .our-look {
-    @include media-breakpoint-up("lg", $grid-breakpoints){
-      flex-basis: 50%;
-    }
-  }
-}
-}
