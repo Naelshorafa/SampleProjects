@@ -188,179 +188,8 @@
         لضمان تغطية التأمين لجميع سائقي المركبة (التأمين الشامل ) يجب ادخال كافة
         البيانات المطلوبة
       </p>
-      <!--<div class="table-responsive d-none d-lg-block mb-3">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th>رقم هوية السائق</th>
-              <th>تاريخ الميلاد</th>
-              <th>الإسم الكامل</th>
-              <th>نسبة القيادة</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>88560000888787</td>
-              <td>مايو 2020</td>
-              <td>هاني مصطفى عادل</td>
-              <td>
-                <div class="col-md-12">
-                  <div class="form-radio-inline-group">
-                    <div class="form-radio-inline">
-                      <input
-                        type="radio"
-                        name="driver-per"
-                        id="driver-per1"
-                        value="25"
-                      />
-                      <label class="form-check-label" for="driver-per1"
-                        >25%</label
-                      >
-                    </div>
-                    <div class="form-radio-inline">
-                      <input
-                        type="radio"
-                        name="driver-per"
-                        id="driver-per2"
-                        value="50"
-                      />
-                      <label class="form-check-label" for="driver-per2"
-                        >50%</label
-                      >
-                    </div>
-                    <div class="form-radio-inline">
-                      <input
-                        type="radio"
-                        name="driver-per"
-                        id="driver-per"
-                        value="75"
-                      />
-                      <label class="form-check-label" for="driver-per3"
-                        >75%</label
-                      >
-                    </div>
-                    <div class="form-radio-inline">
-                      <input
-                        type="radio"
-                        name="driver-per"
-                        id="driver-per4"
-                        value="100"
-                        checked
-                      />
-                      <label class="form-check-label" for="driver-per4"
-                        >100%</label
-                      >
-                    </div>
-                  </div>
-                </div>
-              </td>
-              <td class="text-center">
-                <button
-                  class="btn btn-edit-icon"
-                  type="button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#extra-driver-modal"
-                >
-                  <span></span>
-                </button>
-                <button class="btn btn-delete-icon" type="button">
-                  <span></span>
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="table-responsive d-lg-none mb-3">
-        <table class="table table-striped">
-          <tbody>
-            <tr>
-              <td>رقم هوية السائق</td>
-              <td>88560000888787</td>
-            </tr>
-            <tr>
-              <td>تاريخ الميلاد</td>
-              <td>مايو 2020</td>
-            </tr>
-            <tr>
-              <td>الإسم الكامل</td>
-              <td>هاني مصطفى عادل</td>
-            </tr>
-            <tr>
-              <td colspan="2">نسبة القيادة</td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <div class="form-radio-inline-group">
-                  <div class="form-radio-inline">
-                    <input
-                      type="radio"
-                      name="driver-per"
-                      id="driver-per1"
-                      value="25"
-                    />
-                    <label class="form-check-label" for="driver-per1"
-                      >25%</label
-                    >
-                  </div>
-                  <div class="form-radio-inline">
-                    <input
-                      type="radio"
-                      name="driver-per"
-                      id="driver-per2"
-                      value="50"
-                    />
-                    <label class="form-check-label" for="driver-per2"
-                      >50%</label
-                    >
-                  </div>
-                  <div class="form-radio-inline">
-                    <input
-                      type="radio"
-                      name="driver-per"
-                      id="driver-per"
-                      value="75"
-                    />
-                    <label class="form-check-label" for="driver-per3"
-                      >75%</label
-                    >
-                  </div>
-                  <div class="form-radio-inline">
-                    <input
-                      type="radio"
-                      name="driver-per"
-                      id="driver-per4"
-                      value="100"
-                      checked
-                    />
-                    <label class="form-check-label" for="driver-per4"
-                      >100%</label
-                    >
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="text-center" colspan="2">
-                <button
-                  class="btn btn-edit-icon"
-                  type="button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#extra-driver-modal"
-                >
-                  <span></span>
-                </button>
-                <button class="btn btn-delete-icon" type="button">
-                  <span></span>
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>-->
       
-        <table class="table-responsive" role="table">
+        <table class="table drivers-table" role="table">
           <thead role="rowgroup">
             <tr role="row">
               <th role="columnheader">رقم هوية السائق</th>
@@ -375,8 +204,7 @@
               <td role="cell" title="رقم هوية السائق">88560000888787</td>
               <td role="cell" title="تاريخ الميلاد">مايو 2020</td>
               <td role="cell" title="الإسم الكامل">هاني مصطفى عادل</td>
-              <td role="cell" title="نسبة القيادة">كم هي نسبة القيادة</td>
-              <td>
+              <td role="cell" class="driving-percentage-cell" title="نسبة القيادة">
                 <div class="col-md-12">
                   <div class="form-radio-inline-group">
                     <div class="form-radio-inline">
@@ -396,6 +224,7 @@
                         name="driver-per"
                         id="driver-per2"
                         value="50"
+                        checked
                       />
                       <label class="form-check-label" for="driver-per2"
                         >50%</label
@@ -418,7 +247,6 @@
                         name="driver-per"
                         id="driver-per4"
                         value="100"
-                        checked
                       />
                       <label class="form-check-label" for="driver-per4"
                         >100%</label
@@ -427,7 +255,7 @@
                   </div>
                 </div>
               </td>
-              <td role="cell" class="text-center">
+              <td role="cell" class="options-cell text-center">
                 <button
                   class="btn btn-edit-icon"
                   type="button"
@@ -441,6 +269,77 @@
                 </button>
               </td>
             </tr>
+
+            <tr role="row">
+              <td role="cell" title="رقم هوية السائق">88560000888787</td>
+              <td role="cell" title="تاريخ الميلاد">مايو 2020</td>
+              <td role="cell" title="الإسم الكامل">هاني مصطفى عادل</td>
+              <td role="cell" class="driving-percentage-cell" title="نسبة القيادة">
+                <div class="col-md-12">
+                  <div class="form-radio-inline-group">
+                    <div class="form-radio-inline">
+                      <input
+                        type="radio"
+                        name="driver-per1"
+                        id="driver-per1"
+                        value="25"
+                      />
+                      <label class="form-check-label" for="driver-per1"
+                        >25%</label
+                      >
+                    </div>
+                    <div class="form-radio-inline">
+                      <input
+                        type="radio"
+                        name="driver-per1"
+                        id="driver-per2"
+                        value="50"
+                        checked
+                      />
+                      <label class="form-check-label" for="driver-per2"
+                        >50%</label
+                      >
+                    </div>
+                    <div class="form-radio-inline">
+                      <input
+                        type="radio"
+                        name="driver-per1"
+                        id="driver-per"
+                        value="75"
+                      />
+                      <label class="form-check-label" for="driver-per3"
+                        >75%</label
+                      >
+                    </div>
+                    <div class="form-radio-inline">
+                      <input
+                        type="radio"
+                        name="driver-per1"
+                        id="driver-per4"
+                        value="100"
+                      />
+                      <label class="form-check-label" for="driver-per4"
+                        >100%</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td role="cell" class="options-cell text-center">
+                <button
+                  class="btn btn-edit-icon"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#extra-driver-modal"
+                >
+                  <span></span>
+                </button>
+                <button class="btn btn-delete-icon" type="button">
+                  <span></span>
+                </button>
+              </td>
+            </tr>
+
           </tbody>
         </table>
       <div class="row mb-5 gy-3">

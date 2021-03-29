@@ -30,8 +30,8 @@ $(function () {
         $(this).closest('tr').remove();
     });
     // Delete Driver from Step1
-    $(document).on('click', '.table-responsive .btn-delete-icon', function () {
-        $(this).closest('tbody').remove();
+    $(document).on('click', '.drivers-list .btn-delete-icon', function () {
+        $(this).closest('tr').remove();
     });
 
     // Add other license from extra-details-modal
