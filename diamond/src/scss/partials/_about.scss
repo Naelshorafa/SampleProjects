@@ -42,7 +42,10 @@
   }
 }
 .our-job-about {
-  margin-bottom: 235px;
+  
+  @include media-breakpoint-up("lg", $grid-breakpoints){
+    margin-bottom: 235px;
+  }
 .container {
   display: flex;
   flex-direction: row;
