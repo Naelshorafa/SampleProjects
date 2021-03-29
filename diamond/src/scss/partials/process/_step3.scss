@@ -132,4 +132,16 @@
       }
     }
   }
+  table {
+    width: 100%;
+    tr {
+      td,
+      th {
+        padding: 10px 4px;
+      }
+      th {
+        width: 150px;
+      }
+    }
+  }
 }
